@@ -2,20 +2,219 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="A literary masterpiece blending MA English (MEG) with complete SEO strategy. An epic SEO poem by Manish Yadav, founder of Best Digital Marketer." />
-  <meta name="author" content="Manish Yadav" />
-  <meta name="keywords" content="SEO poem, SEO poetry, literary SEO, MEG poem, MA English poem on SEO, search engine optimization in literature, meta tags poetry, SEO keywords, technical SEO poem" />
-  <title>The Epic of SERPheus: A Literary SEO Poem | Best Digital Marketer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Google Just Removed Some Structured Data Types – What You Should Know (In Simple Words)</title>
+  <meta name="description" content="Explore the pros and cons of Google Ads vs Meta Ads and find out which platform is best for lead generation in 2025.">
+  <meta name="keywords" content="Google Ads, Meta Ads, Lead Generation, Digital Marketing 2025, Facebook Ads, Instagram Ads, PPC Strategy">
+  <meta name="author" content="Best Digital Marketer">
+  <!-- Open Graph Meta Tags -->
+<meta property="og:title" content="Google Removing 7 Structured Data Types - Schema Markup Update 2025 | Best Digital Marketer" />
+<meta property="og:description" content="Google's June 2025 update removes support for 7 structured data types. Learn which ones and how it impacts SEO & schema strategies." />
+<meta property="og:image" content="https://bestdigitalmarketer.com/google-removing-7-structured-data-types-schema-markup.webp" />
+<meta property="og:url" content="https://bestdigitalmarketer.com/blog/google-structured-data-update-2025" />
+<meta property="og:type" content="blog" />
+  <meta name="robots" content="index, follow" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #ffffff; /* default background for white section */
+      color: #333;
+    }
+    header {
+      background: #1a73e8;
+      color: #fff;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.5em;
+    }
+    .nav-btn {
+      background: #fff;
+      color: #1a73e8;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    .blog-header {
+      text-align: center;
+      padding: 40px 20px 20px;
+      background: #fff;
+    }
+    .blog-header img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+    .blog-header h2 {
+      font-size: 2em;
+      margin: 20px 0 10px;
+    }
+    .blog-header p {
+      color: #555;
+      font-size: 1.1em;
+    }
+    .blog-container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
+    }
+    .toc h3 {
+      font-size: 1.2em;
+      margin-bottom: 10px;
+    }
+    .toc ul {
+      padding-left: 20px;
+    }
+    .toc li {
+      margin: 6px 0;
+    }
+    .toc a {
+      text-decoration: none;
+      color: #1a73e8;
+    }
+    section h3 {
+      color: #1a73e8;
+      margin-top: 40px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #222;
+      color: #ccc;
+      font-size: 0.9em;
+    }
+    a {
+      color: #1a73e8;
+      text-decoration: none;
+    }
+
+    .highlight-section {
+      background: #fffce6;
+      border-radius: 25px;
+      padding: 30px 20px;
+      margin: 50px auto;
+      max-width: 1000px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.05);
+    }
+    .highlight-section h3 {
+      font-size: 1.7em;
+      margin-bottom: 20px;
+      color: #222;
+    }
+    .highlight-section p {
+      font-size: 1.1em;
+      margin-bottom: 10px;
+    }
+
+    .cta-section {
+      background: linear-gradient(135deg, #e3f2fd, #ffffff);
+      text-align: center;
+      padding: 40px 20px;
+      border-radius: 15px;
+      margin: 60px auto;
+      max-width: 1000px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    }
+    .cta-btn {
+      background: #1a73e8;
+      color: white;
+      padding: 12px 25px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1em;
+    }
+
+    .faq-section {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .faq {
+      flex: 1 1 45%;
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      overflow: hidden;
+    }
+    .faq button {
+      width: 100%;
+      padding: 15px 20px;
+      text-align: left;
+      background: #f5f5f5;
+      border: none;
+      cursor: pointer;
+      font-size: 1.05em;
+      position: relative;
+      font-weight: 600;
+    }
+    .faq button .arrow {
+      float: right;
+      transition: transform 0.3s ease;
+    }
+    .faq.open button .arrow {
+      transform: rotate(180deg);
+    }
+    .faq-content {
+      display: none;
+      padding: 15px 20px;
+      background: white;
+      border-top: 1px solid #ddd;
+      font-size: 1em;
+      line-height: 1.5;
+    }
+
+    @media (max-width: 768px) {
+      .faq {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
 </head>
 <body>
-  <main>
-    <article>
-      <h1>The Epic of SERPheus: A Literary Pilgrimage through SEO</h1>
-      <p><em>—By Manish Yadav (Tatva Tech Digital)</em></p>
 
-      <section>
-        <h2>🪶 Invocation: The Muse of Meta</h2>
+<header>
+  <h1>Best Digital Marketer</h1>
+  <a href="/" class="nav-btn">Go to Home</a>
+</header>
+
+<div class="blog-header">
+  <img src="https://bestdigitalmarketer.com/google-removing-7-structured-data-types-schema-markup.webp" alt="Google Algorithm Update removing structured data types markup">
+  <h2>Google Just Removed Some Structured Data Types – What You Should Know
+</h2>
+  <p>So Google just made another change to how things appear in the search results. If you're into SEO or own a website, this is something you should know — but don’t worry, I’ll explain it super simply.
+
+</p>
+</div>
+
+<!-- Light gray background area starts here -->
+<div style="background-color: #f9f9f9;">
+  <div class="blog-container">
+    <div class="toc">
+      <h3><strong>Table of Contents</strong></h3>
+      <ul>
+        <li><strong><a href="#structured-data">1. What is Structured Data?</a></strong></li>
+        <li><strong><a href="#change">2. Google is Changing</a></strong></li>
+        <li><strong><a href="#removed">3. Structured Data Types Being Removed</a></strong></li>
+        <li><strong><a href="#affect">4. Does This Affect Ranking?</a></strong></li>
+        <li><strong><a href="#role">5. Why It Matters for You</a></strong></li>
+        <li><strong><a href="#now-what">6. What You Should Do:</a></strong></li>
+      </ul>
+    </div>
+
+    <section id="structured-dataw">
+         <h2>🪶 Invocation: The Muse of Meta</h2>
         <p>O Muse of Tags, of Title’s flame,<br>
         Who sings in code and marketer’s name,<br>
         In Eliot’s waste or Milton’s pyre,<br>
@@ -125,12 +324,86 @@
         Like Woolf through rooms that thought could fill.<br>
         And if thy bounce be high or rank be low,<br>
         Rewrite thy path—<strong>become SEO</strong>.</p>
-      </section>
+     
+    </section>
+  </div>
+</div>
+<!-- Light gray background area ends here -->
 
-      <footer>
-        <p><em>A poem by Manish Yadav – merging MEG literature and SEO wisdom. All rights reserved @ <a href="https://bestdigitalmarketer.com/" target="_blank">BestDigitalMarketer.com</a></em></p>
-      </footer>
-    </article>
-  </main>
+<!-- Lead Generation Section (starts with white background) -->
+<div class="highlight-section">
+  <div class="blog-container">
+    <h3>The Bottom Line: Smarter Schema, Better SEO</h3>
+    <p><strong>✅ Use Google-supported schema types</strong> like FAQ, Product, HowTo, and Event — these still boost visibility and trust.</p>
+    <p><strong>✅ Audit your existing markup</strong> to remove outdated or low-quality schema that could harm your credibility.</p>
+    <p><strong>✅ Prioritize real value </strong>- structured data should support useful, human-first content, not just chase rich results.</p>
+    <p><strong>💡 Pro Tip:</strong> Schema is still your SEO superpower — but now, it’s less about tricks and more about trust.</p>
+
+  </div>
+</div>
+
+<!-- CTA Section -->
+<div class="cta-section">
+  <div class="cta-content">
+    <h3 style="font-size: 1.8em; margin: 0 0 10px;">Hungry for More Digital Growth Hacks?</h3>
+    <p style="color: #555; font-size: 1.1em; margin: 0 0 15px;">Discover the latest strategies, tools, and creative ad ideas to stay ahead in 2025.</p>
+    <a href="/" class="cta-btn">🔍 Read More Blogs</a>
+  </div>
+</div><!-- FAQ Section -->
+<div class="faq-section">
+  <div class="faq">
+    <button onclick="toggleFAQ(this)">Will this update affect my CTR?<span class="arrow">▼</span></button>
+    <div class="faq-content">
+      Definitely yes, because such schemas/snippets cover more area on the screen on SERPs (Search Engine Result Pages), which increases the chances of getting more clicks on your page. With the update, you'll likely get fewer clicks but approximately the same impressions (depending on your site's SEO).
+    </div>
+  </div>
+
+  <div class="faq">
+    <button onclick="toggleFAQ(this)">Will removing structured data by Google not affect my page ranking?<span class="arrow">▼</span></button>
+    <div class="faq-content">
+      Not really, but it might affect around 10%, because the schemas Google is removing help search engines understand more about your page content. Out of the 7 structured data types, some were delivering richer information to Google. But you can still maintain good rankings by optimizing your content and naturally including this information within your page content.
+    </div>
+  </div>
+
+  <div class="faq">
+    <button onclick="toggleFAQ(this)">Does structured data still matter for mobile-first indexing?<span class="arrow">▼</span></button>
+    <div class="faq-content">
+      Yes, it still matters. Mobile-first indexing is more about how your site shows up on phones, but structured data still helps Google understand your content better—doesn’t matter if it’s mobile or desktop. So yeah, keep your schema clean and updated, it still plays a role.
+    </div>
+  </div>
+
+  <div class="faq">
+    <button onclick="toggleFAQ(this)">Are structured data types and schema markup the same?<span class="arrow">▼</span></button>
+    <div class="faq-content">
+      Not exactly, but they’re closely connected. <strong>Schema markup</strong> is the code (usually in JSON-LD) you add to your web pages—it tells search engines what your content means. <br><br>
+      <strong>Structured data types</strong> are specific categories within that code—like <code>Product</code>, <code>FAQPage</code>, or <code>Article</code>—used to define what kind of content you’re describing. <br><br>
+      So schema is the language, and structured data types are what you're describing using that language.
+    </div>
+  </div>
+</div>
+
+<footer>
+
+  © 2025 Best Digital Marketer. All Rights Reserved.
+</footer>
+
+<script>
+  function toggleFAQ(button) {
+    const faqItem = button.parentElement;
+    const content = button.nextElementSibling;
+    const isOpen = faqItem.classList.contains('open');
+
+    document.querySelectorAll('.faq').forEach(faq => {
+      faq.classList.remove('open');
+      faq.querySelector('.faq-content').style.display = "none";
+    });
+
+    if (!isOpen) {
+      faqItem.classList.add('open');
+      content.style.display = "block";
+    }
+  }
+</script>
+
 </body>
 </html>
