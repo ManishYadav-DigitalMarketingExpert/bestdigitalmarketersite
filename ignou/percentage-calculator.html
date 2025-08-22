@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>IGNOU MEG Percentage Calculator</title>
+  <style>
+    :root{
+      --bg:#0f172a;          /* slate-900 */
+      --card:#111827;        /* gray-900 */
+      --muted:#94a3b8;       /* slate-400 */
+      --text:#e5e7eb;        /* gray-200 */
+      --accent:#22d3ee;      /* cyan-400 */
+      --accent-2:#a78bfa;    /* violet-400 */
+      --ok:#10b981;          /* emerald-500 */
+      --warn:#f59e0b;        /* amber-500 */
+      --bad:#ef4444;         /* red-500 */
+      --border:#1f2937;      /* gray-800 */
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:radial-gradient(1200px 600px at 10% -10%, #1f2937 0%, transparent 60%),
+                         radial-gradient(1200px 600px at 110% 10%, #111827 0%, transparent 60%),
+                         var(--bg);color:var(--text);font:16px/1.5 system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif}
+    .container{max-width:1100px;margin:40px auto;padding:24px}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));
+          border:1px solid var(--border);border-radius:18px;box-shadow:0 10px 30px rgba(0,0,0,.25);overflow:hidden}
+    header{padding:22px 22px 10px 22px;border-bottom:1px solid var(--border)}
+    header h1{margin:0;font-size: clamp(20px, 2.8vw, 30px);letter-spacing:.3px}
+    header p{margin:6px 0 0;color:var(--muted)}
+
+    .controls{display:flex;flex-wrap:wrap;gap:12px;padding:16px;border-bottom:1px solid var(--border)}
+    .controls .group{display:flex;gap:10px;align-items:center}
+    .controls label{font-size:14px;color:var(--muted)}
+    .btn{appearance:none;border:1px solid var(--border);background:#0b1220;color:var(--text);padding:10px 14px;border-radius:12px;cursor:pointer;transition:.15s transform,.15s opacity}
+    .btn:hover{transform:translateY(-1px)}
+    .btn.primary{background:linear-gradient(90deg, var(--accent), var(--accent-2));border:0;color:#0b1220;font-weight:700}
+    .btn.ghost{background:transparent}
+    .switch{display:inline-flex;align-items:center;gap:8px;cursor:pointer}
+    .switch input{appearance:none;width:40px;height:24px;border-radius:999px;background:#1f2937;position:relative;outline:none;border:1px solid var(--border)}
+    .switch input:checked{background:#123;}
+    .switch input:before{content:"";position:absolute;inset:2px 20px 2px 2px;border-radius:999px;background:#cbd5e1;transition:.15s}
+    .switch input:checked:before{inset:2px 2px 2px 20px;background:#67e8f9}
+
+    .table-wrap{padding:8px 16px 18px 16px;overflow:auto}
+    table{width:100%;border-collapse:collapse;min-width:820px}
+    th,td{padding:10px;border-bottom:1px solid var(--border);text-align:left}
+    th{font-size:14px;color:var(--muted);position:sticky;top:0;background:#0b1220;z-index:1}
+    tr:hover td{background:rgba(255,255,255,.02)}
+
+    select, input[type="number"]{width:100%;padding:9px 10px;border-radius:10px;border:1px solid var(--border);background:#0b1220;color:var(--text);outline:none}
+    input[type="number"]::-webkit-outer-spin-button,
+    input[type="number"]::-webkit-inner-spin-button{appearance:none;margin:0}
+
+    .result{display:grid;grid-template-columns: repeat(auto-fit, minmax(220px,1fr));gap:14px;padding:18px;border-top:1px solid var(--border);background:linear-gradient(180deg, rgba(34,211,238,.08), rgba(167,139,250,.05))}
+    .stat{padding:14px;border:1px solid var(--border);border-radius:14px}
+    .stat h3{margin:0 0 6px 0;font-size:13px;color:var(--muted)}
+    .stat .value{font-size:26px;font-weight:800}
+    .value.ok{color:var(--ok)}
+    .value.warn{color:var(--warn)}
+    .value.bad{color:var(--bad)}
+
+    .muted{color:var(--muted);font-size:13px}
+    .tag{display:inline-block;padding:4px 8px;border-radius:999px;border:1px solid var(--border);margin-right:6px; font-size:12px;color:var(--muted)}
+    .foot{padding:14px;border-top:1px dashed var(--border);color:var(--muted);font-size:13px}
+    .small{font-size:12px}
+    .center{text-align:center}
+    .right{text-align:right}
+    .pass{color:var(--ok);font-weight:700}
+    .fail{color:var(--bad);font-weight:700}
+    .note{padding:10px 14px;margin:12px 16px;border-left:4px solid var(--accent);background:rgba(34,211,238,.08);border-radius:10px}
+  </style>
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "sytpdi6qw7");
+</script>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <header>
+        <h1>IGNOU MEG Percentage Calculator (15 Subjects)</h1>
+        <p>Weighting used: <span class="tag">Assignments 30%</span> <span class="tag">Term‑End Exam 70%</span>. Fill up to 15 subjects (MEG codes). Only filled rows are counted.</p>
+      </header>
+
+      <div class="controls">
+        <div class="group">
+          <button id="calcBtn" class="btn primary">Calculate</button>
+          <button id="resetBtn" class="btn ghost">Reset</button>
+          <button id="demoBtn" class="btn ghost" title="Fill demo data for testing">Demo Data</button>
+        </div>
+        <div class="group">
+          <label class="switch" title="If enabled, flags subjects with theory & assignment marks below 40.">
+            <input id="enforcePass" type="checkbox" checked>
+          </label>
+          <span class="muted">Enforce pass criteria (≥40 in Assignment & Theory)</span>
+        </div>
+      </div>
+
+      <div class="table-wrap">
+        <table id="marksTable" aria-label="IGNOU MEG marks input table">
+          <thead>
+            <tr>
+              <th class="center">#</th>
+              <th>Subject Code</th>
+              <th>Assignment (0–100)</th>
+              <th>Term‑End Theory (0–100)</th>
+              <th>Weighted (30% + 70%)</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+      </div>
+
+      <section class="result" id="results">
+        <div class="stat"><h3>Subjects Counted</h3><div id="count" class="value">0</div></div>
+        <div class="stat"><h3>Overall Percentage</h3><div id="percent" class="value">0.00%</div></div>
+        <div class="stat"><h3>Overall Grade</h3><div id="grade" class="value">–</div><div class="small muted">A≥80, B≥60, C≥50, D≥40, E&lt;40</div></div>
+        <div class="stat"><h3>Remarks</h3><div id="remarks" class="small muted">Fill marks and click Calculate.</div></div>
+      </section>
+
+      <div class="note small">
+        <strong>How it works:</strong> For each filled subject → <em>Weighted</em> = (Assignment × 0.30) + (Theory × 0.70). Final percentage is the average of all weighted scores across filled subjects. Empty rows are ignored.
+      </div>
+
+      <div class="foot">
+        Built with <em>bestdigitalmarketer.com/ignou/meg‑piku‑world</em>. to calculate IGNOU MEG percentage.
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // ==== CONFIG ============================================================
+    const SUBJECT_CODES = [
+      "MEG-01","MEG-02","MEG-03","MEG-04","MEG-05","MEG-06","MEG-07","MEG-08",
+      "MEG-09","MEG-10","MEG-11","MEG-12","MEG-13","MEG-14","MEG-15","MEG-16"
+    ]; // you can edit this list if needed.
+
+    const PASS_MARK = 40; // typical passing threshold for MEG (assignment & theory)
+
+    // ==== UI BUILD ==========================================================
+    const tbody = document.querySelector('#marksTable tbody');
+
+    function makeRow(idx){
+      const tr = document.createElement('tr');
+      tr.innerHTML = `
+        <td class="center">${idx+1}</td>
+        <td>
+          <select aria-label="Subject code for row ${idx+1}">
+            <option value="">— Select —</option>
+            ${SUBJECT_CODES.map(code => `<option value="${code}">${code}</option>`).join('')}
+          </select>
+        </td>
+        <td><input type="number" inputmode="decimal" placeholder="e.g., 65" min="0" max="100" step="0.01" aria-label="Assignment marks row ${idx+1}" /></td>
+        <td><input type="number" inputmode="decimal" placeholder="e.g., 72" min="0" max="100" step="0.01" aria-label="Theory marks row ${idx+1}" /></td>
+        <td class="right" data-weighted>—</td>
+        <td data-status class="small muted">–</td>
+      `;
+      return tr;
+    }
+
+    for(let i=0;i<15;i++){ tbody.appendChild(makeRow(i)); }
+
+    // ==== CALCULATION LOGIC ================================================
+    function gradeFromPercent(p){
+      if (p >= 80) return 'A';
+      if (p >= 60) return 'B';
+      if (p >= 50) return 'C';
+      if (p >= 40) return 'D';
+      return 'E';
+    }
+
+    function clampToRange(v){
+      if (Number.isNaN(v)) return null;
+      if (v < 0) return 0; if (v > 100) return 100; return v;
+    }
+
+    function calc(){
+      const enforcePass = document.getElementById('enforcePass').checked;
+      let weightedSum = 0;
+      let count = 0;
+      let anyFails = false;
+
+      [...tbody.rows].forEach((tr) => {
+        const sel = tr.querySelector('select');
+        const aInp = tr.querySelector('td:nth-child(3) input');
+        const tInp = tr.querySelector('td:nth-child(4) input');
+        const wCell = tr.querySelector('[data-weighted]');
+        const sCell = tr.querySelector('[data-status]');
+
+        const sub = sel.value.trim();
+        const aRaw = clampToRange(parseFloat(aInp.value));
+        const tRaw = clampToRange(parseFloat(tInp.value));
+
+        // Decide whether this row is countable
+        const rowFilled = sub !== '' && aRaw !== null && tRaw !== null;
+
+        if (!rowFilled){
+          wCell.textContent = '—';
+          sCell.textContent = '–';
+          sCell.className = 'small muted';
+          return;
+        }
+
+        const weighted = +( (aRaw * 0.30) + (tRaw * 0.70) ).toFixed(2);
+        wCell.textContent = weighted.toFixed(2);
+        wCell.className = 'right';
+
+        let statusTxt = 'OK';
+        let statusClass = 'pass';
+        if (enforcePass && (aRaw < PASS_MARK || tRaw < PASS_MARK)){
+          statusTxt = `Fail (${aRaw < PASS_MARK ? 'A' : ''}${(aRaw < PASS_MARK && tRaw < PASS_MARK)?' & ':''}${tRaw < PASS_MARK ? 'T' : ''})`;
+          statusClass = 'fail';
+          anyFails = true;
+        }
+        sCell.textContent = statusTxt;
+        sCell.className = statusClass;
+
+        weightedSum += weighted;
+        count += 1;
+      });
+
+      const percent = count ? +(weightedSum / count).toFixed(2) : 0;
+      const grade = gradeFromPercent(percent);
+
+      // Update summary
+      const countEl = document.getElementById('count');
+      const percentEl = document.getElementById('percent');
+      const gradeEl = document.getElementById('grade');
+      const remarksEl = document.getElementById('remarks');
+
+      countEl.textContent = count;
+      percentEl.textContent = `${percent.toFixed(2)}%`;
+      gradeEl.textContent = grade;
+
+      gradeEl.className = 'value ' + (percent>=60? 'ok' : percent>=40? 'warn' : 'bad');
+
+      if (!count){
+        remarksEl.textContent = 'No valid rows yet. Select subject + enter both marks.';
+      } else if (anyFails){
+        remarksEl.textContent = 'Some subjects are below the minimum required marks (40). Consider re-appearing/improving those components.';
+      } else {
+        remarksEl.textContent = 'All counted subjects meet minimum criteria (if enabled).';
+      }
+    }
+
+    // ==== EVENTS ============================================================
+    document.getElementById('calcBtn').addEventListener('click', calc);
+    document.getElementById('enforcePass').addEventListener('change', calc);
+
+    document.getElementById('resetBtn').addEventListener('click', () => {
+      [...tbody.rows].forEach((tr)=>{
+        tr.querySelector('select').value = '';
+        tr.querySelector('td:nth-child(3) input').value = '';
+        tr.querySelector('td:nth-child(4) input').value = '';
+        tr.querySelector('[data-weighted]').textContent = '—';
+        const sCell = tr.querySelector('[data-status]');
+        sCell.textContent = '–';
+        sCell.className = 'small muted';
+      });
+      document.getElementById('count').textContent = '0';
+      document.getElementById('percent').textContent = '0.00%';
+      document.getElementById('grade').textContent = '–';
+      document.getElementById('grade').className = 'value';
+      document.getElementById('remarks').textContent = 'Fill marks and click Calculate.';
+    });
+
+    document.getElementById('demoBtn').addEventListener('click', () => {
+      // Fill first 6 rows with sample data
+      const samples = [
+        {code:'MEG-01', a:75, t:68},
+        {code:'MEG-02', a:62, t:71},
+        {code:'MEG-03', a:58, t:45},
+        {code:'MEG-04', a:80, t:82},
+        {code:'MEG-05', a:49, t:39}, // will show fail if pass criteria on
+        {code:'MEG-06', a:66, t:59}
+      ];
+      [...tbody.rows].forEach((tr, i)=>{
+        const s = tr.querySelector('select');
+        const a = tr.querySelector('td:nth-child(3) input');
+        const t = tr.querySelector('td:nth-child(4) input');
+        if (samples[i]){
+          s.value = samples[i].code; a.value = samples[i].a; t.value = samples[i].t;
+        } else {
+          s.value = ''; a.value = ''; t.value='';
+        }
+        tr.querySelector('[data-weighted]').textContent = '—';
+        const st = tr.querySelector('[data-status]'); st.textContent='–'; st.className='small muted';
+      });
+      calc();
+    });
+
+    // Optional: auto-calc on input changes
+    tbody.addEventListener('input', (e) => {
+      const target = e.target;
+      if (target.matches('input, select')){ calc(); }
+    });
+  </script>
+</body>
+</html>
