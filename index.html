@@ -15,1399 +15,1030 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <meta name="robots" content="index, follow" />
     <title>Learn latest Updates - Tips - Tricks with Best Digital Marketer</title>
     <link rel="canonical" href="https://bestdigitalmarketer.com/" />
+
+
+    <meta property="og:title" content="Best Digital Marketer — Grow Faster with Simple, Creative Marketing" />
+    <meta property="og:description" content="Blogs, micro tips, and digital marketing services that focus on results." />
+    <meta property="og:url" content="https://bestdigitalmarketer.com/" />
+    <meta property="og:type" content="website" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Best Digital Marketer — Grow Faster with Simple, Creative Marketing" />
+    <meta name="twitter:description" content="Blogs, micro tips, and digital marketing services that focus on results." />
+
     <style>
-        /* Modern Base Styles */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-        }
-        
-        body {
-            line-height: 1.6;
-            color: #1a1a2e; /* Deep navy */
-            background-color: #f8fafc; /* Light gray-blue */
-            overflow-x: hidden;
-        }
-        
-        .container {
-            width: 100%;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-        
-        .section-title {
-            font-size: 32px;
-            margin-bottom: 40px;
-            color: #1a1a2e; /* Deep navy */
-            position: relative;
-            padding-left: 20px;
-            border-left: 4px solid #f093fb; /* Changed to pink */
-            font-weight: 700;
-        }
-        
-        /* Modern Hero Section with 3D Reading Images */
-        .hero {
-            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-            color: #ffffff;
-            padding: 0;
-            position: relative;
-            overflow: hidden;
-            height: 100vh;
-            display: flex;
-            align-items: center;
-        }
-        
-        /* Modern Animated Circle */
-        .animated-circle {
-            position: absolute;
-            width: 500px;
-            height: 500px;
-            background: linear-gradient(135deg, #ff6b6b, #4ecdc4);
-            border-radius: 50%;
-            right: -150px;
-            bottom: -150px;
-            opacity: 0.8;
-            z-index: 1;
-            transition: transform 0.5s ease-out;
-            box-shadow: 0 0 100px rgba(255, 107, 107, 0.3);
-        }
-        
-        /* Gradient overlay on circle */
-        .animated-circle::after {
-            content: '';
-            position: absolute;
-            width: 70%;
-            height: 70%;
-            top: 15%;
-            left: 15%;
-            background: linear-gradient(135deg, rgba(255,255,255,0.2), rgba(255,255,255,0.05));
-            border-radius: 50%;
-            backdrop-filter: blur(10px);
-        }
-        
-        /* Modern Floating Elements */
-        .floating-elements {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            pointer-events: none;
-            z-index: 1;
-        }
-        
-        .modern-shape {
-            position: absolute;
-            border-radius: 20px;
-            background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05));
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255,255,255,0.2);
-        }
-        
-        .modern-shape:nth-child(1) {
-            width: 80px;
-            height: 80px;
-            top: 20%;
-            left: 15%;
-            animation: float1 6s ease-in-out infinite;
-        }
-        
-        .modern-shape:nth-child(2) {
-            width: 60px;
-            height: 60px;
-            top: 60%;
-            left: 25%;
-            animation: float2 8s ease-in-out infinite 2s;
-            border-radius: 50%;
-        }
-        
-        .modern-shape:nth-child(3) {
-            width: 100px;
-            height: 40px;
-            top: 30%;
-            right: 20%;
-            animation: float3 7s ease-in-out infinite 1s;
-        }
-        
-        .modern-shape:nth-child(4) {
-            width: 50px;
-            height: 50px;
-            top: 70%;
-            right: 30%;
-            animation: float1 9s ease-in-out infinite 3s;
-            transform: rotate(45deg);
-        }
-        
-        @keyframes float1 {
-            0%, 100% { transform: translateY(0) rotate(0deg); }
-            50% { transform: translateY(-30px) rotate(10deg); }
-        }
-        
-        @keyframes float2 {
-            0%, 100% { transform: translateY(0) scale(1); }
-            50% { transform: translateY(-20px) scale(1.1); }
-        }
-        
-        @keyframes float3 {
-            0%, 100% { transform: translateY(0) rotate(0deg); }
-            50% { transform: translateY(-25px) rotate(-5deg); }
-        }
-        
-        /* Particle System */
-        .particles {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
-        
-        .particle {
-            position: absolute;
-            width: 4px;
-            height: 4px;
-            background: rgba(255,255,255,0.6);
-            border-radius: 50%;
-            animation: particleFloat 12s linear infinite;
-        }
-        
-        .particle:nth-child(1) { top: 10%; left: 20%; animation-delay: 0s; }
-        .particle:nth-child(2) { top: 30%; left: 60%; animation-delay: 2s; }
-        .particle:nth-child(3) { top: 50%; left: 40%; animation-delay: 4s; }
-        .particle:nth-child(4) { top: 70%; left: 80%; animation-delay: 6s; }
-        .particle:nth-child(5) { top: 20%; left: 70%; animation-delay: 8s; }
-        .particle:nth-child(6) { top: 60%; left: 30%; animation-delay: 10s; }
-        
-        @keyframes particleFloat {
-            0% { transform: translateY(0) scale(0); opacity: 0; }
-            10% { opacity: 1; }
-            90% { opacity: 1; }
-            100% { transform: translateY(-100vh) scale(1); opacity: 0; }
-        }
-        
-        /* Hero Layout with 3D Reading Images */
-        .hero-layout {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            width: 100%;
-            gap: 60px;
-            position: relative;
-            z-index: 2;
-        }
-        
-        .hero-content {
-            flex: 1;
-            max-width: 600px;
-        }
-        
-        .hero h1 {
-            font-size: 64px;
-            margin-bottom: 24px;
-            color: #ffffff;
-            font-weight: 800;
-            line-height: 1.1;
-            letter-spacing: -0.02em;
-        }
-        
-        .hero p {
-            font-size: 22px;
-            margin-bottom: 32px;
-            color: rgba(255,255,255,0.9);
-            font-weight: 400;
-            line-height: 1.6;
-        }
-        
-        .hero-button {
-            display: inline-block;
-            padding: 16px 32px;
-            background: rgba(255,255,255,0.15);
-            color: #ffffff;
-            font-size: 16px;
-            font-weight: 600;
-            border-radius: 12px;
-            text-decoration: none;
-            transition: all 0.3s ease;
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255,255,255,0.2);
-        }
-        
-        .hero-button:hover {
-            background: rgba(255,255,255,0.25);
-            transform: translateY(-2px);
-            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-        }
-        
-        /* 3D Reading Images */
-        .reading-images {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-            width: 400px;
-            flex-shrink: 0;
-        }
-        
-        .reading-image {
-            width: 100%;
-            height: 180px;
-            background: rgba(255,255,255,0.1);
-            backdrop-filter: blur(10px);
-            border-radius: 20px;
-            overflow: hidden;
-            position: relative;
-            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
-            transition: all 0.5s ease;
-            border: 1px solid rgba(255,255,255,0.2);
-        }
-        
-        .reading-image:hover {
-            transform: translateY(-10px) scale(1.05);
-            box-shadow: 0 25px 50px rgba(0,0,0,0.3);
-        }
-        
-        .reading-image:nth-child(1) {
-            animation: imageFloat1 6s ease-in-out infinite;
-        }
-        
-        .reading-image:nth-child(2) {
-            animation: imageFloat2 7s ease-in-out infinite 1s;
-        }
-        
-        .reading-image:nth-child(3) {
-            animation: imageFloat3 8s ease-in-out infinite 2s;
-        }
-        
-        @keyframes imageFloat1 {
-            0%, 100% { transform: translateY(0) rotate(0deg); }
-            50% { transform: translateY(-15px) rotate(2deg); }
-        }
-        
-        @keyframes imageFloat2 {
-            0%, 100% { transform: translateY(0) rotate(0deg); }
-            50% { transform: translateY(-10px) rotate(-2deg); }
-        }
-        
-        @keyframes imageFloat3 {
-            0%, 100% { transform: translateY(0) rotate(0deg); }
-            50% { transform: translateY(-12px) rotate(1deg); }
-        }
-        
-        .reading-image-content {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
-            text-align: center;
-            color: white;
-        }
-        
-        .reading-image-icon {
-            font-size: 40px;
-            margin-bottom: 10px;
-        }
-        
-        .reading-image-title {
-            font-size: 18px;
-            font-weight: 700;
-        }
-        
-        /* Modern Posts Grid */
-        .posts-section {
-            padding: 25px 0;
-            background: #ffffff;
-        }
-        
-        .posts-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 24px;
-        }
-        
-        .post-card {
-            background: #ffffff;
-            border-radius: 16px;
-            overflow: hidden;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-            transition: all 0.3s ease;
-            border: 1px solid #e2e8f0;
-            cursor: pointer;
-        }
-        
-        .post-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 12px 40px rgba(0,0,0,0.15);
-        }
-        
-        .post-link {
-            text-decoration: none;
-            color: inherit;
-            display: block;
-        }
-        
-        .post-image {
-            width: 100%;
-            height: 150px;
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-color: #f1f5f9;
-            position: relative;
-        }
-        
-        .post-image::after {
-            content: '📷';
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            font-size: 24px;
-            opacity: 0.5;
-        }
-        
-        .post-title {
-            padding: 20px;
-            font-size: 16px;
-            font-weight: 600;
-            color: #1a1a2e;
-            line-height: 1.4;
-        }
-        
-        /* Modern Quiz Section */
-        .quiz-section {
-            padding: 80px 0;
-            background: #f8fafc;
-        }
-        
-        .quiz-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 32px;
-        }
-        
-        .quiz-card {
-            background: #ffffff;
-            border-radius: 20px;
-            padding: 32px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-            border: 1px solid #e2e8f0;
-            transition: all 0.3s ease;
-        }
-        
-        .quiz-card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 12px 40px rgba(0,0,0,0.12);
-        }
-        
-        .quiz-question {
-            font-size: 20px;
-            margin-bottom: 24px;
-            font-weight: 700;
-            color: #1a1a2e;
-            line-height: 1.3;
-        }
-        
-        .quiz-options {
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-        }
-        
-        .quiz-option {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 16px 20px;
-            background: #f8fafc;
-            border-radius: 12px;
-            cursor: pointer;
-            transition: all 0.2s ease;
-            border: 2px solid transparent;
-        }
-        
-        .quiz-option:hover {
-            background: #e2e8f0;
-            border-color: #f093fb;
-        }
-        
-        .quiz-option.selected {
-            background: #e2e8f0;
-            border-color: #f093fb;
-        }
-        
-        .quiz-option.correct {
-            background: rgba(34, 197, 94, 0.1);
-            border-color: #22c55e;
-            color: #15803d;
-        }
-        
-        .quiz-option.wrong {
-            background: rgba(239, 68, 68, 0.1);
-            border-color: #ef4444;
-            color: #dc2626;
-        }
-        
-        .option-text {
-            font-size: 16px;
-            color: inherit;
-            font-weight: 500;
-        }
-        
-        .option-status {
-            font-size: 14px;
-            font-weight: 700;
-            color: inherit;
-        }
-        
-        /* Compact Modern Services Section */
-        .services-section {
-            padding: 60px 0; /* Reduced from 80px */
-            background: #ffffff;
-            position: relative;
-        }
-        
-        .services-container {
-            display: flex;
-            gap: 32px;
-            position: relative;
-            z-index: 2;
-        }
-        
-        /* Left Side Menu - Compact */
-        .services-menu {
-            width: 220px; /* Reduced from 250px */
-            flex-shrink: 0;
-            border-right: 2px solid #e2e8f0;
-            padding-right: 20px;
-        }
-        
-        .service-tab {
-            padding: 12px 16px; /* Reduced padding */
-            margin-bottom: 8px; /* Reduced margin */
-            background: transparent;
-            color: #64748b;
-            border-radius: 12px 0 0 12px;
-            font-size: 16px; /* Reduced font size */
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            position: relative;
-            text-align: left;
-            border-left: 3px solid transparent;
-        }
-        
-        .service-tab:hover {
-            background: rgba(240, 147, 251, 0.05);
-            color: #f093fb;
-        }
-        
-        .service-tab.active {
-            background: rgba(240, 147, 251, 0.1);
-            color: #f093fb;
-            border-left: 3px solid #f093fb;
-            font-weight: 700;
-        }
-        
-        /* Right Side Content - Compact */
-        .service-content {
-            flex: 1;
-            position: relative;
-        }
-        
-        .service-panel {
-            display: none;
-            animation: fadeIn 0.4s ease forwards;
-            background: #ffffff;
-            border-radius: 20px;
-            padding: 32px; /* Reduced from 40px */
-            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-            position: relative;
-            overflow: hidden;
-            border: 1px solid #e2e8f0;
-        }
-        
-        .service-panel.active {
-            display: block;
-        }
-        
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateX(20px); }
-            to { opacity: 1; transform: translateX(0); }
-        }
-        
-        .service-panel::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 4px;
-            height: 100%;
-            background: linear-gradient(135deg, #f093fb, #f5576c);
-        }
-        
-        .service-header {
-            display: flex;
-            align-items: center;
-            margin-bottom: 24px; /* Reduced margin */
-        }
-        
-        .service-icon {
-            width: 60px; /* Reduced from 80px */
-            height: 60px;
-            background: linear-gradient(135deg, #f093fb, #f5576c);
-            border-radius: 16px; /* Changed from circle to rounded square */
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-right: 16px;
-            color: #ffffff;
-            font-size: 24px; /* Reduced font size */
-            box-shadow: 0 4px 15px rgba(240, 147, 251, 0.3);
-        }
-        
-        .service-title {
-            font-size: 24px; /* Reduced from 28px */
-            color: #1a1a2e;
-            margin-bottom: 4px;
-            font-weight: 700;
-        }
-        
-        .service-subtitle {
-            font-size: 14px;
-            color: #64748b;
-            font-style: italic;
-        }
-        
-        .service-description {
-            font-size: 16px;
-            line-height: 1.6;
-            color: #374151;
-            margin-bottom: 24px; /* Reduced margin */
-        }
-        
-        .service-features {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 16px; /* Reduced gap */
-        }
-        
-        .feature-item {
-            display: flex;
-            align-items: center;
-            font-size: 14px; /* Reduced font size */
-            color: #374151;
-            font-weight: 500;
-        }
-        
-        .feature-item::before {
-            content: '✓';
-            color: #10b981;
-            font-weight: bold;
-            margin-right: 8px;
-            font-size: 16px;
-            background: rgba(16, 185, 129, 0.1);
-            border-radius: 50%;
-            width: 20px;
-            height: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        
-        /* FAQ Section */
-        .faq-section {
-            padding: 60px 0;
-            background: #f8fafc;
-        }
-        
-        .faq-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 32px;
-        }
-        
-        .faq-item {
-            background: #ffffff;
-            border-radius: 16px;
-            padding: 24px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-            border: 1px solid #e2e8f0;
-            transition: all 0.3s ease;
-        }
-        
-        .faq-item:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 12px 40px rgba(0,0,0,0.12);
-        }
-        
-        .faq-question {
-            font-size: 18px;
-            font-weight: 700;
-            color: #1a1a2e;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            margin-bottom: 16px;
-            padding: 12px 0;
-            border-bottom: 2px solid #f093fb;
-        }
-        
-        .faq-question:hover {
-            color: #f093fb;
-        }
-        
-        .faq-icon {
-            font-size: 20px;
-            color: #f093fb;
-            transition: transform 0.3s ease;
-        }
-        
-        .faq-icon.rotated {
-            transform: rotate(180deg);
-        }
-        
-        .faq-answer {
-            font-size: 16px;
-            line-height: 1.6;
-            color: #374151;
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.5s ease;
-            opacity: 0;
-        }
-        
-        .faq-answer.open {
-            max-height: 500px;
-            opacity: 1;
-            padding-top: 16px;
-        }
-        
-        /* Footer - Simplified */
-        footer {
-            background: #1a1a2e;
-            color: #ffffff;
-            padding: 40px 0;
-            text-align: center;
-        }
-        
-        /* Responsive Design */
-        @media (max-width: 1024px) {
-            .hero-layout {
-                flex-direction: column;
-                gap: 40px;
-            }
-            
-            .reading-images {
-                width: 100%;
-                max-width: 500px;
-            }
-            
-            .posts-grid {
-                grid-template-columns: repeat(3, 1fr);
-            }
-            
-            .quiz-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-            
-            .service-features {
-                grid-template-columns: 1fr;
-            }
-            
-            .services-container {
-                flex-direction: column;
-            }
-            
-            .services-menu {
-                width: 100%;
-                border-right: none;
-                border-bottom: 2px solid #e2e8f0;
-                padding-right: 0;
-                padding-bottom: 20px;
-                margin-bottom: 20px;
-                display: flex;
-                overflow-x: auto;
-                gap: 8px;
-            }
-            
-            .service-tab {
-                margin-right: 0;
-                margin-bottom: 0;
-                border-left: none;
-                border-bottom: 3px solid transparent;
-                white-space: nowrap;
-                border-radius: 12px 12px 0 0;
-            }
-            
-            .service-tab.active {
-                border-left: none;
-                border-bottom: 3px solid #f093fb;
-            }
-            
-            .faq-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-        
-        @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 48px;
-            }
-            
-            .hero p {
-                font-size: 18px;
-            }
-            
-            .animated-circle {
-                width: 300px;
-                height: 300px;
-                /* Keep the circle visible on mobile */
-                display: block;
-            }
-            
-            .reading-images {
-                padding: 0 20px;
-            }
-            
-            .posts-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-            
-            .quiz-grid {
-                grid-template-columns: 1fr;
-            }
-            
-            .subscribe-form {
-                flex-direction: column;
-                gap: 12px;
-            }
-            
-            .service-panel {
-                padding: 24px 16px;
-            }
-            
-            .service-header {
-                flex-direction: column;
-                text-align: center;
-            }
-            
-            .service-icon {
-                margin-right: 0;
-                margin-bottom: 12px;
-            }
-            
-            .flying-book {
-                display: none;
-            }
-            
-            .faq-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-        
-        @media (max-width: 480px) {
-            .hero h1 {
-                font-size: 36px;
-            }
-            
-            .hero p {
-                font-size: 16px;
-            }
-            
-            .animated-circle {
-                width: 200px;
-                height: 200px;
-                /* Keep the circle visible on mobile */
-                display: block;
-                right: -100px;
-                bottom: -100px;
-            }
-            
-            .section-title {
-                font-size: 24px;
-            }
-            
-            .service-title {
-                font-size: 20px;
-            }
-            
-            .service-description {
-                font-size: 14px;
-            }
-            
-            .modern-shape {
-                display: none;
-            }
-            
-            .letter {
-                font-size: 16px;
-            }
-            
-            .reading-image {
-                height: 150px;
-            }
-            
-            .faq-question {
-                font-size: 16px;
-            }
-            
-            .faq-answer {
-                font-size: 14px;
-            }
-        }
+      :root {
+        /* 3-5 color palette (tokens) */
+        --bg: #f6f8fb;            /* light neutral background */
+        --text: #0f172a;          /* dark neutral text */
+        --primary: #0ea5e9;       /* blue (brand primary) */
+        --accent: #f59e0b;        /* amber (accent) */
+        --border: #e5e7eb;        /* neutral border */
+
+        --surface: #ffffff;       /* derived neutral surface */
+        --radius: 0.75rem;        /* rounded corners */
+        --shadow: 0 10px 30px rgba(2, 6, 23, 0.06);
+        --shadow-soft: 0 4px 16px rgba(2, 6, 23, 0.05);
+
+        /* Typography scale */
+        --fs-900: clamp(1.8rem, 3vw + 1rem, 3rem);
+        --fs-700: clamp(1.25rem, 1.2vw + 1rem, 1.75rem);
+        --fs-600: 1.25rem;
+        --fs-500: 1.125rem;
+        --fs-400: 1rem;
+        --fs-300: 0.9375rem;
+        --lh: 1.55;
+      }
+
+      /* Reset-ish */
+      * { box-sizing: border-box; }
+      html, body { height: 100%; }
+      body {
+        margin: 0;
+        font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Inter, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+        background: var(--bg);
+        color: var(--text);
+        line-height: var(--lh);
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      img { max-width: 100%; display: block; }
+      a { color: inherit; text-decoration: none; }
+      a:focus { outline: 2px solid var(--primary); outline-offset: 2px; border-radius: 4px; }
+      :focus-visible { outline: 2px solid var(--primary); outline-offset: 2px; border-radius: 4px; }
+
+      .container {
+        width: min(1100px, 92vw);
+        margin-inline: auto;
+      }
+      .sr-only {
+        position: absolute; width: 1px; height: 1px;
+        padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0);
+        white-space: nowrap; border: 0;
+      }
+
+      /* Header/Nav */
+      .topbar {
+        position: sticky;
+        top: 0;
+        z-index: 30;
+        background: rgba(255,255,255,0.7);
+        backdrop-filter: blur(8px);
+        border-bottom: 1px solid var(--border);
+      }
+      .nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.75rem 0;
+        gap: 1rem;
+        position: relative; /* for mobile dropdown positioning */
+      }
+      .brand {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-weight: 800;
+        letter-spacing: 0.2px;
+        color: var(--text);
+      }
+      .brand-badge {
+        width: 28px;
+        height: 28px;
+        border-radius: 8px;
+        background: linear-gradient(135deg, var(--primary), var(--accent));
+        box-shadow: var(--shadow-soft);
+      }
+
+      /* mobile hamburger button (hidden on desktop) */
+      .menu-toggle {
+        display: none;
+        align-items: center;
+        justify-content: center;
+        width: 42px;
+        height: 38px;
+        border-radius: 8px;
+        border: 1px solid var(--border);
+        background: var(--surface);
+        box-shadow: var(--shadow-soft);
+      }
+      .menu-toggle .bars {
+        display: grid;
+        gap: 4px;
+      }
+      .menu-toggle .bars span {
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: #0b1324;
+        border-radius: 2px;
+      }
+
+.menu {
+  display: inline-flex;      /* change from flex to inline-flex */
+  gap: 1rem;
+  align-items: center;
+  flex-wrap: nowrap;         /* prevent wrapping */
+}
+
+.menu a {
+  padding: 0.5rem 0.75rem;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  transition: border-color 160ms ease, background 160ms ease, color 160ms ease;
+  white-space: nowrap;       /* prevent link text from breaking */
+}
+
+.menu a:hover {
+  border-color: var(--border);
+  background: var(--surface);
+}
+
+.cta {
+  padding: 0.55rem 0.9rem;
+  border-radius: 999px;
+  background: var(--primary);
+  color: white;
+  font-weight: 600;
+  box-shadow: var(--shadow-soft);
+  border: 1px solid transparent;
+  white-space: nowrap;       /* prevent CTA text from breaking */
+  flex-shrink: 0;            /* prevent shrinking */
+}
+
+
+      /* responsive behavior for mobile dropdown */
+      @media (max-width: 760px) {
+        .menu-toggle { display: inline-flex; }
+        /* hide menu by default on mobile */
+        #primaryNav .menu {
+          display: none;
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: calc(100% + 6px);
+          background: rgba(255,255,255,0.98);
+          border: 1px solid var(--border);
+          border-radius: var(--radius);
+          box-shadow: var(--shadow);
+          padding: 0.5rem;
+          grid-template-columns: 1fr;
+          z-index: 25;
+        }
+        #primaryNav[data-open="true"] .menu {
+          display: grid;
+          gap: 0.35rem;
+        }
+        #primaryNav .menu a { border-radius: 8px; }
+        #primaryNav .menu .cta { width: 100%; text-align: center; }
+      }
+
+      /* Hero */
+      .hero {
+        padding: 2.25rem 0 1.25rem;
+      }
+      .hero-wrap {
+        display: grid;
+        gap: 1rem;
+        align-items: start;
+      }
+      .eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-size: var(--fs-300);
+        color: #334155;
+        background: color-mix(in srgb, var(--primary) 9%, white);
+        padding: 0.25rem 0.6rem;
+        border-radius: 999px;
+        border: 1px solid var(--border);
+      }
+      .hero h1 {
+        font-size: var(--fs-900);
+        margin: 0.25rem 0 0.35rem;
+        letter-spacing: -0.3px;
+      }
+      .lead {
+        font-size: var(--fs-500);
+        color: #475569;
+        max-width: 70ch;
+      }
+
+      /* Section titles */
+      section { scroll-margin-top: 80px; }
+      .section-title {
+        display: flex; align-items: baseline; justify-content: space-between; gap: 1rem;
+        margin: 1.75rem 0 1rem;
+      }
+      .section-title h2 { font-size: var(--fs-700); margin: 0; }
+      .section-sub { color: #64748b; font-size: var(--fs-400); }
+
+      /* Blog columns */
+      .blog-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+      }
+      @media (min-width: 860px) {
+        .blog-grid { grid-template-columns: 1fr 1fr; }
+      }
+      .list-card {
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        overflow: clip;
+        box-shadow: var(--shadow-soft);
+      }
+      .list-header {
+        padding: 0.9rem 1rem;
+        display: flex; align-items: center; justify-content: space-between;
+        border-bottom: 1px solid var(--border);
+        background: linear-gradient(180deg, white, #fcfdff);
+      }
+      .list-header h3 { margin: 0; font-size: var(--fs-600); }
+      .list {
+        margin: 0; padding: 0; list-style: none;
+        max-height: 520px; /* shows ~10 compact items */
+        overflow: auto;
+      }
+      .list li a {
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        align-items: center;
+        gap: 0.75rem;
+        padding: 0.7rem 1rem;
+        border-bottom: 1px dashed var(--border);
+        transition: background 140ms ease, color 140ms ease;
+      }
+      .list li:last-child a { border-bottom: none; }
+      .dot {
+        width: 8px; height: 8px; border-radius: 999px; background: var(--primary);
+      }
+      .list li a:hover {
+        background: color-mix(in srgb, var(--primary) 6%, white);
+      }
+      .arrow { color: #94a3b8; font-size: 0.95rem; }
+
+      .card-actions {
+        display: flex; justify-content: space-between; align-items: center;
+        padding: 0.75rem 1rem; border-top: 1px solid var(--border);
+        background: #fbfdff;
+      }
+      .muted { color: #64748b; }
+
+      /* Micro tips */
+      .tips {
+        display: grid; gap: 0.85rem;
+        grid-template-columns: 1fr;
+      }
+      @media (min-width: 700px) {
+        .tips { grid-template-columns: 1fr 1fr; }
+      }
+      .tips article {
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        padding: 0.9rem 1rem;
+        box-shadow: var(--shadow-soft);
+        background: var(--surface);
+      }
+      .tips article:nth-child(2n) {
+        background: color-mix(in srgb, var(--primary) 8%, white);
+      }
+      .tips article:nth-child(3n) {
+        background: color-mix(in srgb, var(--accent) 9%, white);
+      }
+      .tip-title {
+        margin: 0 0 0.25rem; font-weight: 700;
+      }
+      .tip-meta {
+        font-size: var(--fs-300); color: #475569; margin-bottom: 0.35rem;
+      }
+
+      /* Services */
+      .services {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0.9rem;
+      }
+      @media (min-width: 700px) {
+        .services { grid-template-columns: repeat(3, 1fr); }
+      }
+      .service-card {
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        padding: 1rem;
+        box-shadow: var(--shadow-soft);
+        transition: transform 160ms ease, box-shadow 160ms ease, border-color 160ms ease;
+      }
+      .service-card:hover {
+        transform: translateY(-2px);
+        box-shadow: var(--shadow);
+        border-color: color-mix(in srgb, var(--primary) 40%, var(--border));
+      }
+      .service-card h3 { margin: 0 0 0.25rem; font-size: var(--fs-600); }
+      .service-card p { margin: 0 0 0.6rem; color: #475569; }
+      .pill {
+        display: inline-flex; align-items: center; gap: 0.4rem;
+        padding: 0.35rem 0.6rem; border: 1px solid var(--border);
+        border-radius: 999px; color: #0b1324; background: #fff;
+        font-size: var(--fs-300);
+      }
+      .link {
+        color: var(--primary); font-weight: 600;
+      }
+      .link:hover { text-decoration: underline; }
+
+/* About Section */
+.about-section {
+  background: #ffffff;          /* full white background */
+  border: 2px solid #e5e7eb;   /* soft neutral border */
+  border-radius: 1rem;          /* rounded corners */
+  min-height: 10vh;
+  display: flex;
+  align-items: center;
+  padding: 2rem;                /* inner space */
+  margin: 1rem auto;            /* center section */
+  max-width: 1100px;            /* optional: limit width */
+  width: 90%;                   /* responsive width for mobile */
+  box-shadow: 0 4px 16px rgba(0,0,0,0.05); /* subtle shadow */
+}
+
+
+
+
+      /* Marketing Wall */
+      .wall {
+        position: relative;
+        overflow: hidden;
+      }
+      .wall-track {
+        display: grid;
+        grid-auto-flow: column;
+        gap: 0.75rem;
+        align-items: stretch;
+        grid-auto-columns: 70%;
+        overflow-x: auto; /* ensure arrows can scroll */
+        scroll-behavior: smooth;
+      }
+      @media (min-width: 520px) { .wall-track { grid-auto-columns: 45%; } }
+      @media (min-width: 760px) { .wall-track { grid-auto-columns: 30%; } }
+      @media (min-width: 1024px){ .wall-track { grid-auto-columns: 22%; } }
+      @media (min-width: 1280px){ .wall-track { grid-auto-columns: 18%; } }
+
+      .wall-slide {
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        overflow: hidden;
+        background: var(--surface);
+        box-shadow: var(--shadow-soft);
+        cursor: zoom-in;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+      }
+      .wall-slide img {
+        display: block;
+        width: 100%;
+        height: 160px;
+        object-fit: cover;
+      }
+      @media (min-width: 760px) { .wall-slide img { height: 180px; } }
+      @media (min-width: 1024px){ .wall-slide img { height: 200px; } }
+
+      /* caption area under each image */
+      .wall-caption {
+        border-top: 1px solid var(--border);
+        padding: 0.5rem 0.6rem;
+        text-align: left;
+        background: #fff;
+      }
+      .wall-caption h4 {
+        margin: 0;
+        font-size: var(--fs-40);
+        line-height: 1.35;
+        color: #0b1324;
+      }
+
+      /* arrows for manual scroll */
+      .wall-nav {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 40px;
+        height: 40px;
+        border-radius: 999px;
+        border: 1px solid var(--border);
+        background: rgba(255,255,255,0.9);
+        box-shadow: var(--shadow-soft);
+        display: grid;
+        place-items: center;
+        cursor: pointer;
+        z-index: 10;
+      }
+      .wall-nav.prev { left: 6px; }
+      .wall-nav.next { right: 6px; }
+      .wall-nav span {
+        font-size: 20px;
+        color: #0b1324;
+        line-height: 1;
+      }
+
+      /* Lightbox for full-screen image view */
+      .lightbox {
+        position: fixed;
+        inset: 0;
+        background: rgba(2, 6, 23, 0.85);
+        display: none;
+        align-items: center;
+        justify-content: center;
+        z-index: 50;
+      }
+      .lightbox.open { display: flex; }
+      .lightbox img {
+        max-width: 92vw;
+        max-height: 92vh;
+        border-radius: var(--radius);
+        box-shadow: var(--shadow);
+      }
+
+
+/* Footer */
+footer {
+  background: #ffffff;
+  border-top: 1px solid var(--border);
+  padding: 2rem 3rem;
+  box-shadow: 0 -2px 10px rgba(0,0,0,0.03);
+  color: var(--text);
+  font-size: 0.95rem;
+}
+
+/* Footer main container */
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;       /* allow wrap on small screens */
+  max-width: 1100px;
+  margin: 0 auto;
+  gap: 1rem;
+}
+
+/* Left: Logo */
+.footer-left .footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--text);
+}
+
+/* Center: Links */
+.footer-center {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.footer-center a {
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.footer-center a:hover {
+  color: var(--primary);
+}
+
+/* Right: Contact Email */
+.footer-right a {
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.footer-right a:hover {
+  color: var(--primary);
+}
+
+/* Footer line at bottom */
+.footer-line {
+  text-align: center;
+  margin-top: 1.5rem;
+  font-size: 0.85rem;
+  color: #666;
+}
+
+/* Responsive: Mobile */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;       /* stack sections vertically */
+    align-items: center;          /* center horizontally */
+    text-align: center;           /* center text inside each section */
+    gap: 1rem;
+  }
+
+  .footer-center {
+    justify-content: center;      /* center links */
+    gap: 1rem;
+  }
+
+  .footer-right {
+    margin-top: 0;                /* remove extra top margin */
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;       /* stack sections vertically */
+    align-items: center;          /* center all sections horizontally */
+    text-align: center;           /* center text inside each section */
+    gap: 1rem;
+  }
+
+  .footer-center {
+    justify-content: center;      /* center links in the middle */
+    gap: 1rem;
+  }
+
+  .footer-right {
+    margin-top: 0.5rem;           /* small spacing below links */
+  }
+}
+      /* Utility */
+      .spacer { height: 0.5rem; }
+      .badge {
+        display: inline-flex; align-items: center; gap: 0.35rem;
+        font-size: var(--fs-300);
+        color: #0b1324;
+        background: #fff;
+        border: 1px solid var(--border);
+        padding: 0.25rem 0.55rem;
+        border-radius: 999px;
+      }
     </style>
-</head>
-<body>
-    <!-- Google Tag Manager (noscript) -->
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Best Digital Marketer",
+        "url": "https://bestdigitalmarketer.com/",
+        "sameAs": [],
+        "logo": "https://bestdigitalmarketer.com/favicon.ico"
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Best Digital Marketer",
+        "url": "https://bestdigitalmarketer.com/",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://bestdigitalmarketer.com/?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      }
+    </script>
+  </head>
+  <body>
+ <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W33WK3QH"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
-    <!-- Modern Hero Section with 3D Reading Images -->
-    <section class="hero">
-        <!-- Modern Animated Circle -->
-        <div class="animated-circle"></div>
-        
-        <!-- Modern Floating Elements -->
-        <div class="floating-elements">
-            <div class="modern-shape"></div>
-            <div class="modern-shape"></div>
-            <div class="modern-shape"></div>
-            <div class="modern-shape"></div>
+    <a class="sr-only" href="#main">Skip to content</a>
+
+    <header class="topbar" role="banner">
+      <div class="container nav" aria-label="Primary">
+        <a class="brand" href="#top" aria-label="Best Digital Marketer home">
+          <span class="brand-badge" aria-hidden="true"></span>
+          <span>Best Digital Marketer</span>
+        </a>
+
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-controls="mainMenu" aria-expanded="false">
+          <span class="bars" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </span>
+        </button>
+
+        <nav id="primaryNav" aria-label="Main menu">
+          <div class="menu" id="mainMenu">
+            <a href="https://bestdigitalmarketer.com/">Home</a>
+            <a href="#marketing-wall">Marketing Wall</a>
+            <a href="#blogs">Blogs</a>
+            <a href="#marketing-tips-tricks">Tips</a>
+            <a href="#about">About</a>
+            <a class="cta" href="#Digital-Marketing-Services">Digital Marketing Services</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero container" id="top">
+        <span class="eyebrow">
+          <span class="badge" aria-hidden="true">Learn</span>
+          <span class="badge" aria-hidden="true">Digital Marketing</span>
+          <span class="badge" aria-hidden="true">Offline Marketing</span>
+        </span>
+        <h1>Best Digital Marketer - Stay ahead Digital Marketing</h1>
+        <p class="lead">
+Learn Digital Marketing Tips-Tricks, be updated & explore trend of Marketing in offline & Online Market. <br> Open to serve- SEO, PPC, Meta Ads, Website Designing, ORM, eMail Marketing, YouTube Optimization, eCommerce, Marketplace Ads & all services.
+        </p>
+      </section>
+
+      <section class="container" id="marketing-wall" aria-labelledby="wall-title">
+        <div class="section-title">
+          <h2 id="wall-title">Wall of Marketing Ideas</h2>
+
         </div>
-        
-        <!-- Particle System -->
-        <div class="particles">
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
+
+        <div class="wall" aria-live="polite">
+
+          <button class="wall-nav prev" type="button" aria-label="Previous"><span>‹</span></button>
+          <button class="wall-nav next" type="button" aria-label="Next"><span>›</span></button>
+
+          <div class="wall-track" id="wallTrack">
+
+            <button class="wall-slide" aria-label="Open idea 1">
+              <img src="/placeholder.svg?height=200&width=320" alt="Creative ad layout concept" />
+              <div class="wall-caption"><h4>this is cfeativvee1Idea 1: Creative Ad Layout</h4></div>
+            </button>
+
+            <button class="wall-slide" aria-label="Open idea 2">
+              <img src="https://d57439wlqx3vo.cloudfront.net/iblock/bc0/bc0f0fade6094e32d26afe9ee426bf47/a1d39b9944184055866844a5d88fdec3.png?height=200&width=320" alt="Billboard marketing idea" />
+              <div class="wall-caption"><h4>Idea 2: Billboard Concept</h4></div>
+            </button>
+
+            <button class="wall-slide" aria-label="Open idea 3">
+              <img src="/placeholder.svg?height=200&width=320" alt="Social post campaign grid" />
+              <div class="wall-caption"><h4>Idea 3: Social Grid</h4></div>
+            </button>
+
+            <button class="wall-slide" aria-label="Open idea 4">
+              <img src="/placeholder.svg?height=200&width=320" alt="Guerrilla marketing example" />
+              <div class="wall-caption"><h4>Idea 4: Guerrilla Activation</h4></div>
+            </button>
+
+            <button class="wall-slide" aria-label="Open idea 5">
+              <img src="/placeholder.svg?height=200&width=320" alt="Product display inspiration" />
+              <div class="wall-caption"><h4>Idea 5: Product Display</h4></div>
+            </button>
+
+            <button class="wall-slide" aria-label="Open idea 6">
+              <img src="/placeholder.svg?height=200&width=320" alt="Email newsletter design" />
+              <div class="wall-caption"><h4>Idea 6: Newsletter Design</h4></div>
+            </button>
+
+            <button class="wall-slide" aria-label="Open idea 7">
+              <img src="/placeholder.svg?height=200&width=320" alt="Landing page hero pattern" />
+              <div class="wall-caption"><h4>Idea 7: Hero Pattern</h4></div>
+            </button>
+
+            <button class="wall-slide" aria-label="Open idea 8">
+              <img src="/placeholder.svg?height=200&width=320" alt="Landing page hero pattern" />
+              <div class="wall-caption"><h4>Idea 8: Hero Variant</h4></div>
+            </button>
+
+            <button class="wall-slide" aria-label="Open idea 9">
+              <img src="/placeholder.svg?height=200&width=320" alt="Landing page hero pattern" />
+              <div class="wall-caption"><h4>Idea 9: Hero Variation</h4></div>
+            </button>
+
+            <button class="wall-slide" aria-label="Open idea 10">
+              <img src="/placeholder.svg?height=200&width=320" alt="Landing page hero pattern" />
+              <div class="wall-caption"><h4>Idea 10: Hero Study</h4></div>
+            </button>
+
+            <button class="wall-slide" aria-label="Open idea 11">
+              <img src="/placeholder.svg?height=200&width=320" alt="Landing page hero pattern" />
+              <div class="wall-caption"><h4>Idea 11: Hero Concept</h4></div>
+            </button>
+          </div>
         </div>
-        
-        <div class="container">
-            <div class="hero-layout">
-                <!-- Left Side: Hero Content -->
-                <div class="hero-content">
-                    <h1>Stay Ahead with the Latest Digital Marketing Updates</h1>
-                    <p>Your comprehensive resource for the latest digital marketing tips, insights, and strategies</p>
-                    <a href="#latest-updates" class="hero-button">Explore Resources</a>
-                </div>
-                
-                <!-- Right Side: 3D Reading Images -->
-                <div class="reading-images">
-                    <!-- Reading Image 1 -->
-                    <div class="reading-image">
-                        <div class="reading-image-content">
-                            <div class="reading-image-icon">📚</div>
-                            <div class="reading-image-title">Digital Marketing Guides</div>
-                        </div>
-                    </div>
-                    
-                    <!-- Reading Image 2 -->
-                    <div class="reading-image">
-                        <div class="reading-image-content">
-                            <div class="reading-image-icon">📊</div>
-                            <div class="reading-image-title">Analytics & Insights</div>
-                        </div>
-                    </div>
-                    
-                    <!-- Reading Image 3 -->
-                    <div class="reading-image">
-                        <div class="reading-image-content">
-                            <div class="reading-image-icon">🚀</div>
-                            <div class="reading-image-title">Digital Marketing Updates</div>
-                        </div>
-                    </div>
-                </div>
+      </section>
+
+      <section class="container" id="blogs">
+        <div class="section-title">
+          <h2>Latest Blogs</h2>
+
+        </div>
+
+        <div class="blog-grid">
+          <div class="list-card" aria-labelledby="general-blogs-title">
+            <div class="list-header">
+              <h3 id="general-blogs-title">Digital Marketing</h3>
+              <span class="pill" aria-hidden="true">Top</span>
             </div>
-        </div>
-    </section>  
-    <!-- Latest Updates Section -->
-    <section id="latest-updates" class="posts-section">
-        <div class="container">
-            <h2 class="section-title">Explore the Latest in Digital Marketing</h2>
-            <div class="posts-grid">
-                <!-- Post 1 -->
-                <div class="post-card">
-                    <a href="https://bestdigitalmarketer.com/blog/google-structured-data-update-2025" class="post-link">
-        <div class="post-image" style="background-image: url('https://bestdigitalmarketer.com/google-removing-7-structured-data-types-schema-markup.webp');"></div>
-                        <div class="post-title">Google Just Removed 7 Structured Schema Markup</div>
-                    </a>
-                </div>
-                
-                <!-- Post 2 -->
-                <div class="post-card">
-                    <a href="https://bestdigitalmarketer.com/blog/smm-vs-smo-vs-meta-paid-ads" class="post-link">
-                        <div class="post-image" style="background-image: url('https://bestdigitalmarketer.com/smo-smm-meta-paid-ads-difference.jpg');"></div>
-                        <div class="post-title">Difference in SMM, SMO, Paid Meta Ads</div>
-                    </a>
-                </div>
-                
-                <!-- Post 3 -->
-                <div class="post-card">
-                    <a href="https://bestdigitalmarketer.com/blog/turn-haldi-trend-into-business-opportunity" class="post-link">
-                        <div class="post-image" style="background-image: url('https://bestdigitalmarketer.com/viral-haldi-trend-for-branding.jpg');"></div>
-                        <div class="post-title">Turn Viral Haldi trend into Branding Opportunity</div>
-                    </a>
-                </div>
-                
-                <!-- Post 4 -->
-                <div class="post-card">
-                    <a href="https://bestdigitalmarketer.com/blog/learn-all-full-forms-easy-meaning" class="post-link">
-                        <div class="post-image" style="background-image: url('/placeholder.svg?height=150&width=200&text=Facebook+Targeting');"></div>
-                        <div class="post-title">2000+ Digital Marketing Full Forms Explained</div>
-                    </a>
-                </div>
-                
-                <!-- Post 5 -->
-                <div class="post-card">
-                    <a href="https://bestdigitalmarketer.com/blog/epic-seo-poem" class="post-link">
-                        <div class="post-image" style="background-image: url('/placeholder.svg?height=150&width=200&text=LinkedIn+Features');"></div>
-                        <div class="post-title">World's 1st Epic Poem on SEO</div>
-                    </a>
-                </div>
-                
-                <!-- Post 6 -->
-                <div class="post-card">
-                    <a href="#" class="post-link">
-                        <div class="post-image" style="background-image: url('/placeholder.svg?height=150&width=200&text=Smart+Bidding');"></div>
-                        <div class="post-title">Google Ads Smart Bidding Update</div>
-                    </a>
-                </div>
+            <ol class="list">
+                       <li><a href="https://bestdigitalmarketer.com/blog/smm-vs-smo-vs-meta-paid-ads"><span class="dot"></span><span>Difference in SMM, SMO, Paid Meta Ads</span><span class="arrow">→</span></a></li>
+              <li><a href="https://bestdigitalmarketer.com/blog/learn-all-full-forms-easy-meaning"><span class="dot"></span><span>2000+ Digital Marketing Full Forms Explained</span><span class="arrow">→</span></a></li>
+              <li><a href="https://bestdigitalmarketer.com/blog/epic-seo-poem"><span class="dot"></span><span>World's 1st Poem on SEO in Literary terms (Literature)
+</span><span class="arrow">→</span></a></li>
+              <li><a href="https://bestdigitalmarketer.com/blog/turn-haldi-trend-into-business-opportunity"><span class="dot"></span><span>Turn Viral Haldi trend into Branding Opportunity</span><span class="arrow">→</span></a></li>
+              <li><a href="https://bestdigitalmarketer.com/blog/google-structured-data-update-2025"><span class="dot"></span><span>Google Just Removed Some Structured Data Types </span><span class="arrow">→</span></a></li>
+
+              <li><a href="https://bestdigitalmarketer.com/blog/smm-vs-smo-vs-meta-paid-ads"><span class="dot"></span><span>Difference in SMM, SMO, Paid Meta Ads</span><span class="arrow">→</span></a></li>
+              <li><a href="https://bestdigitalmarketer.com/blog/learn-all-full-forms-easy-meaning"><span class="dot"></span><span>2000+ Digital Marketing Full Forms Explained</span><span class="arrow">→</span></a></li>
+              <li><a href="https://bestdigitalmarketer.com/blog/epic-seo-poem"><span class="dot"></span><span>World's 1st Poem on SEO in Literary terms (Literature)
+</span><span class="arrow">→</span></a></li>
+              <li><a href="https://bestdigitalmarketer.com/blog/turn-haldi-trend-into-business-opportunity"><span class="dot"></span><span>Turn Viral Haldi trend into Branding Opportunity</span><span class="arrow">→</span></a></li>
+              <li><a href="https://bestdigitalmarketer.com/blog/google-structured-data-update-2025"><span class="dot"></span><span>Google Just Removed Some Structured Data Types </span><span class="arrow">→</span></a></li>
+                  
+   </ol>
+            <div class="card-actions">
+              <span class="muted">Showing  posts</span>
+              <a class="link" href="#marketing-tips-tricks"> Digital Marketing Tips Tricks</a>
             </div>
-        </div>
-    </section>
-    
-    <!-- Quiz Section -->
-    <section class="quiz-section">
-        <div class="container">
-            <h2 class="section-title">Digital Marketing Question Polls</h2>
-            <div class="quiz-grid">
-                <!-- Quiz 1 -->
-                <div class="quiz-card">
-                    <div class="quiz-question">Which social platform gives you the best ROI?</div>
-                    <div class="quiz-options" data-poll-id="0" data-correct="0">
-                        <div class="quiz-option" onclick="updatePoll(this, 0, 0)">
-                            <span class="option-text">Facebook</span>
-                            <span class="option-status"></span>
-                        </div>
-                        <div class="quiz-option" onclick="updatePoll(this, 0, 1)">
-                            <span class="option-text">Instagram</span>
-                            <span class="option-status"></span>
-                        </div>
-                        <div class="quiz-option" onclick="updatePoll(this, 0, 2)">
-                            <span class="option-text">LinkedIn</span>
-                            <span class="option-status"></span>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Quiz 2 -->
-                <div class="quiz-card">
-                    <div class="quiz-question">How often should you update your website content?</div>
-                    <div class="quiz-options" data-poll-id="1" data-correct="1">
-                        <div class="quiz-option" onclick="updatePoll(this, 1, 0)">
-                            <span class="option-text">Weekly</span>
-                            <span class="option-status"></span>
-                        </div>
-                        <div class="quiz-option" onclick="updatePoll(this, 1, 1)">
-                            <span class="option-text">Monthly</span>
-                            <span class="option-status"></span>
-                        </div>
-                        <div class="quiz-option" onclick="updatePoll(this, 1, 2)">
-                            <span class="option-text">Quarterly</span>
-                            <span class="option-status"></span>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Quiz 3 -->
-                <div class="quiz-card">
-                    <div class="quiz-question">What's the most important SEO factor?</div>
-                    <div class="quiz-options" data-poll-id="2" data-correct="0">
-                        <div class="quiz-option" onclick="updatePoll(this, 2, 0)">
-                            <span class="option-text">Quality Content</span>
-                            <span class="option-status"></span>
-                        </div>
-                        <div class="quiz-option" onclick="updatePoll(this, 2, 1)">
-                            <span class="option-text">Link Building</span>
-                            <span class="option-status"></span>
-                        </div>
-                        <div class="quiz-option" onclick="updatePoll(this, 2, 2)">
-                            <span class="option-text">Technical SEO</span>
-                            <span class="option-status"></span>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Quiz 4 -->
-                <div class="quiz-card">
-                    <div class="quiz-question">Which ad platform has the highest conversion rate?</div>
-                    <div class="quiz-options" data-poll-id="3" data-correct="0">
-                        <div class="quiz-option" onclick="updatePoll(this, 3, 0)">
-                            <span class="option-text">Google Ads</span>
-                            <span class="option-status"></span>
-                        </div>
-                        <div class="quiz-option" onclick="updatePoll(this, 3, 1)">
-                            <span class="option-text">Facebook Ads</span>
-                            <span class="option-status"></span>
-                        </div>
-                        <div class="quiz-option" onclick="updatePoll(this, 3, 2)">
-                            <span class="option-text">LinkedIn Ads</span>
-                            <span class="option-status"></span>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Quiz 5 -->
-                <div class="quiz-card">
-                    <div class="quiz-question">What's the ideal email open rate?</div>
-                    <div class="quiz-options" data-poll-id="4" data-correct="1">
-                        <div class="quiz-option" onclick="updatePoll(this, 4, 0)">
-                            <span class="option-text">10-15%</span>
-                            <span class="option-status"></span>
-                        </div>
-                        <div class="quiz-option" onclick="updatePoll(this, 4, 1)">
-                            <span class="option-text">20-25%</span>
-                            <span class="option-status"></span>
-                        </div>
-                        <div class="quiz-option" onclick="updatePoll(this, 4, 2)">
-                            <span class="option-text">30-35%</span>
-                            <span class="option-status"></span>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Quiz 6 -->
-                <div class="quiz-card">
-                    <div class="quiz-question">What content type gets the most engagement?</div>
-                    <div class="quiz-options" data-poll-id="5" data-correct="1">
-                        <div class="quiz-option" onclick="updatePoll(this, 5, 0)">
-                            <span class="option-text">Blog Posts</span>
-                            <span class="option-status"></span>
-                        </div>
-                        <div class="quiz-option" onclick="updatePoll(this, 5, 1)">
-                            <span class="option-text">Videos</span>
-                            <span class="option-status"></span>
-                        </div>
-                        <div class="quiz-option" onclick="updatePoll(this, 5, 2)">
-                            <span class="option-text">Infographics</span>
-                            <span class="option-status"></span>
-                        </div>
-                    </div>
-                </div>
+          </div>
+
+          <div class="list-card" id="category-blogs" aria-labelledby="category-blogs-title">
+            <div class="list-header">
+              <h3 id="category-blogs-title">General Marketing</h3>
+              <span class="pill" aria-hidden="true">Top</span>
             </div>
-        </div>
-    </section>
-    
-    <!-- Compact Services Section with Left Menu -->
-    <section class="services-section">
-        <div class="container">
-            <h2 class="section-title">Our Digital Marketing Services</h2>
-            
-            <div class="services-container">
-                <!-- Left Side Menu -->
-                <div class="services-menu">
-                    <div class="service-tab active" onclick="showService(0)">SEO Services</div>
-                    <div class="service-tab" onclick="showService(1)">Google Ads</div>
-                    <div class="service-tab" onclick="showService(2)">Social Media</div>
-                    <div class="service-tab" onclick="showService(3)">Website Design</div>
-                </div>
-                
-                <!-- Right Side Content -->
-                <div class="service-content">
-                    <!-- SEO Services Panel -->
-                    <div class="service-panel active" id="service-0">
-                        <div class="service-header">
-                            <div class="service-icon">🔍</div>
-                            <div>
-                                <h3 class="service-title">Complete SEO</h3>
-                                <p class="service-subtitle">Boost website rankings and drive organic traffic</p>
-                            </div>
-                        </div>
-                        
-                        <p class="service-description">
-                            Our comprehensive SEO services help your web-pages to rank higher in every search engines, driving more organic traffic to your business. We use proven strategies and the latest techniques to improve your online visibility.
-                        </p>
-                        
-                        <div class="service-features">
-                            <div class="feature-item">Keyword Research</div>
-                            <div class="feature-item">On-Page SEO</div>
-                            <div class="feature-item">Link Building</div>
-                            <div class="feature-item">Technical SEO</div>
-                            <div class="feature-item">Local SEO</div>
-                            <div class="feature-item">E-commerce</div>
-                        </div>
-                    </div>
-                    
-                    <!-- Google Ads Panel -->
-                    <div class="service-panel" id="service-1">
-                        <div class="service-header">
-                            <div class="service-icon">🎯</div>
-                            <div>
-                                <h3 class="service-title">Google Ads</h3>
-                                <p class="service-subtitle">Drive quality traffic and maximize ROI</p>
-                            </div>
-                        </div>
-                        
-                        <p class="service-description">
-                            Our Google Ads services help you reach potential customers only at the exact moment they're searching for your products or services. We create and manage campaigns that drive targeted traffic at lowest cost and maximize your return on investment.
-                        </p>
-                        
-                        <div class="service-features">
-                            <div class="feature-item">Campaign Setup</div>
-                            <div class="feature-item">Keyword Research</div>
-                            <div class="feature-item">Ad Copywriting</div>
-                            <div class="feature-item">Performance Tracking</div>
-                            <div class="feature-item">Conversion Optimization</div>
-                            <div class="feature-item">ROI Maximization</div>
-                        </div>
-                    </div>
-                    
-                    <!-- Social Media Panel -->
-                    <div class="service-panel" id="service-2">
-                        <div class="service-header">
-                            <div class="service-icon">📱</div>
-                            <div>
-                                <h3 class="service-title">Social Media Marketing</h3>
-                                <p class="service-subtitle">Engage your audience and boost sales</p>
-                            </div>
-                        </div>
-                        
-                        <p class="service-description">
-                            Our social media marketing services help you connect with your customers on the platforms they use most. We create engaging content and manage your social presence to build brand awareness and drive engagement.
-                        </p>
-                        
-                        <div class="service-features">
-                            <div class="feature-item">Content Creation</div>
-                            <div class="feature-item">Community Management</div>
-                            <div class="feature-item">Paid Campaigns</div>
-                            <div class="feature-item">Analytics & Insights</div>
-                            <div class="feature-item">Influencer Marketing</div>
-                            <div class="feature-item">Platform Strategy</div>
-                        </div>
-                    </div>
-                    
-                    <!-- Website Design Panel -->
-                    <div class="service-panel" id="service-3">
-                        <div class="service-header">
-                            <div class="service-icon">🌐</div>
-                            <div>
-                                <h3 class="service-title">Website Designing</h3>
-                                <p class="service-subtitle">Custom, responsive SEO friendly websites</p>
-                            </div>
-                        </div>
-                        
-                        <p class="service-description">
-                            Our website designing services focus on creative UI & logical UX which delivers great conversion. We analye user experience to ensure your site stands out from the competition.
-                        </p>
-                        
-                        <div class="service-features">
-                            <div class="feature-item">Responsive Design</div>
-                            <div class="feature-item">SEO Optimized</div>
-                            <div class="feature-item">Fast Loading</div>
-                            <div class="feature-item">Modern UI/UX</div>
-                            <div class="feature-item">Mobile Friendly</div>
-                            <div class="feature-item">Conversion Focused</div>
-                        </div>
-                    </div>
-                </div>
+            <ol class="list">
+
+                       <li><a href="https://bestdigitalmarketer.com/blog/smm-vs-smo-vs-meta-paid-ads"><span class="dot"></span><span>Difference in SMM, SMO, Paid Meta Ads</span><span class="arrow">→</span></a></li>
+              <li><a href="https://bestdigitalmarketer.com/blog/learn-all-full-forms-easy-meaning"><span class="dot"></span><span>2000+ Digital Marketing Full Forms Explained</span><span class="arrow">→</span></a></li>
+              <li><a href="https://bestdigitalmarketer.com/blog/epic-seo-poem"><span class="dot"></span><span>World's 1st Poem on SEO in Literary terms (Literature)
+</span><span class="arrow">→</span></a></li>
+              <li><a href="https://bestdigitalmarketer.com/blog/turn-haldi-trend-into-business-opportunity"><span class="dot"></span><span>Turn Viral Haldi trend into Branding Opportunity</span><span class="arrow">→</span></a></li>
+              <li><a href="https://bestdigitalmarketer.com/blog/google-structured-data-update-2025"><span class="dot"></span><span>Google Just Removed Some Structured Data Types </span><span class="arrow">→</span></a></li>
+
+              <li><a href="https://bestdigitalmarketer.com/blog/smm-vs-smo-vs-meta-paid-ads"><span class="dot"></span><span>Difference in SMM, SMO, Paid Meta Ads</span><span class="arrow">→</span></a></li>
+              <li><a href="https://bestdigitalmarketer.com/blog/learn-all-full-forms-easy-meaning"><span class="dot"></span><span>2000+ Digital Marketing Full Forms Explained</span><span class="arrow">→</span></a></li>
+              <li><a href="https://bestdigitalmarketer.com/blog/epic-seo-poem"><span class="dot"></span><span>World's 1st Poem on SEO in Literary terms (Literature)
+</span><span class="arrow">→</span></a></li>
+              <li><a href="https://bestdigitalmarketer.com/blog/turn-haldi-trend-into-business-opportunity"><span class="dot"></span><span>Turn Viral Haldi trend into Branding Opportunity</span><span class="arrow">→</span></a></li>
+              <li><a href="https://bestdigitalmarketer.com/blog/google-structured-data-update-2025"><span class="dot"></span><span>Google Just Removed Some Structured Data Types </span><span class="arrow">→</span></a></li>
+            </ol>
+            <div class="card-actions">
+              <span class="muted">Showing posts</span>
+              <a class="link" href="#Digital-Marketing-Services">Digital Marketing Services</a>
             </div>
+          </div>
         </div>
-    </section>
-    
-    <!-- FAQ Section -->
-    <section class="faq-section">
+      </section>
+
+      <section class="container" id="marketing-tips-tricks" aria-labelledby="micro-title">
+        <div class="section-title">
+          <h2 id="micro-title">Marketing Tips & Tricks </h2>
+
+        </div>
+
+        <div class="tips" aria-live="polite">
+
+
+          <article>
+            <h3 class="tip-title">Update Website Content for ranking</h3>
+            <p class="tip-meta"> • SEO • Ranking </p>
+            <p>Try to update your website, blogs content monthly to be in rank because Google says focus to presenting fresh content compare than uploading new blogs & all.</p>
+          </article>
+
+          <article>
+            <h3 class="tip-title">Avoid doing A/B testing on "Same Keyword”</h3>
+            <p class="tip-meta"> • Google Ads • Search Ads</p>
+            <p>Because there you are being your competitor & you'll pay more to show your A/B ads on top, so shite test must make change in Keywords or location or time.</p>
+          </article>
+
+          <article>
+            <h3 class="tip-title">Backlinks type for fast ranking</h3>
+            <p class="tip-meta"> • SEO • Ranking</p>
+            <p>Article submission backlinks are always on top, then PDF submission then Blog posting, but ad it all on high DA, PA sites.</p>
+          </article>
+
+          <article>
+            <h3 class="tip-title">Make Backlink's “Backlinks”</h3>
+            <p class="tip-meta"> • SEO • Off Page </p>
+            <p>Make your backlink's backlink if your made 1st backlink on high SEO value site.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="container" id="Digital-Marketing-Services" aria-labelledby="services-title">
+        <div class="section-title">
+          <h2 id="services-title">Best Digital Marketing Services</h2>
+
+        </div>
+
+        <div class="services">
+          <a class="service-card" href="/services/seo">
+            <h3>SEO</h3>
+            <p>Technical, on-page, and content-led SEO that grows qualified traffic.</p>
+            <span class="pill">Audits</span>
+            <span class="pill">Content</span>
+            <span class="pill">Technical</span>
+            <div class="spacer"></div>
+            <span class="link">Explore SEO →</span>
+          </a>
+
+          <a class="service-card" href="/services/ppc">
+            <h3>PPC</h3>
+            <p>Efficient paid search and social campaigns with tight tracking.</p>
+            <span class="pill">Google Ads</span>
+            <span class="pill">Meta</span>
+            <span class="pill">Retargeting</span>
+            <div class="spacer"></div>
+            <span class="link">Explore PPC →</span>
+          </a>
+
+          <a class="service-card" href="/services/smo">
+            <h3>SMO</h3>
+            <p>Organic social that prioritizes engagement, reach, and saves.</p>
+            <span class="pill">Calendars</span>
+            <span class="pill">Playbooks</span>
+            <span class="pill">Creator Ops</span>
+            <div class="spacer"></div>
+            <span class="link">Explore SMO →</span>
+          </a>
+
+          <a class="service-card" href="/services/content">
+            <h3>Content Marketing</h3>
+            <p>Topic clusters, briefs, and distribution routines that compound.</p>
+            <span class="pill">Briefs</span>
+            <span class="pill">Clusters</span>
+            <span class="pill">Repurposing</span>
+            <div class="spacer"></div>
+            <span class="link">Explore Content →</span>
+          </a>
+
+          <a class="service-card" href="/services/analytics">
+            <h3>Analytics & Tracking</h3>
+            <p>Clean data, clear dashboards, and decisions you can trust.</p>
+            <span class="pill">GA4</span>
+            <span class="pill">Attribution</span>
+            <span class="pill">Dashboards</span>
+            <div class="spacer"></div>
+            <span class="link">Explore Analytics →</span>
+          </a>
+
+          <a class="service-card" href="/services/tv-ads">
+            <h3>TV & Video Ads</h3>
+            <p>CTV planning, creative strategy, and post-campaign analysis.</p>
+            <span class="pill">CTV</span>
+            <span class="pill">Scripts</span>
+            <span class="pill">Brand Lift</span>
+            <div class="spacer"></div>
+            <span class="link">Explore TV Ads →</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="about-section" id="about" aria-labelledby="about-title">
         <div class="container">
-            <h2 class="section-title">Frequently Asked Questions</h2>
-            <div class="faq-grid">
-                <!-- FAQ 1 -->
-                <div class="faq-item">
-                    <div class="faq-question" onclick="toggleFAQ(this)">
-                        <span>What is Best Digital Marketer?</span>
-                        <span class="faq-icon">▼</span>
-                    </div>
-                    <div class="faq-answer">
-                        <a href="https://bestdigitalmarketer.com/"><b>Best Digital Marketer</b></a> is the open platform for Digital Marketers, business owners, learners, faculties and all who want to be ahead with Digital Marketing Updates or changes and want to learn tricks for fast online presence with correct efforts.
-                    </div>
-                </div>
-                
-                <!-- FAQ 2 -->
-                <div class="faq-item">
-                    <div class="faq-question" onclick="toggleFAQ(this)">
-                        <span>Does Best Digital Marketer offers Digital Marketing Services & classes as well?</span>
-                        <span class="faq-icon">▼</span>
-                    </div>
-                    <div class="faq-answer">
-                        Yes! we offers quality Digital Marketing services for Business, start-up,services and products. Also offering offline classes in Delhi.
-                    </div>
-                </div>
-                
-                <!-- FAQ 3 -->
-                <div class="faq-item">
-                    <div class="faq-question" onclick="toggleFAQ(this)">
-                        <span>Can I use content from Best Digital Marketer on my own website?</span>
-                        <span class="faq-icon">▼</span>
-                    </div>
-                    <div class="faq-answer">
-                        We have no issue with you sharing our content, but please use it by adding a canonical tag pointing to the original URL on our website. This helps preserve SEO value and avoids content duplication penalties.
-                    </div>
-                </div>
-                
-                <!-- FAQ 4 -->
-                <div class="faq-item">
-                    <div class="faq-question" onclick="toggleFAQ(this)">
-                        <span>Do I need a mobile-responsive website?</span>
-                        <span class="faq-icon">▼</span>
-                    </div>
-                    <div class="faq-answer">
-                        Yes, absolutely! It's a must because most of the traffic comes from mobile phones, and people expect mobile-friendly websites - otherwise, you’ll miss business opportunities.
-                    </div>
-                </div>
-            </div>
+          <div class="section-title">
+            <h2 id="about-title">About</h2>
+          </div>
+          <p class="lead" style="max-width: 100ch;">
+<a href="https://bestdigitalmarketer.com/"><b>Best Digital Marketer</b></a> is the open platform website for Digital Marketers, business owners, learners, faculties and all who want to be ahead with Digital Marketing Updates or changes and want to learn tricks to be fast online presence with correct efforts only. Also Best Digital Marketer is offering Digital Marketing Services Globally.
+          </p>
         </div>
-    </section>
-    
-    <!-- Footer - Simplified -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Best Digital Marketer. All Rights Reserved.</p>
-        </div>
-    </footer>
-    
-    <!-- JavaScript -->
+      </section>
+
+  
+    </main>
+
+<footer role="contentinfo">
+  <div class="footer-container">
+    <!-- Left: Logo -->
+    <div class="footer-left">
+      <a href="/" class="footer-logo">
+        <span class="brand-badge"></span>
+        Best Digital Marketer
+      </a>
+    </div>
+
+    <!-- Center: Links -->
+    <nav class="footer-center" aria-label="Footer">
+
+      <a href="#marketing-wall">Marketing Wall</a>
+      <a href="#blogs">Blogs</a>
+      <a href="#marketing-tips-tricks">Tips</a>
+      <a href="#Digital-Marketing-Services">Services</a>
+      <a href="#about">About</a>
+
+    </nav>
+
+    <!-- Right: Contact Email -->
+    <div class="footer-right">
+      <a href="mailto:info@bestdigitalmarketer.com">info@bestdigitalmarketer.com</a>
+    </div>
+  </div>
+
+  <!-- Optional: Footer line at bottom -->
+  <div class="footer-line">
+    Built for clarity, crafted for growth — <a href="https://bestdigitalmarketer.com/"><b>Best Digital Marketer</b></a>.
+  </div>
+</footer>
+
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Full screen image viewer">
+      <img id="lightboxImg" alt="Marketing idea full view" />
+    </div>
+
+
     <script>
-        // Function to handle poll voting with correct/wrong answers
-        function updatePoll(element, questionIndex, optionIndex) {
-            // Get the parent options container
-            const optionsContainer = element.parentElement;
-            const options = optionsContainer.children;
-            const correctAnswer = parseInt(optionsContainer.getAttribute('data-correct'));
-            
-            // Check if user has already voted on this poll
-            const pollKey = `poll_${questionIndex}`;
-            if (localStorage.getItem(pollKey)) {
-                return; // Already voted
-            }
-            
-            // Remove selected class from all options in this poll
-            for (let i = 0; i < options.length; i++) {
-                options[i].classList.remove('selected');
-            }
-            
-            // Add selected class to clicked option
-            element.classList.add('selected');
-            
-            // Show correct/wrong answers
-            for (let i = 0; i < options.length; i++) {
-                const option = options[i];
-                const statusSpan = option.querySelector('.option-status');
-                
-                if (i === correctAnswer) {
-                    option.classList.add('correct');
-                    statusSpan.textContent = 'Correct';
-                } else {
-                    option.classList.add('wrong');
-                    statusSpan.textContent = 'Wrong';
-                }
-            }
-            
-            // Save the vote
-            localStorage.setItem(pollKey, optionIndex.toString());
-        }
-        
-        function showService(index) {
-            const panels = document.querySelectorAll('.service-panel');
-            panels.forEach(panel => {
-                panel.classList.remove('active');
-            });
-            
-            document.getElementById(`service-${index}`).classList.add('active');
-            
-            const tabs = document.querySelectorAll('.service-tab');
-            tabs.forEach((tab, i) => {
-                if (i === index) {
-                    tab.classList.add('active');
-                } else {
-                    tab.classList.remove('active');
-                }
-            });
-        }
-        
-        function toggleFAQ(element) {
-            const faqItem = element.parentElement;
-            const answer = faqItem.querySelector('.faq-answer');
-            const icon = element.querySelector('.faq-icon');
-            
-            // Toggle the answer visibility
-            if (answer.classList.contains('open')) {
-                answer.classList.remove('open');
-                icon.classList.remove('rotated');
-            } else {
-                answer.classList.add('open');
-                icon.classList.add('rotated');
-            }
-        }
-        
-        // Modern animated circle that moves on scroll
-        window.addEventListener('scroll', function() {
-            const scrollPosition = window.scrollY;
-            const circle = document.querySelector('.animated-circle');
-            
-            if (scrollPosition <= window.innerHeight) {
-                const translateX = -scrollPosition * 0.6;
-                const translateY = scrollPosition * 0.3;
-                const scale = 1 - (scrollPosition / window.innerHeight) * 0.2;
-                
-                circle.style.transform = `translate(${translateX}px, ${translateY}px) scale(${scale})`;
-            }
+      const menuToggle = document.getElementById('menuToggle');
+      const primaryNav = document.getElementById('primaryNav');
+      const mainMenu = document.getElementById('mainMenu');
+
+      if (menuToggle && primaryNav && mainMenu) {
+        menuToggle.addEventListener('click', () => {
+          const isOpen = primaryNav.getAttribute('data-open') === 'true';
+          primaryNav.setAttribute('data-open', String(!isOpen));
+          menuToggle.setAttribute('aria-expanded', String(!isOpen));
         });
-        
-        // Check for existing votes on page load and mark them as selected
-        document.addEventListener('DOMContentLoaded', function() {
-            for (let i = 0; i < 6; i++) {
-                const pollKey = `poll_${i}`;
-                const savedVote = localStorage.getItem(pollKey);
-                
-                if (savedVote !== null) {
-                    const quizCard = document.querySelectorAll('.quiz-card')[i];
-                    if (quizCard) {
-                        const optionsContainer = quizCard.querySelector('.quiz-options');
-                        const options = optionsContainer.querySelectorAll('.quiz-option');
-                        const correctAnswer = parseInt(optionsContainer.getAttribute('data-correct'));
-                        const selectedOption = options[parseInt(savedVote)];
-                        
-                        if (selectedOption) {
-                            selectedOption.classList.add('selected');
-                            
-                            // Show correct/wrong answers for already voted polls
-                            for (let j = 0; j < options.length; j++) {
-                                const option = options[j];
-                                const statusSpan = option.querySelector('.option-status');
-                                
-                                if (j === correctAnswer) {
-                                    option.classList.add('correct');
-                                    statusSpan.textContent = 'Correct';
-                                } else {
-                                    option.classList.add('wrong');
-                                    statusSpan.textContent = 'Wrong';
-                                }
-                            }
-                        }
-                    }
-                }
-            }
+
+        // Reset state if resized to desktop
+        window.addEventListener('resize', () => {
+          if (window.innerWidth >= 760) {
+            primaryNav.removeAttribute('data-open');
+            menuToggle.setAttribute('aria-expanded', 'false');
+          }
         });
+      }
+
+      // Auto-scrolling carousel + manual arrows
+      const track = document.getElementById('wallTrack');
+      const prevBtn = document.querySelector('.wall .prev');
+      const nextBtn = document.querySelector('.wall .next');
+
+      if (track) {
+        let rafId, paused = false;
+        const speed = 0.3; // pixels per frame ~10fps
+        const step = () => {
+          if (!paused) {
+            track.scrollLeft += speed; // scrolls toward right
+            // Loop back when reaching end
+            if (track.scrollLeft + track.clientWidth >= track.scrollWidth - 2) {
+              track.scrollLeft = 0;
+            }
+          }
+          rafId = requestAnimationFrame(step);
+        };
+        rafId = requestAnimationFrame(step);
+
+        // Pause on hover/focus for accessibility
+        track.addEventListener('pointerenter', () => paused = true);
+        track.addEventListener('pointerleave', () => paused = false);
+        track.addEventListener('focusin', () => paused = true);
+        track.addEventListener('focusout', () => paused = false);
+
+        const jump = () => Math.max(160, Math.floor(track.clientWidth * 0.8));
+        const resumeAfter = () => setTimeout(() => { paused = false; }, 1500);
+
+        if (prevBtn) {
+          prevBtn.addEventListener('click', () => {
+            paused = true;
+            track.scrollLeft -= jump();
+            if (track.scrollLeft < 0) track.scrollLeft = 0;
+            resumeAfter();
+          });
+        }
+        if (nextBtn) {
+          nextBtn.addEventListener('click', () => {
+            paused = true;
+            track.scrollLeft += jump();
+            if (track.scrollLeft + track.clientWidth >= track.scrollWidth - 2) {
+              track.scrollLeft = 0;
+            }
+            resumeAfter();
+          });
+        }
+      }
+
+      // Lightbox (click image or caption area to open full-screen)
+      const lb = document.getElementById('lightbox');
+      const lbImg = document.getElementById('lightboxImg');
+
+      function openLightbox(src, alt) {
+        lbImg.src = src;
+        lbImg.alt = alt || 'Marketing idea';
+        lb.classList.add('open');
+      }
+      function closeLightbox() {
+        lb.classList.remove('open');
+        lbImg.src = '';
+      }
+
+      document.addEventListener('click', (e) => {
+        const btn = e.target.closest('.wall-slide');
+        if (btn) {
+          const img = btn.querySelector('img');
+          if (img) {
+            openLightbox(img.src, img.alt);
+          }
+        }
+      });
+      lb?.addEventListener('click', closeLightbox);
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && lb?.classList.contains('open')) closeLightbox();
+      });
     </script>
-</body>
+  </body>
 </html>
