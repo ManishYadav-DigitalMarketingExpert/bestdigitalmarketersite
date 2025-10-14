@@ -305,7 +305,32 @@
 
         <section id="faq">
           <h3>6. FAQs</h3>
-          <p>We’ve compiled answers to some common questions about Google’s new search ads update.</p>
+          <div class="faq-section">
+            <div class="faq">
+              <button onclick="toggleFAQ(this)">How does the "Hide Sponsored Results" button work?<span class="arrow">▼</span></button>
+              <div class="faq-content">
+                The button appears after you've scrolled through the sponsored results. You can click it to collapse the ads, and they will reappear when you click the button again.
+              </div>
+            </div>
+            <div class="faq">
+              <button onclick="toggleFAQ(this)">Does this change affect all users?<span class="arrow">▼</span></button>
+              <div class="faq-content">
+                Yes, the new feature will be available to all users as the update rolls out globally across both desktop and mobile.
+              </div>
+            </div>
+            <div class="faq">
+              <button onclick="toggleFAQ(this)">Are there any changes to ad rankings?<span class="arrow">▼</span></button>
+              <div class="faq-content">
+                No, the underlying mechanics of ad ranking, such as bidding and Quality Score, remain unchanged.
+              </div>
+            </div>
+            <div class="faq">
+              <button onclick="toggleFAQ(this)">How does this impact advertisers' visibility?<span class="arrow">▼</span></button>
+              <div class="faq-content">
+                The visibility of ads remains consistent, but with the new transparency, users may become more selective about which ads they engage with.
+              </div>
+            </div>
+          </div>
         </section>
       </div>
     </div>
@@ -318,12 +343,55 @@
         <a href="https://bestdigitalmarketer.com/blog" class="cta-btn">Read More Blogs</a>
       </div>
     </div>
-
-    <!-- Footer -->
-
   </main>
 
-  <!-- Footer Scripts -->
+  <!-- Footer -->
 
+  <footer role="contentinfo">
+    <div class="footer-container">
+      <div class="footer-left">
+        <a href="/" class="footer-logo">
+          <span class="brand-badge"></span>
+          Best Digital Marketer
+        </a>
+      </div>
+
+      <nav class="footer-center" aria-label="Footer">
+        <a href="#top">Top</a>
+        <a href="https://bestdigitalmarketer.com/#blogs">Blogs</a>
+        <a href="https://bestdigitalmarketer.com/#marketing-tips-tricks">Tips</a>
+        <a href="https://bestdigitalmarketer.com/#Digital-Marketing-Services">Services</a>
+        <a href="https://bestdigitalmarketer.com/#about">About</a>
+      </nav>
+
+      <div class="footer-right">
+        <a href="mailto:info@bestdigitalmarketer.com">info@bestdigitalmarketer.com</a>
+      </div>
+    </div>
+
+    <div class="footer-line">
+      Built for clarity, crafted for growth — <a href="https://bestdigitalmarketer.com/"><b>Best Digital Marketer</b></a>.
+    </div>
+  </footer>
+
+  <script>
+    // FAQ accordion logic (article)
+    function toggleFAQ(button) {
+      const faqItem = button.parentElement;
+      const content = button.nextElementSibling;
+      const isOpen = faqItem.classList.contains('open');
+
+      document.querySelectorAll('.faq').forEach(faq => {
+        faq.classList.remove('open');
+        const c = faq.querySelector('.faq-content');
+        if (c) c.style.display = "none";
+      });
+
+      if (!isOpen) {
+        faqItem.classList.add('open');
+        content.style.display = "block";
+      }
+    }
+  </script>
 </body>
 </html>
