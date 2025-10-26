@@ -347,82 +347,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 
 
-      /* Marketing Wall */
-      .wall {
-        position: relative;
-        overflow: hidden;
-      }
-      .wall-track {
-        display: grid;
-        grid-auto-flow: column;
-        gap: 0.75rem;
-        align-items: stretch;
-        grid-auto-columns: 70%;
-        overflow-x: auto; /* ensure arrows can scroll */
-        scroll-behavior: smooth;
-      }
-      @media (min-width: 520px) { .wall-track { grid-auto-columns: 45%; } }
-      @media (min-width: 760px) { .wall-track { grid-auto-columns: 30%; } }
-      @media (min-width: 1024px){ .wall-track { grid-auto-columns: 22%; } }
-      @media (min-width: 1280px){ .wall-track { grid-auto-columns: 18%; } }
 
-      .wall-slide {
-        border: 1px solid var(--border);
-        border-radius: var(--radius);
-        overflow: hidden;
-        background: var(--surface);
-        box-shadow: var(--shadow-soft);
-        cursor: zoom-in;
-        display: flex;
-        flex-direction: column;
-        padding: 0;
-      }
-      .wall-slide img {
-        display: block;
-        width: 100%;
-        height: 160px;
-        object-fit: cover;
-      }
-      @media (min-width: 760px) { .wall-slide img { height: 180px; } }
-      @media (min-width: 1024px){ .wall-slide img { height: 200px; } }
-
-      /* caption area under each image */
-      .wall-caption {
-        border-top: 1px solid var(--border);
-        padding: 0.5rem 0.6rem;
-        text-align: left;
-        background: #fff;
-      }
-      .wall-caption h4 {
-        margin: 0;
-        font-size: var(--fs-40);
-        line-height: 1.35;
-        color: #0b1324;
-      }
-
-      /* arrows for manual scroll */
-      .wall-nav {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 40px;
-        height: 40px;
-        border-radius: 999px;
-        border: 1px solid var(--border);
-        background: rgba(255,255,255,0.9);
-        box-shadow: var(--shadow-soft);
-        display: grid;
-        place-items: center;
-        cursor: pointer;
-        z-index: 10;
-      }
-      .wall-nav.prev { left: 6px; }
-      .wall-nav.next { right: 6px; }
-      .wall-nav span {
-        font-size: 20px;
-        color: #0b1324;
-        line-height: 1;
-      }
+    
 
       /* Lightbox for full-screen image view */
       .lightbox {
@@ -611,7 +537,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <nav id="primaryNav" aria-label="Main menu">
           <div class="menu" id="mainMenu">
             <a href="https://bestdigitalmarketer.com/">Home</a>
-            <a href="#marketing-wall">Marketing Wall</a>
+
             <a href="#links">Links</a>
             <a href="#marketing-tips-tricks">Tips</a>
             <a href="#about">About</a>
@@ -634,61 +560,7 @@ Free Download MEG notes, Assignments, PYQs, and join active student groups</p>
 
       </section>
 
-      <section class="container" id="marketing-wall" aria-labelledby="wall-title">
-        <div class="section-title">
-          <h2 id="wall-title">Wall of Marketing Ideas</h2>
-
-        </div>
-
-        <div class="wall" aria-live="polite">
-
-          <button class="wall-nav prev" type="button" aria-label="Previous"><span>‹</span></button>
-          <button class="wall-nav next" type="button" aria-label="Next"><span>›</span></button>
-
-          <div class="wall-track" id="wallTrack">
-
-            <button class="wall-slide" id="dracula-ad" aria-label="Dracula Ad Gets Creepier as the Sun Goes Down">
-              <img src="https://bestdigitalmarketer.com/dracula-outdoor-ad-2020.webp?height=200&width=320" alt="Dracula Ad Gets Creepier as the Sun Goes Down" />
-              <div class="wall-caption"><h4>Dracula Ad Gets Creepier as the Sun Goes Down</h4></div>
-            </button>
-
-
-            <button class="wall-slide" id"Mercedes-give-Steering-in-your-Hand" aria-label="Mercedes give Steering in your Hand">
-              <img src="https://bestdigitalmarketer.com/mercedes-put-steering-newspaper.jfif?height=200&width=320" alt="Mercedes give Steering in your Hand" />
-              <div class="wall-caption"><h4>Mercedes give Steering in your Hand by Newspaper</h4></div>
-            </button>
-
-              
-            <button class="wall-slide" id="super-hot-sauce" aria-label="Super Hot Sauce- Burned the Table">
-              <img src="https://bestdigitalmarketer.com/super-hot-sauce-creative-advertising.jfif?height=200&width=320" alt="Super Hot Sauce- Burned the Table" />
-              <div class="wall-caption"><h4>Super Hot Sauce- Burned the Table</h4></div>
-            </button>
-
-            <button class="wall-slide" id="google-fast-response-anywhere" aria-label="Google Fast Response anywhere">
-              <img src="https://bestdigitalmarketer.com/Google-old-advertisment-every-answer-fast.jfif?height=200&width=320" alt="Google Fast Response anywhere" />
-              <div class="wall-caption"><h4>Google's Fast Response anywhere</h4></div>
-            </button>
-
-            <button class="wall-slide" id="Clothes-Secret-Messages" aria-label="Clothes Secret Messages">
-              <img src="https://bestdigitalmarketer.com/clothes-message.jfif?height=200&width=320" alt="Clothes Secret Messages" />
-              <div class="wall-caption"><h4>Clothes Secret Messages</h4></div>
-                    </button>
-
-                          <button class="wall-slide" id="brands-printed-logo-on-road" aria-label="Brands Printed Logo on Road">
-              <img src="https://bestdigitalmarketer.com/brands-printed-on-road.jfif?height=200&width=320" alt="Brands Printed Logo on Road" />
-              <div class="wall-caption"><h4>Brands Printed Logo on Road</h4></div>
-            </button>
-
-              
-            <button class="wall-slide" id="road-light-on-colgate-hoarding" aria-label="Road Hoarding Light Focus on Colgate's white Teeth">
-              <img src="https://bestdigitalmarketer.com/road-light-on-colgate-hoarding.jfif?height=200&width=320" alt="Road Hoarding Light Focus on Colgate's white Teeth" />
-              <div class="wall-caption"><h4>Road Hoarding Light Focus on Colgate's white Teeth</h4></div>
-            </button>
-
-          </div>
-        </div>
-      </section>
-
+    
       <section class="container" id="linkss">
         <div class="section-title">
           <h2>MEG Important Links</h2>
@@ -771,62 +643,44 @@ Free Download MEG notes, Assignments, PYQs, and join active student groups</p>
         <div class="services">
           <a class="service-card" href="https://onlineservices.ignou.ac.in/reevaluation/">
             <h3>MEG Re-evaluation</h3>
-            <p>Technical, on-page, and content-led SEO that grows qualified traffic.</p>
-            <span class="pill">Audits</span>
-            <span class="pill">Content</span>
-            <span class="pill">Technical</span>
+            <span class="pill">Re-evaluation</span>
             <div class="spacer"></div>
-            <span class="link">Explore SEO →</span>
+            <span class="link">MEG Re-evaluation →</span>
           </a>
 
           <a class="service-card" href="https://termendresult.ignou.ac.in/">
             <h3>MEG Result</h3>
-            <p>Efficient paid search and social campaigns with tight tracking.</p>
-            <span class="pill">Google Ads</span>
-            <span class="pill">Meta</span>
-            <span class="pill">Retargeting</span>
+            <span class="pill">Result</span>
             <div class="spacer"></div>
-            <span class="link">Explore PPC →</span>
+            <span class="link">Check Result →</span>
           </a>
 
           <a class="service-card" href="https://bestdigitalmarketer.com/ignou/percentage-calculator">
             <h3>Percentage Calculator</h3>
-            <p>Organic social that prioritizes engagement, reach, and saves.</p>
-            <span class="pill">Calendars</span>
-            <span class="pill">Playbooks</span>
-            <span class="pill">Creator Ops</span>
+            <span class="pill">% Calculator</span>
             <div class="spacer"></div>
-            <span class="link">Explore SMO →</span>
+            <span class="link">Calculate %→</span>
           </a>
 
           <a class="service-card" href="https://gradecard.ignou.ac.in/gradecard/">
             <h3>Grade Card</h3>
-            <p>Topic clusters, briefs, and distribution routines that compound.</p>
-            <span class="pill">Briefs</span>
-            <span class="pill">Clusters</span>
-            <span class="pill">Repurposing</span>
+            <span class="pill">Grade Card</span>
             <div class="spacer"></div>
-            <span class="link">Explore Content →</span>
+            <span class="link">Check →</span>
           </a>
 
           <a class="service-card" href="https://drive.google.com/drive/folders/1p6ivTf7m4NKr1ryXiKDzVzBRVuRMjIAZ">
             <h3>MEG Solved Assignments</h3>
-            <p>Clean data, clear dashboards, and decisions you can trust.</p>
-            <span class="pill">GA4</span>
-            <span class="pill">Attribution</span>
-            <span class="pill">Dashboards</span>
+            <span class="pill">Assignments</span>
             <div class="spacer"></div>
-            <span class="link">Explore Analytics →</span>
+            <span class="link">Get Assignments→</span>
           </a>
 
           <a class="service-card" href="/services/tv-ads">
-            <h3>TV & Video Ads</h3>
-            <p>CTV planning, creative strategy, and post-campaign analysis.</p>
-            <span class="pill">CTV</span>
-            <span class="pill">Scripts</span>
-            <span class="pill">Brand Lift</span>
+            <h3>Date Sheet</h3>
+            <span class="pill">Exam Date</span>
             <div class="spacer"></div>
-            <span class="link">Explore TV Ads →</span>
+            <span class="link">Date Sheet→</span>
           </a>
         </div>
       </section>
@@ -857,7 +711,7 @@ This Page is dedicate for <a href="https://bestdigitalmarketer.com/ignou/meg-pik
     <!-- Center: Links -->
     <nav class="footer-center" aria-label="Footer">
 
-      <a href="#marketing-wall">Marketing Wall</a>
+
       <a href="#links">Links</a>
       <a href="#marketing-tips-tricks">Tips</a>
       <a href="#imp-links">Imp Links</a>
@@ -982,19 +836,3 @@ This Page is dedicate for <a href="https://bestdigitalmarketer.com/ignou/meg-pik
     </script>
   </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
