@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>aa#No-1 Best Digital Marketer</title>
+    <title>#No-1 Best Digital Marketer</title>
     <meta name="description" content="Best Digital Marketer 360° - delivering complete digital marketing solutions for agencies and brands, driving growth, leads, and measurable results.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,64 +19,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- End Google Tag Manager -->
      <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://bestdigitalmarketer.com/" />
-    
- <!-- Firebase App (required) -->
-<script type="module">
-  // Import Firebase functions
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.8.0/firebase-app.js";
-  import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/12.8.0/firebase-firestore.js";
-
-  // Your Firebase configuration
-  const firebaseConfig = {
-    apiKey: "AIzaSyAVRG_owDNuFGkM1OWlOTOQs_MysNCsWIA",
-    authDomain: "bestdigitalform.firebaseapp.com",
-    projectId: "bestdigitalform",
-    storageBucket: "bestdigitalform.firebasestorage.app",
-    messagingSenderId: "724612303980",
-    appId: "1:724612303980:web:456bab9e8c0ae7954bdc49"
-  };
-
-  // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
-  const db = getFirestore(app);
-
-  // Form Submission using Firestore
-  const contactForm = document.getElementById('contactForm');
-
-  contactForm.addEventListener('submit', async (event) => {
-    event.preventDefault();
-    
-    const formData = new FormData(contactForm);
-    const name = formData.get('name');
-    const email = formData.get('email');
-    const mobile = formData.get('mobile');
-    const website = formData.get('website');
-    const message = formData.get('message');
-
-    try {
-      // Save data to Firestore
-      await addDoc(collection(db, 'contactMessages'), {
-        name,
-        email,
-        mobile,
-        website,
-        message,
-        timestamp: new Date()
-      });
-
-      // Show success alert
-      alert(`Thank you, ${name}! Your message has been sent successfully. We will contact you soon.`);
-
-      // Reset form
-      contactForm.reset();
-
-    } catch (error) {
-      console.error("Error saving message: ", error);
-      alert("Oops! Something went wrong. Please try again later.");
-    }
-  });
-</script>
-
 
 
     <meta property="og:title" content="#No-1 Best Digital Marketer Freelancer - SEO, PPC, Google Ads, Meta Ads, Native Ads, Marketplace Ads, YouTube Marketing, ASO" />
@@ -2369,7 +2311,26 @@ transform: translateX(0);
             }
         }
 
-    
+        // Form Submission
+        function handleSubmit(event) {
+            event.preventDefault();
+            const form = event.target;
+            const formData = new FormData(form);
+            
+            // Get form values
+            const name = formData.get('name');
+            const email = formData.get('email');
+            const mobile = formData.get('mobile');
+            const website = formData.get('website');
+            const message = formData.get('message');
+            
+            // Show success message
+            alert('Thank you, ' + name + '! Your message has been sent successfully. We will contact you soon.');
+            
+            // Reset form
+            form.reset();
+        }
+
         // Smooth scroll for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
@@ -2420,5 +2381,3 @@ transform: translateX(0);
 
 </body>
 </html>
-
-
