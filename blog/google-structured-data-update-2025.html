@@ -21,353 +21,482 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta property="og:url" content="https://bestdigitalmarketer.com/blog/google-structured-data-update-2025" />
 <meta property="og:type" content="blog" />
   <meta name="robots" content="index, follow" />
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: #ffffff; /* default background for white section */
-      color: #333;
-    }
-    header {
-      background: #1a73e8;
-      color: #fff;
-      padding: 20px 40px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 1.5em;
-    }
-    .nav-btn {
-      background: #fff;
-      color: #1a73e8;
-      border: none;
-      padding: 10px 20px;
-      border-radius: 4px;
-      cursor: pointer;
-      font-weight: bold;
-      text-decoration: none;
-    }
-    .blog-header {
-      text-align: center;
-      padding: 40px 20px 20px;
-      background: #fff;
-    }
-    .blog-header img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 8px;
-    }
-    .blog-header h2 {
-      font-size: 2em;
-      margin: 20px 0 10px;
-    }
-    .blog-header p {
-      color: #555;
-      font-size: 1.1em;
-    }
-    .blog-container {
-      max-width: 1000px;
-      margin: auto;
-      padding: 20px;
-    }
-    .toc h3 {
-      font-size: 1.2em;
-      margin-bottom: 10px;
-    }
-    .toc ul {
-      padding-left: 20px;
-    }
-    .toc li {
-      margin: 6px 0;
-    }
-    .toc a {
-      text-decoration: none;
-      color: #1a73e8;
-    }
-    section h3 {
-      color: #1a73e8;
-      margin-top: 40px;
-    }
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #222;
-      color: #ccc;
-      font-size: 0.9em;
-    }
-    a {
-      color: #1a73e8;
-      text-decoration: none;
-    }
+<style>
+:root {
+--bg-dark: #0a0a0f;
+--bg-card: #12121a;
+--text-white: #ffffff;
+--text-gray: #9ca3af;
+--text-light-gray: #d1d5db;
+--primary: #00d4aa;
+--border-color: #2a2a3a;
+/* Home Page Variables Added for Navbar */
+--gradient-1: linear-gradient(135deg, #00d4aa 0%, #00b894 100%);
+}
 
-    .highlight-section {
-      background: #fffce6;
-      border-radius: 25px;
-      padding: 30px 20px;
-      margin: 50px auto;
-      max-width: 1000px;
-      box-shadow: 0 0 8px rgba(0,0,0,0.05);
-    }
-    .highlight-section h3 {
-      font-size: 1.7em;
-      margin-bottom: 20px;
-      color: #222;
-    }
-    .highlight-section p {
-      font-size: 1.1em;
-      margin-bottom: 10px;
-    }
+body {
+margin: 0;
+font-family: 'Inter', 'Segoe UI', sans-serif;
+background: var(--bg-dark);
+color: var(--text-white);
+padding-top: 80px; /* Space for fixed navbar */
+}
 
-    .cta-section {
-      background: linear-gradient(135deg, #e3f2fd, #ffffff);
-      text-align: center;
-      padding: 40px 20px;
-      border-radius: 15px;
-      margin: 60px auto;
-      max-width: 1000px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-    }
-    .cta-btn {
-      background: #1a73e8;
-      color: white;
-      padding: 12px 25px;
-      border-radius: 6px;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 1em;
-    }
+/* ========== INTEGRATED NAVIGATION STYLES FROM HOME ========== */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: rgba(10, 10, 15, 0.95);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--border-color);
+    padding: 16px 0;
+}
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--text-white);
+}
+.logo-icon {
+    width: 40px;
+    height: 40px;
+    background: var(--gradient-1);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 18px;
+    color: var(--bg-dark);
+}
+.nav-links {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.nav-links a {
+    color: var(--text-gray);
+    font-size: 15px;
+    font-weight: 500;
+    position: relative;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.nav-links a:hover {
+    color: var(--primary);
+}
+.nav-cta {
+    background: var(--gradient-1);
+    color: var(--bg-dark);
+    padding: 12px 28px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.nav-cta:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(0, 212, 170, 0.3);
+}
+.mobile-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    padding: 10px;
+}
+.mobile-toggle span {
+    width: 25px;
+    height: 2px;
+    background: var(--text-white);
+    transition: all 0.3s ease;
+}
+.mobile-menu {
+    display: none;
+    position: fixed;
+    top: 73px;
+    left: 0;
+    right: 0;
+    background: rgba(10, 10, 15, 0.98);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--border-color);
+    padding: 24px;
+    z-index: 999;
+}
+.mobile-menu.active { display: block; }
+.mobile-menu ul { list-style: none; padding: 0; }
+.mobile-menu li { margin-bottom: 16px; }
+.mobile-menu a { color: var(--text-white); font-size: 18px; font-weight: 500; text-decoration: none; }
 
-    .faq-section {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      max-width: 1000px;
-      margin: 40px auto;
-      padding: 0 20px;
-    }
-    .faq {
-      flex: 1 1 45%;
-      background: #fff;
-      border: 1px solid #ddd;
-      border-radius: 6px;
-      overflow: hidden;
-    }
-    .faq button {
-      width: 100%;
-      padding: 15px 20px;
-      text-align: left;
-      background: #f5f5f5;
-      border: none;
-      cursor: pointer;
-      font-size: 1.05em;
-      position: relative;
-      font-weight: 600;
-    }
-    .faq button .arrow {
-      float: right;
-      transition: transform 0.3s ease;
-    }
-    .faq.open button .arrow {
-      transform: rotate(180deg);
-    }
-    .faq-content {
-      display: none;
-      padding: 15px 20px;
-      background: white;
-      border-top: 1px solid #ddd;
-      font-size: 1em;
-      line-height: 1.5;
-    }
+@media (max-width: 992px) {
+    .nav-links, .nav-cta-desktop { display: none; }
+    .mobile-toggle { display: flex; }
+}
 
-    @media (max-width: 768px) {
-      .faq {
-        flex: 1 1 100%;
-      }
-    }
-  </style>
-   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5332010657852321"
-     crossorigin="anonymous"></script>
+/* ========== ORIGINAL BLOG STYLES ========== */
+.blog-header {
+text-align: center;
+padding: 40px 20px 20px;
+background: var(--bg-card);
+border: 1px solid var(--border-color);
+}
+.blog-header img {
+max-width: 100%;
+height: auto;
+border-radius: 8px;
+}
+.blog-header h2 {
+font-size: 2em;
+margin: 20px 0 10px;
+color: var(--text-white);
+}
+.blog-header p {
+color: var(--text-gray);
+font-size: 1.1em;
+}
+.blog-container {
+max-width: 1000px;
+margin: auto;
+padding: 20px;
+background: var(--bg-card);
+border: 1px solid var(--border-color);
+}
+.toc h3 {
+font-size: 1.2em;
+margin-bottom: 10px;
+color: var(--text-white);
+}
+.toc ul {
+padding-left: 20px;
+}
+.toc li {
+margin: 6px 0;
+}
+.toc a {
+text-decoration: none;
+color: var(--primary);
+}
+section h3 {
+color: var(--primary);
+margin-top: 40px;
+}
+footer {
+text-align: center;
+padding: 20px;
+background: var(--bg-card);
+color: var(--text-light-gray);
+font-size: 0.9em;
+border-top: 1px solid var(--border-color);
+}
+a {
+color: var(--primary);
+text-decoration: none;
+}
+.highlight-section {
+background: var(--bg-card);
+border: 1px solid var(--border-color);
+border-radius: 25px;
+padding: 30px 20px;
+margin: 50px auto;
+max-width: 1000px;
+box-shadow: 0 0 8px rgba(0,0,0,0.05);
+}
+.highlight-section h3 {
+font-size: 1.7em;
+margin-bottom: 20px;
+color: var(--text-white);
+}
+.highlight-section p {
+font-size: 1.1em;
+margin-bottom: 10px;
+color: var(--text-gray);
+}
+.cta-section {
+background: linear-gradient(135deg, rgba(0,212,170,0.1), var(--bg-card));
+text-align: center;
+padding: 40px 20px;
+border: 1px solid var(--border-color);
+border-radius: 15px;
+margin: 60px auto;
+max-width: 1000px;
+box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+.cta-btn {
+background: var(--primary);
+color: var(--bg-dark);
+padding: 12px 25px;
+border-radius: 50px;
+text-decoration: none;
+font-weight: bold;
+font-size: 1em;
+display: inline-block;
+margin-top: 20px;
+}
+.faq-section {
+display: flex;
+flex-wrap: wrap;
+gap: 20px;
+max-width: 1000px;
+margin: 40px auto;
+padding: 0 20px;
+}
+.faq {
+flex: 1 1 45%;
+background: var(--bg-card);
+border: 1px solid var(--border-color);
+border-radius: 6px;
+overflow: hidden;
+}
+.faq button {
+width: 100%;
+padding: 15px 20px;
+text-align: left;
+background: var(--bg-card);
+border: none;
+cursor: pointer;
+font-size: 1.05em;
+position: relative;
+font-weight: 600;
+color: var(--text-white);
+}
+.faq button .arrow {
+float: right;
+transition: transform 0.3s ease;
+color: var(--primary);
+}
+.faq.open button .arrow {
+transform: rotate(180deg);
+}
+.faq-content {
+display: none;
+padding: 15px 20px;
+background: var(--bg-card);
+border-top: 1px solid var(--border-color);
+font-size: 1em;
+line-height: 1.5;
+color: var(--text-gray);
+}
+@media (max-width: 768px) {
+.faq {
+flex: 1 1 100%;
+}
+}
+</style>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5332010657852321"
+crossorigin="anonymous"></script>
 </head>
 <body>
-   <!-- Google Tag Manager (noscript) -->
+ <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W33WK3QH"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
-<header>
-  <h1>Best Digital Marketer</h1>
-  <a href="/" class="nav-btn">Go to Home</a>
-</header>
+<nav class="navbar">
+    <div class="nav-container">
+        <a href="https://bestdigitalmarketer.com/" class="logo">
+            <div class="logo-icon">BDM</div>
+            Best Digital Marketer
+        </a>
+        <ul class="nav-links">
+            <li><a href="https://bestdigitalmarketer.com/#services">Services</a></li>
+            <li><a href="https://bestdigitalmarketer.com/#about">About</a></li>
+            <li><a href="https://bestdigitalmarketer.com/#industries">Industries</a></li>
+            <li><a href="https://bestdigitalmarketer.com/#why-us">Why Us</a></li>
+            <li><a href="https://bestdigitalmarketer.com/#blog">Blog</a></li>
+            <li><a href="https://bestdigitalmarketer.com/#contact">Contact</a></li>
+        </ul>
+        <button class="nav-cta nav-cta-desktop" onclick="location.href='https://bestdigitalmarketer.com/#contact'">Get in touch</button>
+        <div class="mobile-toggle" onclick="toggleMobileMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+        <ul>
+            <li><a href="https://bestdigitalmarketer.com/#services" onclick="closeMobileMenu()">Services</a></li>
+            <li><a href="https://bestdigitalmarketer.com/#about" onclick="closeMobileMenu()">About</a></li>
+            <li><a href="https://bestdigitalmarketer.com/#industries" onclick="closeMobileMenu()">Industries</a></li>
+            <li><a href="https://bestdigitalmarketer.com/#why-us" onclick="closeMobileMenu()">Why Us</a></li>
+            <li><a href="https://bestdigitalmarketer.com/#blog" onclick="closeMobileMenu()">Blog</a></li>
+            <li><a href="https://bestdigitalmarketer.com/#contact" onclick="closeMobileMenu()">Contact</a></li>
+        </ul>
+        <button class="nav-cta" style="display: block; width: 100%;" onclick="location.href='https://bestdigitalmarketer.com/#contact'">Get Free Audit</button>
+    </div>
+</nav>
 
 <div class="blog-header">
-  <img src="https://bestdigitalmarketer.com/google-removing-7-structured-data-types-schema-markup.webp" alt="Google Algorithm Update removing structured data types markup">
-  <h2>Google Just Removed Some Structured Data Types – What You Should Know
+<img src="https://bestdigitalmarketer.com/google-removing-7-structured-data-types-schema-markup.webp" alt="Google Algorithm Update removing structured data types markup">
+<h2>Google Just Removed Some Structured Data Types – What You Should Know
 </h2>
-  <p>So Google just made another change to how things appear in the search results. If you're into SEO or own a website, this is something you should know — but don’t worry, I’ll explain it super simply.
-
+<p>So Google just made another change to how things appear in the search results. If you're into SEO or own a website, this is something you should know — but don't worry, I'll explain it super simply.
 </p>
 </div>
-
-<!-- Light gray background area starts here -->
-<div style="background-color: #f9f9f9;">
-  <div class="blog-container">
-    <div class="toc">
-      <h3><strong>Table of Contents</strong></h3>
-      <ul>
-        <li><strong><a href="#structured-data">1. What is Structured Data?</a></strong></li>
-        <li><strong><a href="#change">2. Google is Changing</a></strong></li>
-        <li><strong><a href="#removed">3. Structured Data Types Being Removed</a></strong></li>
-        <li><strong><a href="#affect">4. Does This Affect Ranking?</a></strong></li>
-        <li><strong><a href="#role">5. Why It Matters for You</a></strong></li>
-        <li><strong><a href="#now-what">6. What You Should Do:</a></strong></li>
-      </ul>
-    </div>
-
-    <section id="structured-dataw">
-      <h3>1. First, What Is “Structured Data”?</h3>
-      <p>Structured data is a way of helping Google understand what your page is about by adding specific code to your content.<br>
+<div style="background-color: var(--bg-card); border: 1px solid var(--border-color); border-radius: 24px; margin: 0 20px;">
+<div class="blog-container">
+<div class="toc">
+<h3><strong>Table of Contents</strong></h3>
+<ul>
+<li><strong><a href="#structured-dataw">1. What is Structured Data?</a></strong></li>
+<li><strong><a href="#change">2. Google is Changing</a></strong></li>
+<li><strong><a href="#removed">3. Structured Data Types Being Removed</a></strong></li>
+<li><strong><a href="#affact">4. Does This Affect Ranking?</a></strong></li>
+<li><strong><a href="#role">5. Why It Matters for You</a></strong></li>
+<li><strong><a href="#now-what">6. What You Should Do:</a></strong></li>
+</ul>
+</div>
+<section id="structured-dataw">
+<h3>1. First, What Is "Structured Data"?</h3>
+<p>Structured data is a way of helping Google understand what your page is about by adding specific code to your content.<br>
 For example:</p>
-        <ul>
-<li>If you have a course page, you can add code that tells Google: “Hey, this is a course!”</li>
-      <li>If it’s a product, you can tell Google the price, reviews, etc.</li>
-          </ul>
-        <p>This extra information allows Google to show rich results in search, like star ratings, FAQs, job salaries, or product details. It doesn’t change your ranking but can make your listing look more attractive and informative in search results.</p>
-    </section>
-
-    <section id="change">
-      <h3>2. What Google Is Changing?</h3>
-      <p>Google is now removing support for rich results from some types of structured data. This means it will no longer show enhanced listings for certain schema types.</p>
-      <ul>
-        <li>Not many people are using them</li>
-        <li>They aren’t adding much value anymore</li>
-        <li>Google wants to keep the search results cleaner and simpler</li>
-        </ul>
-    </section>
-
-    <section id="removed">
-      <h3>3. Structured Data Types Being Removed:</h3>
-      <p>Over the coming weeks and months, the following structured data types will no longer show rich results in Google Search:</p>
-      <ul>
-        <li>Book Actions (like "Buy this book" buttons)</li>
+<ul>
+<li>If you have a course page, you can add code that tells Google: "Hey, this is a course!"</li>
+<li>If it's a product, you can tell Google the price, reviews, etc.</li>
+</ul>
+<p>This extra information allows Google to show rich results in search, like star ratings, FAQs, job salaries, or product details. It doesn't change your ranking but can make your listing look more attractive and informative in search results.</p>
+</section>
+<section id="change">
+<h3>2. What Google Is Changing?</h3>
+<p>Google is now removing support for rich results from some types of structured data. This means it will no longer show enhanced listings for certain schema types.</p>
+<ul>
+<li>Not many people are using them</li>
+<li>They aren't adding much value anymore</li>
+<li>Google wants to keep the search results cleaner and simpler</li>
+</ul>
+</section>
+<section id="removed">
+<h3>3. Structured Data Types Being Removed:</h3>
+<p>Over the coming weeks and months, the following structured data types will no longer show rich results in Google Search:</p>
+<ul>
+<li>Book Actions (like "Buy this book" buttons)</li>
 <li>Course Info</li>
 <li>Claim Review (fact-check boxes)</li>
 <li>Estimated Salary (used in job listings)</li>
 <li>Learning Video</li>
 <li>Special Announcement (like COVID updates)</li>
 <li>Vehicle Listing (car ads)</li>
-      </ul>
-        <p>Even if you continue to add this markup to your site, Google will ignore it for rich results. It won’t appear visually enhanced in search results.</p>
-          </section>
-
-    <section id="affact">
-      <h3>4. Does This Affect Ranking?</h3>
-      <p><b>Not exactly, this change does not impact your page’s search rankings.</b></p>
-      <p>Google has clearly stated that the removal of these rich results does not affect how pages are ranked. It only changes the visual appearance of your listing, not its position in the search results.<br>
+</ul>
+<p>Even if you continue to add this markup to your site, Google will ignore it for rich results. It won't appear visually enhanced in search results.</p>
+</section>
+<section id="affact">
+<h3>4. Does This Affect Ranking?</h3>
+<p><b>Not exactly, this change does not impact your page's search rankings.</b></p>
+<p>Google has clearly stated that the removal of these rich results does not affect how pages are ranked. It only changes the visual appearance of your listing, not its position in the search results.<br>
 It just affects how results look, not where they appear.</p>
-    </section>
-
-    <section id="role">
-      <h3>5. Why It Matters for You:</h3>
-      <p>If your site was using any of the <a href="https://bestdigitalmarketer.com/blog/google-structured-data-update-2025"><b>removed 7 structured data types</b></a>, you may notice that your listings in Google look more basic now. The additional information that used to be displayed—like ratings, fact-checks, or special highlights—will no longer appear.</p>
-      <ul>
-        <li>Look more plain now</li>
+</section>
+<section id="role">
+<h3>5. Why It Matters for You:</h3>
+<p>If your site was using any of the <a href="https://bestdigitalmarketer.com/blog/google-structured-data-update-2025"><b>removed 7 structured data types</b></a>, you may notice that your listings in Google look more basic now. The additional information that used to be displayed—like ratings, fact-checks, or special highlights—will no longer appear.</p>
+<ul>
+<li>Look more plain now</li>
 <li>Might get fewer clicks (because less info is shown)</li>
-      </ul>
-      <p>This could lead to fewer people clicking on your links, even though your rankings stay the same. That’s because visually rich results tend to attract more clicks.</p>
-      <p>However, there’s no need to remove the markup from your site. It won’t harm anything. Also, other search engines like Bing or Yandex might still use it, so it’s okay to leave it in place.</p>
-    </section>
-    
-     <section id="now-what">
-      <h3>6. What You Should Do:</h3>
-       <p>If your site isn’t using the removed structured data types, there’s nothing you need to change. If you are using them, don’t worry. Your pages will still rank the same, even if the visual enhancements are no longer shown. Going forward, focus your efforts on structured data types that Google still supports.</p>
-             <ul>
-      <li>If you're not using any of these types — you're safe, no need to worry.</li>
-<li>If you are, just know it’s not going to break your site or drop your rankings.</li>
+</ul>
+<p>This could lead to fewer people clicking on your links, even though your rankings stay the same. That's because visually rich results tend to attract more clicks.</p>
+<p>However, there's no need to remove the markup from your site. It won't harm anything. Also, other search engines like Bing or Yandex might still use it, so it's okay to leave it in place.</p>
+</section>
+<section id="now-what">
+<h3>6. What You Should Do:</h3>
+<p>If your site isn't using the removed structured data types, there's nothing you need to change. If you are using them, don't worry. Your pages will still rank the same, even if the visual enhancements are no longer shown. Going forward, focus your efforts on structured data types that Google still supports.</p>
+<ul>
+<li>If you're not using any of these types — you're safe, no need to worry.</li>
+<li>If you are, just know it's not going to break your site or drop your rankings.</li>
 <li>Going forward, focus on the structured data that Google still supports — like Product, FAQ, How-To (where still allowed), Event, etc.</li>
-         </ul>
-      <p>Continue optimizing your content with these supported schema types to improve how your content appears in search and to stay aligned with Google’s latest updates.</p>
-    </section>
-  </div>
+</ul>
+<p>Continue optimizing your content with these supported schema types to improve how your content appears in search and to stay aligned with Google's latest updates.</p>
+</section>
 </div>
-<!-- Light gray background area ends here -->
-
-<!-- Lead Generation Section (starts with white background) -->
+</div>
 <div class="highlight-section">
-  <div class="blog-container">
-    <h3>The Bottom Line: Smarter Schema, Better SEO</h3>
-    <p><strong>✅ Use Google-supported schema types</strong> like FAQ, Product, HowTo, and Event — these still boost visibility and trust.</p>
-    <p><strong>✅ Audit your existing markup</strong> to remove outdated or low-quality schema that could harm your credibility.</p>
-    <p><strong>✅ Prioritize real value </strong>- structured data should support useful, human-first content, not just chase rich results.</p>
-    <p><strong>💡 Pro Tip:</strong> Schema is still your SEO superpower — but now, it’s less about tricks and more about trust.</p>
-
-  </div>
+<div class="blog-container">
+<h3>The Bottom Line: Smarter Schema, Better SEO</h3>
+<p><strong>✅ Use Google-supported schema types</strong> like FAQ, Product, HowTo, and Event — these still boost visibility and trust.</p>
+<p><strong>✅ Audit your existing markup</strong> to remove outdated or low-quality schema that could harm your credibility.</p>
+<p><strong>✅ Prioritize real value </strong>- structured data should support useful, human-first content, not just chase rich results.</p>
+<p><strong>💡 Pro Tip:</strong> Schema is still your SEO superpower — but now, it's less about tricks and more about trust.</p>
 </div>
-
-<!-- CTA Section -->
+</div>
 <div class="cta-section">
-  <div class="cta-content">
-    <h3 style="font-size: 1.8em; margin: 0 0 10px;">Hungry for More Digital Growth Hacks?</h3>
-    <p style="color: #555; font-size: 1.1em; margin: 0 0 15px;">Discover the latest strategies, tools, and creative ad ideas to stay ahead in 2025.</p>
-    <a href="/" class="cta-btn">🔍 Read More Blogs</a>
-  </div>
-</div><!-- FAQ Section -->
-<div class="faq-section">
-  <div class="faq">
-    <button onclick="toggleFAQ(this)">Will this update affect my CTR?<span class="arrow">▼</span></button>
-    <div class="faq-content">
-      Definitely yes, because such schemas/snippets cover more area on the screen on SERPs (Search Engine Result Pages), which increases the chances of getting more clicks on your page. With the update, you'll likely get fewer clicks but approximately the same impressions (depending on your site's SEO).
-    </div>
-  </div>
-
-  <div class="faq">
-    <button onclick="toggleFAQ(this)">Will removing structured data by Google not affect my page ranking?<span class="arrow">▼</span></button>
-    <div class="faq-content">
-      Not really, but it might affect around 10%, because the schemas Google is removing help search engines understand more about your page content. Out of the 7 structured data types, some were delivering richer information to Google. But you can still maintain good rankings by optimizing your content and naturally including this information within your page content.
-    </div>
-  </div>
-
-  <div class="faq">
-    <button onclick="toggleFAQ(this)">Does structured data still matter for mobile-first indexing?<span class="arrow">▼</span></button>
-    <div class="faq-content">
-      Yes, it still matters. Mobile-first indexing is more about how your site shows up on phones, but structured data still helps Google understand your content better—doesn’t matter if it’s mobile or desktop. So yeah, keep your schema clean and updated, it still plays a role.
-    </div>
-  </div>
-
-  <div class="faq">
-    <button onclick="toggleFAQ(this)">Are structured data types and schema markup the same?<span class="arrow">▼</span></button>
-    <div class="faq-content">
-      Not exactly, but they’re closely connected. <strong>Schema markup</strong> is the code (usually in JSON-LD) you add to your web pages—it tells search engines what your content means. <br><br>
-      <strong>Structured data types</strong> are specific categories within that code—like <code>Product</code>, <code>FAQPage</code>, or <code>Article</code>—used to define what kind of content you’re describing. <br><br>
-      So schema is the language, and structured data types are what you're describing using that language.
-    </div>
-  </div>
+<div class="cta-content">
+<h3 style="font-size: 1.8em; margin: 0 0 10px; color: var(--text-white);">Hungry for More Digital Growth Hacks?</h3>
+<p style="color: var(--text-gray); font-size: 1.1em; margin: 0 0 15px;">Discover the latest strategies, tools, and creative ad ideas to stay ahead in 2025.</p>
+<a href="https://bestdigitalmarketer.com/#blog" class="cta-btn">🔍 Read More Blogs</a>
 </div>
-
+</div><div class="faq-section">
+<div class="faq">
+<button onclick="toggleFAQ(this)">Will this update affect my CTR?<span class="arrow">▼</span></button>
+<div class="faq-content">
+Definitely yes, because such schemas/snippets cover more area on the screen on SERPs (Search Engine Result Pages), which increases the chances of getting more clicks on your page. With the update, you'll likely get fewer clicks but approximately the same impressions (depending on your site's SEO).
+</div>
+</div>
+<div class="faq">
+<button onclick="toggleFAQ(this)">Will removing structured data by Google not affect my page ranking?<span class="arrow">▼</span></button>
+<div class="faq-content">
+Not really, but it might affect around 10%, because the schemas Google is removing help search engines understand more about your page content. Out of the 7 structured data types, some were delivering richer information to Google. But you can still maintain good rankings by optimizing your content and naturally including this information within your page content.
+</div>
+</div>
+<div class="faq">
+<button onclick="toggleFAQ(this)">Does structured data still matter for mobile-first indexing?<span class="arrow">▼</span></button>
+<div class="faq-content">
+Yes, it still matters. Mobile-first indexing is more about how your site shows up on phones, but structured data still helps Google understand your content better—doesn't matter if it's mobile or desktop. So yeah, keep your schema clean and updated, it still plays a role.
+</div>
+</div>
+<div class="faq">
+<button onclick="toggleFAQ(this)">Are structured data types and schema markup the same?<span class="arrow">▼</span></button>
+<div class="faq-content">
+Not exactly, but they're closely connected. <strong>Schema markup</strong> is the code (usually in JSON-LD) you add to your web pages—it tells search engines what your content means. <br><br>
+<strong>Structured data types</strong> are specific categories within that code—like <code>Product</code>, <code>FAQPage</code>, or <code>Article</code>—used to define what kind of content you're describing. <br><br>
+So schema is the language, and structured data types are what you're describing using that language.
+</div>
+</div>
+</div>
 <footer>
-
-  © 2025 Best Digital Marketer. All Rights Reserved.
+© 2026 Best Digital Marketer. All Rights Reserved.
 </footer>
 
 <script>
-  function toggleFAQ(button) {
-    const faqItem = button.parentElement;
-    const content = button.nextElementSibling;
-    const isOpen = faqItem.classList.contains('open');
+// Toggle Function for Nav
+function toggleMobileMenu() {
+    const menu = document.getElementById('mobileMenu');
+    menu.classList.toggle('active');
+}
+function closeMobileMenu() {
+    const menu = document.getElementById('mobileMenu');
+    menu.classList.remove('active');
+}
 
-    document.querySelectorAll('.faq').forEach(faq => {
-      faq.classList.remove('open');
-      faq.querySelector('.faq-content').style.display = "none";
-    });
-
-    if (!isOpen) {
-      faqItem.classList.add('open');
-      content.style.display = "block";
-    }
-  }
+// Blog FAQ function
+function toggleFAQ(button) {
+const faqItem = button.parentElement;
+const content = button.nextElementSibling;
+const isOpen = faqItem.classList.contains('open');
+document.querySelectorAll('.faq').forEach(faq => {
+faq.classList.remove('open');
+faq.querySelector('.faq-content').style.display = "none";
+});
+if (!isOpen) {
+faqItem.classList.add('open');
+content.style.display = "block";
+}
+}
 </script>
-
 </body>
 </html>
