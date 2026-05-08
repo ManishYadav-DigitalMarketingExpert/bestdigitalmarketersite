@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SEO Services - Best Digital Marketer | #1 Search Engine Optimization</title>
+<meta name="description" content="Dominate Google search rankings with Best Digital Marketer's proven SEO strategies. On-Page, Off-Page, Technical SEO, Link Building & more across 175+ countries.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{
+--bg-dark:#0a0a0f;--bg-card:#12121a;--bg-card-hover:#1a1a25;
+--text-white:#ffffff;--text-gray:#9ca3af;--text-light-gray:#d1d5db;
+--primary:#00d4aa;--primary-dark:#00b894;--accent:#ff6b35;--accent-hover:#ff8555;
+--border-color:#2a2a3a;
+--gradient-1:linear-gradient(135deg,#00d4aa 0%,#00b894 100%);
+--gradient-2:linear-gradient(135deg,#ff6b35 0%,#ff8555 100%);
+--gradient-hero:linear-gradient(135deg,rgba(0,212,170,0.1) 0%,rgba(255,107,53,0.05) 100%);
+}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;background:var(--bg-dark);color:var(--text-white);line-height:1.6;overflow-x:hidden}
+h1,h2,h3,h4,h5,h6{font-family:'Space Grotesk',sans-serif;font-weight:700;line-height:1.2}
+a{text-decoration:none;color:inherit;transition:all 0.3s ease}
+img{max-width:100%;height:auto}
+.container{max-width:1280px;margin:0 auto;padding:0 24px}
+
+/* NAV */
+.navbar{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(10,10,15,0.95);backdrop-filter:blur(20px);border-bottom:1px solid var(--border-color);padding:16px 0}
+.nav-container{display:flex;justify-content:space-between;align-items:center}
+.logo{display:flex;align-items:center;gap:12px;font-family:'Space Grotesk',sans-serif;font-size:24px;font-weight:700}
+.logo-icon{width:40px;height:40px;background:var(--gradient-1);border-radius:10px;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:18px;color:var(--bg-dark)}
+.nav-links{display:flex;gap:32px;list-style:none}
+.nav-links a{color:var(--text-gray);font-size:15px;font-weight:500;position:relative}
+.nav-links a:hover{color:var(--primary)}
+.nav-links a::after{content:'';position:absolute;bottom:-4px;left:0;width:0;height:2px;background:var(--primary);transition:width 0.3s ease}
+.nav-links a:hover::after{width:100%}
+.nav-cta{background:var(--gradient-1);color:var(--bg-dark);padding:12px 28px;border-radius:50px;font-weight:600;font-size:14px;border:none;cursor:pointer;transition:transform 0.3s ease,box-shadow 0.3s ease}
+.nav-cta:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(0,212,170,0.3)}
+.mobile-toggle{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:10px}
+.mobile-toggle span{width:25px;height:2px;background:var(--text-white);transition:all 0.3s ease}
+.mobile-menu{display:none;position:fixed;top:73px;left:0;right:0;background:rgba(10,10,15,0.98);backdrop-filter:blur(20px);border-bottom:1px solid var(--border-color);padding:24px;z-index:999}
+.mobile-menu.active{display:block}
+.mobile-menu ul{list-style:none}
+.mobile-menu li{margin-bottom:16px}
+.mobile-menu a{color:var(--text-white);font-size:18px;font-weight:500}
+.mobile-menu .nav-cta{display:block;text-align:center;margin-top:20px}
+
+/* BREADCRUMB */
+.breadcrumb{padding:100px 0 20px;background:var(--bg-dark)}
+.breadcrumb-inner{display:flex;align-items:center;gap:8px;font-size:14px;color:var(--text-gray)}
+.breadcrumb-inner a{color:var(--primary)}
+.breadcrumb-inner span{color:var(--text-gray)}
+
+/* HERO */
+.seo-hero{padding:20px 0 100px;position:relative;overflow:hidden;background:var(--bg-dark)}
+.seo-hero::before{content:'';position:absolute;top:0;left:0;right:0;bottom:0;background:var(--gradient-hero);pointer-events:none}
+.hero-glow{position:absolute;width:700px;height:700px;background:radial-gradient(circle,rgba(0,212,170,0.12) 0%,transparent 70%);top:-200px;right:-200px;pointer-events:none}
+.hero-glow-2{position:absolute;width:500px;height:500px;background:radial-gradient(circle,rgba(255,107,53,0.08) 0%,transparent 70%);bottom:-100px;left:-100px;pointer-events:none}
+.seo-hero-inner{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;position:relative;z-index:1}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(0,212,170,0.1);border:1px solid rgba(0,212,170,0.3);padding:8px 16px;border-radius:50px;font-size:13px;color:var(--primary);margin-bottom:24px}
+.hero-badge::before{content:'';width:8px;height:8px;background:var(--primary);border-radius:50%;animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:0.5}}
+.seo-hero h1{font-size:58px;line-height:1.1;margin-bottom:24px;background:linear-gradient(135deg,#fff 0%,#d1d5db 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.seo-hero h1 span{background:var(--gradient-1);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.hero-desc{font-size:18px;color:var(--text-gray);margin-bottom:32px;line-height:1.8}
+.hero-btns{display:flex;gap:16px;margin-bottom:40px;flex-wrap:wrap}
+.btn-primary{background:var(--gradient-1);color:var(--bg-dark);padding:16px 32px;border-radius:50px;font-weight:600;font-size:16px;border:none;cursor:pointer;display:inline-flex;align-items:center;gap:8px;transition:all 0.3s ease}
+.btn-primary:hover{transform:translateY(-3px);box-shadow:0 15px 40px rgba(0,212,170,0.4)}
+.btn-secondary{background:transparent;color:var(--text-white);padding:16px 32px;border-radius:50px;font-weight:600;font-size:16px;border:2px solid var(--border-color);cursor:pointer;display:inline-flex;align-items:center;gap:8px;transition:all 0.3s ease}
+.btn-secondary:hover{border-color:var(--primary);color:var(--primary)}
+.hero-pills{display:flex;flex-wrap:wrap;gap:10px}
+.hero-pill{background:rgba(0,212,170,0.08);border:1px solid rgba(0,212,170,0.2);color:var(--primary);padding:6px 14px;border-radius:20px;font-size:13px;font-weight:500}
+
+/* SEO VISUAL CARD */
+.seo-visual{position:relative}
+.seo-rank-card{background:var(--bg-card);border:1px solid var(--border-color);border-radius:24px;padding:28px;position:relative;overflow:hidden}
+.seo-rank-card::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:var(--gradient-1)}
+.rank-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px}
+.rank-title{font-size:16px;font-weight:600;color:var(--text-light-gray)}
+.rank-live{background:rgba(0,212,170,0.1);color:var(--primary);padding:4px 12px;border-radius:20px;font-size:12px;font-weight:600;display:flex;align-items:center;gap:6px}
+.rank-live::before{content:'';width:6px;height:6px;background:var(--primary);border-radius:50%;animation:pulse 1.5s infinite}
+.rank-list{display:flex;flex-direction:column;gap:12px}
+.rank-item{display:flex;align-items:center;gap:12px;padding:10px 14px;border-radius:12px;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.05);transition:all 0.3s}
+.rank-item:hover{background:rgba(0,212,170,0.05);border-color:rgba(0,212,170,0.2)}
+.rank-num{width:28px;height:28px;border-radius:8px;background:var(--gradient-1);display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;color:var(--bg-dark);flex-shrink:0}
+.rank-num.top{background:linear-gradient(135deg,#ffd700,#ffaa00)}
+.rank-kw{flex:1;font-size:14px;font-weight:500}
+.rank-pos{font-size:13px;color:var(--primary);font-weight:600;background:rgba(0,212,170,0.1);padding:3px 10px;border-radius:8px}
+.rank-change{font-size:12px;color:#4ade80}
+.floating-seo{position:absolute;background:var(--bg-card);border:1px solid var(--border-color);border-radius:16px;padding:14px 18px;display:flex;align-items:center;gap:10px;box-shadow:0 20px 40px rgba(0,0,0,0.3)}
+.floating-seo-1{top:-20px;right:-20px;animation:float 3s ease-in-out infinite}
+.floating-seo-2{bottom:20px;left:-30px;animation:float 3s ease-in-out infinite 0.7s}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+.float-icon{width:40px;height:40px;background:var(--gradient-1);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0}
+.float-icon.org{background:var(--gradient-2)}
+.float-txt strong{display:block;font-size:14px}
+.float-txt span{font-size:12px;color:var(--text-gray)}
+
+/* SECTION COMMONS */
+section{padding:100px 0}
+.section-header{text-align:center;max-width:700px;margin:0 auto 60px}
+.section-tag{display:inline-block;background:rgba(0,212,170,0.1);color:var(--primary);padding:6px 16px;border-radius:20px;font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:1px;margin-bottom:16px}
+.section-title{font-size:44px;margin-bottom:16px}
+.section-title span{color:var(--primary)}
+.section-desc{font-size:18px;color:var(--text-gray)}
+
+/* STATS STRIP */
+.stats-strip{background:var(--bg-card);border-top:1px solid var(--border-color);border-bottom:1px solid var(--border-color);padding:48px 0}
+.stats-inner{display:grid;grid-template-columns:repeat(4,1fr);gap:32px;text-align:center}
+.stat-box{position:relative}
+.stat-box:not(:last-child)::after{content:'';position:absolute;right:0;top:50%;transform:translateY(-50%);height:60px;width:1px;background:var(--border-color)}
+.stat-num{font-family:'Space Grotesk',sans-serif;font-size:48px;font-weight:700;color:var(--primary);line-height:1}
+.stat-lbl{font-size:14px;color:var(--text-gray);margin-top:8px}
+
+/* SEO PILLARS */
+.pillars{background:linear-gradient(180deg,var(--bg-dark) 0%,rgba(18,18,26,0.5) 100%)}
+.pillars-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.pillar-card{background:var(--bg-card);border:1px solid var(--border-color);border-radius:20px;padding:32px;transition:all 0.4s ease;position:relative;overflow:hidden;cursor:default}
+.pillar-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--gradient-1);transform:scaleX(0);transition:transform 0.4s ease}
+.pillar-card:hover{transform:translateY(-8px);border-color:rgba(0,212,170,0.3);box-shadow:0 20px 50px rgba(0,0,0,0.3)}
+.pillar-card:hover::before{transform:scaleX(1)}
+.pillar-icon{width:64px;height:64px;background:linear-gradient(135deg,rgba(0,212,170,0.2),rgba(0,212,170,0.05));border-radius:16px;display:flex;align-items:center;justify-content:center;font-size:30px;margin-bottom:20px;transition:all 0.3s}
+.pillar-card:hover .pillar-icon{background:var(--gradient-1);transform:scale(1.1) rotate(-5deg)}
+.pillar-card h3{font-size:20px;margin-bottom:12px}
+.pillar-card p{font-size:15px;color:var(--text-gray);line-height:1.7;margin-bottom:16px}
+.pillar-features{display:flex;flex-direction:column;gap:8px}
+.pf-item{display:flex;align-items:center;gap:8px;font-size:14px;color:var(--text-light-gray)}
+.pf-item::before{content:'✓';color:var(--primary);font-weight:700;font-size:13px}
+
+/* PROCESS */
+.process{background:var(--bg-card)}
+.process-steps{display:grid;grid-template-columns:repeat(5,1fr);gap:0;position:relative}
+.process-steps::before{content:'';position:absolute;top:40px;left:10%;right:10%;height:2px;background:linear-gradient(90deg,var(--primary),rgba(0,212,170,0.2));z-index:0}
+.step{text-align:center;position:relative;z-index:1;padding:20px}
+.step-num{width:80px;height:80px;background:var(--bg-dark);border:2px solid var(--primary);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 20px;font-family:'Space Grotesk',sans-serif;font-size:24px;font-weight:700;color:var(--primary);position:relative;transition:all 0.3s}
+.step:hover .step-num{background:var(--gradient-1);color:var(--bg-dark);transform:scale(1.1)}
+.step h4{font-size:16px;margin-bottom:8px}
+.step p{font-size:13px;color:var(--text-gray);line-height:1.6}
+
+/* WHY INTERACTIVE */
+.why-seo{background:var(--bg-dark)}
+.why-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.why-left h2{font-size:42px;line-height:1.2;margin-bottom:20px}
+.why-left h2 span{color:var(--primary)}
+.why-left p{font-size:16px;color:var(--text-gray);line-height:1.8;margin-bottom:32px}
+.why-checks{display:flex;flex-direction:column;gap:16px}
+.why-check{display:flex;align-items:flex-start;gap:16px;padding:16px;background:var(--bg-card);border:1px solid var(--border-color);border-radius:12px;transition:all 0.3s}
+.why-check:hover{border-color:rgba(0,212,170,0.3);transform:translateX(8px)}
+.check-icon{width:40px;height:40px;background:rgba(0,212,170,0.1);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0;transition:all 0.3s}
+.why-check:hover .check-icon{background:var(--gradient-1)}
+.check-text strong{display:block;font-size:15px;margin-bottom:4px}
+.check-text span{font-size:13px;color:var(--text-gray)}
+.why-right{position:relative}
+.seo-donut{background:var(--bg-card);border:1px solid var(--border-color);border-radius:24px;padding:32px}
+.donut-title{font-size:18px;font-weight:600;margin-bottom:24px;text-align:center}
+.donut-wrap{display:flex;align-items:center;gap:32px;flex-wrap:wrap;justify-content:center}
+.donut-svg{width:160px;height:160px;flex-shrink:0}
+.donut-legend{display:flex;flex-direction:column;gap:12px;flex:1;min-width:140px}
+.legend-item{display:flex;align-items:center;gap:10px;font-size:14px}
+.legend-dot{width:12px;height:12px;border-radius:50%;flex-shrink:0}
+.legend-pct{margin-left:auto;font-weight:600;color:var(--primary)}
+.seo-score{margin-top:24px;padding:20px;background:rgba(0,212,170,0.05);border:1px solid rgba(0,212,170,0.15);border-radius:16px}
+.score-label{font-size:13px;color:var(--text-gray);margin-bottom:8px}
+.score-bar{height:8px;background:rgba(255,255,255,0.05);border-radius:8px;overflow:hidden;margin-bottom:8px}
+.score-fill{height:100%;background:var(--gradient-1);border-radius:8px;transition:width 1s ease}
+.score-num{font-size:12px;color:var(--text-gray);text-align:right}
+
+/* PACKAGES */
+.packages{background:var(--bg-card)}
+.pkg-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.pkg-card{background:var(--bg-dark);border:1px solid var(--border-color);border-radius:24px;padding:36px;transition:all 0.4s ease;position:relative;overflow:hidden}
+.pkg-card.featured{border-color:var(--primary);box-shadow:0 0 40px rgba(0,212,170,0.15)}
+.pkg-popular{position:absolute;top:20px;right:20px;background:var(--gradient-1);color:var(--bg-dark);padding:4px 14px;border-radius:20px;font-size:12px;font-weight:700}
+.pkg-card:hover{transform:translateY(-8px);box-shadow:0 25px 50px rgba(0,0,0,0.3)}
+.pkg-card.featured:hover{box-shadow:0 25px 50px rgba(0,212,170,0.2)}
+.pkg-icon{font-size:40px;margin-bottom:16px}
+.pkg-name{font-size:22px;font-weight:700;margin-bottom:8px}
+.pkg-tagline{font-size:14px;color:var(--text-gray);margin-bottom:24px}
+.pkg-price{font-family:'Space Grotesk',sans-serif;font-size:36px;font-weight:700;color:var(--primary);margin-bottom:4px}
+.pkg-price span{font-size:16px;color:var(--text-gray);font-weight:400}
+.pkg-billing{font-size:13px;color:var(--text-gray);margin-bottom:24px}
+.pkg-features{list-style:none;display:flex;flex-direction:column;gap:10px;margin-bottom:32px}
+.pkg-features li{display:flex;align-items:center;gap:10px;font-size:14px;color:var(--text-light-gray)}
+.pkg-features li::before{content:'✓';color:var(--primary);font-weight:700;font-size:13px;flex-shrink:0}
+.pkg-features li.no{color:var(--text-gray)}
+.pkg-features li.no::before{content:'✗';color:#6b7280}
+.pkg-btn{width:100%;padding:14px;border-radius:50px;font-size:15px;font-weight:600;border:none;cursor:pointer;transition:all 0.3s}
+.pkg-btn.outline{background:transparent;border:2px solid var(--border-color);color:var(--text-white)}
+.pkg-btn.outline:hover{border-color:var(--primary);color:var(--primary)}
+.pkg-btn.fill{background:var(--gradient-1);color:var(--bg-dark)}
+.pkg-btn.fill:hover{box-shadow:0 10px 30px rgba(0,212,170,0.4);transform:translateY(-2px)}
+
+/* TOOLS */
+.seo-tools{background:var(--bg-dark)}
+.tools-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:20px}
+.tool-item{background:var(--bg-card);border:1px solid var(--border-color);border-radius:16px;padding:24px;text-align:center;transition:all 0.3s}
+.tool-item:hover{border-color:var(--primary);transform:translateY(-5px);box-shadow:0 15px 40px rgba(0,0,0,0.2)}
+.tool-icon{width:50px;height:50px;background:linear-gradient(135deg,rgba(0,212,170,0.2),rgba(0,212,170,0.05));border-radius:12px;display:flex;align-items:center;justify-content:center;margin:0 auto 12px;font-size:24px}
+.tool-item span{font-size:12px;font-weight:600;color:var(--text-light-gray)}
+
+/* CASE STUDIES */
+.case-studies{background:var(--bg-card)}
+.cs-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.cs-card{background:var(--bg-dark);border:1px solid var(--border-color);border-radius:20px;padding:28px;transition:all 0.4s;overflow:hidden;position:relative}
+.cs-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--gradient-1)}
+.cs-card:hover{transform:translateY(-6px);box-shadow:0 20px 40px rgba(0,0,0,0.3);border-color:rgba(0,212,170,0.2)}
+.cs-industry{font-size:12px;font-weight:600;color:var(--primary);text-transform:uppercase;letter-spacing:1px;margin-bottom:12px}
+.cs-card h4{font-size:18px;margin-bottom:8px;line-height:1.4}
+.cs-challenge{font-size:14px;color:var(--text-gray);margin-bottom:20px;line-height:1.6}
+.cs-metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.cs-metric{text-align:center;padding:12px;background:rgba(0,212,170,0.05);border:1px solid rgba(0,212,170,0.1);border-radius:10px}
+.cs-metric strong{display:block;font-family:'Space Grotesk',sans-serif;font-size:22px;color:var(--primary);line-height:1}
+.cs-metric span{font-size:11px;color:var(--text-gray);margin-top:4px;display:block}
+
+/* FAQ */
+.seo-faq{background:var(--bg-dark)}
+.faq-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.faq-item{background:var(--bg-card);border:1px solid var(--border-color);border-radius:16px;overflow:hidden;transition:all 0.3s}
+.faq-item:hover{border-color:rgba(0,212,170,0.3)}
+.faq-item.active{border-color:var(--primary);box-shadow:0 10px 30px rgba(0,0,0,0.2)}
+.faq-question{display:flex;justify-content:space-between;align-items:center;padding:20px 24px;cursor:pointer;gap:16px}
+.faq-question h3{font-size:16px;font-weight:600;line-height:1.4;margin:0}
+.faq-icon{width:32px;height:32px;min-width:32px;background:linear-gradient(135deg,rgba(0,212,170,0.2),rgba(0,212,170,0.05));border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:20px;font-weight:300;color:var(--primary);transition:all 0.3s}
+.faq-item.active .faq-icon{background:var(--gradient-1);color:var(--bg-dark);transform:rotate(45deg)}
+.faq-answer{max-height:0;overflow:hidden;transition:max-height 0.4s ease}
+.faq-answer p{padding:0 24px 20px;font-size:15px;color:var(--text-gray);line-height:1.7;margin:0}
+.faq-item.active .faq-answer{max-height:300px}
+
+/* CTA BANNER */
+.cta-banner{background:linear-gradient(135deg,rgba(0,212,170,0.15) 0%,rgba(255,107,53,0.08) 100%);border-top:1px solid rgba(0,212,170,0.2);border-bottom:1px solid rgba(0,212,170,0.2);padding:80px 0}
+.cta-inner{text-align:center;max-width:700px;margin:0 auto}
+.cta-inner h2{font-size:44px;margin-bottom:16px;line-height:1.2}
+.cta-inner h2 span{color:var(--primary)}
+.cta-inner p{font-size:18px;color:var(--text-gray);margin-bottom:32px}
+.cta-btns{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+.cta-phone{display:flex;align-items:center;gap:8px;color:var(--text-gray);font-size:15px;margin-top:20px;justify-content:center}
+.cta-phone a{color:var(--primary);font-weight:600}
+
+/* FOOTER */
+.footer{background:var(--bg-card);border-top:1px solid var(--border-color);padding:80px 0 40px}
+.footer-content{display:grid;grid-template-columns:1fr 1fr;gap:80px}
+.footer-left .logo{margin-bottom:20px}
+.footer-description{font-size:15px;color:var(--text-gray);line-height:1.8;margin-bottom:24px;max-width:400px}
+.footer-links{display:flex;gap:48px;margin-bottom:32px}
+.footer-links-column h4{font-size:16px;margin-bottom:16px;color:var(--text-white)}
+.footer-links-column ul{list-style:none}
+.footer-links-column li{margin-bottom:10px}
+.footer-links-column a{color:var(--text-gray);font-size:14px}
+.footer-links-column a:hover{color:var(--primary)}
+.social-links{display:flex;gap:12px}
+.social-link{width:44px;height:44px;background:var(--bg-dark);border:1px solid var(--border-color);border-radius:12px;display:flex;align-items:center;justify-content:center;transition:all 0.3s}
+.social-link img{width:22px;height:22px}
+.social-link:hover{background:var(--primary);border-color:var(--primary);transform:translateY(-3px)}
+.footer-form{background:var(--bg-dark);border:1px solid var(--border-color);border-radius:24px;padding:36px}
+.footer-form h3{font-size:24px;margin-bottom:8px}
+.footer-form p{font-size:15px;color:var(--text-gray);margin-bottom:24px}
+.form-group{margin-bottom:16px}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.form-group input,.form-group textarea{width:100%;background:var(--bg-card);border:1px solid var(--border-color);border-radius:12px;padding:14px 18px;font-size:15px;color:var(--text-white);font-family:inherit;transition:all 0.3s}
+.form-group input:focus,.form-group textarea:focus{outline:none;border-color:var(--primary);box-shadow:0 0 0 3px rgba(0,212,170,0.1)}
+.form-group input::placeholder,.form-group textarea::placeholder{color:var(--text-gray)}
+.form-group textarea{min-height:100px;resize:vertical}
+.form-submit{width:100%;background:var(--gradient-1);color:var(--bg-dark);padding:16px;border-radius:12px;font-size:16px;font-weight:600;border:none;cursor:pointer;transition:all 0.3s}
+.form-submit:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(0,212,170,0.4)}
+.footer-bottom{border-top:1px solid var(--border-color);margin-top:48px;padding-top:24px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px}
+.footer-copyright{font-size:14px;color:var(--text-gray)}
+.footer-legal{display:flex;gap:24px}
+.footer-legal a{font-size:14px;color:var(--text-gray)}
+.footer-legal a:hover{color:var(--primary)}
+
+/* RESPONSIVE */
+@media(max-width:1200px){.pillars-grid{grid-template-columns:repeat(2,1fr)}.tools-grid{grid-template-columns:repeat(4,1fr)}.cs-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:992px){.seo-hero-inner{grid-template-columns:1fr}.why-grid{grid-template-columns:1fr}.footer-content{grid-template-columns:1fr;gap:48px}.nav-links{display:none}.nav-cta{display:none}.mobile-toggle{display:flex}.process-steps{grid-template-columns:repeat(3,1fr)}.process-steps::before{display:none}.pkg-grid{grid-template-columns:1fr}.stats-inner{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:768px){.seo-hero h1{font-size:36px}.section-title{font-size:32px}.pillars-grid{grid-template-columns:1fr}.cs-grid{grid-template-columns:1fr}.faq-grid{grid-template-columns:1fr}.tools-grid{grid-template-columns:repeat(3,1fr)}.process-steps{grid-template-columns:repeat(2,1fr)}.footer-links{flex-direction:column;gap:24px}.footer-bottom{flex-direction:column;text-align:center}.form-row{grid-template-columns:1fr}.floating-seo{display:none}.hero-btns{flex-direction:column}}
+@media(max-width:480px){.container{padding:0 16px}section{padding:60px 0}.tools-grid{grid-template-columns:repeat(2,1fr)}.stats-inner{grid-template-columns:1fr}.stat-box::after{display:none}}
+</style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="container nav-container">
+    <a href="https://bestdigitalmarketer.com/" class="logo">
+      <div class="logo-icon">BDM</div>
+      Best Digital Marketer
+    </a>
+    <ul class="nav-links">
+      <li><a href="https://bestdigitalmarketer.com/#services">Services</a></li>
+      <li><a href="https://bestdigitalmarketer.com/#about">About</a></li>
+      <li><a href="https://bestdigitalmarketer.com/#industries">Industries</a></li>
+      <li><a href="https://bestdigitalmarketer.com/#why-us">Why Us</a></li>
+      <li><a href="https://bestdigitalmarketer.com/#blog">Blog</a></li>
+      <li><a href="https://bestdigitalmarketer.com/#contact">Contact</a></li>
+    </ul>
+    <a href="https://bestdigitalmarketer.com/tools/word-counter/" class="nav-cta">Word Counter</a>
+    <div class="mobile-toggle" onclick="toggleMobileMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="https://bestdigitalmarketer.com/#services" onclick="closeMobileMenu()">Services</a></li>
+      <li><a href="https://bestdigitalmarketer.com/#about" onclick="closeMobileMenu()">About</a></li>
+      <li><a href="https://bestdigitalmarketer.com/#industries" onclick="closeMobileMenu()">Industries</a></li>
+      <li><a href="https://bestdigitalmarketer.com/#why-us" onclick="closeMobileMenu()">Why Us</a></li>
+      <li><a href="https://bestdigitalmarketer.com/#blog" onclick="closeMobileMenu()">Blog</a></li>
+      <li><a href="https://bestdigitalmarketer.com/#contact" onclick="closeMobileMenu()">Contact</a></li>
+    </ul>
+    <a href="https://bestdigitalmarketer.com/tools/word-counter/" class="nav-cta">Word Counter</a>
+  </div>
+</nav>
+
+<!-- BREADCRUMB -->
+<div class="breadcrumb">
+  <div class="container">
+    <div class="breadcrumb-inner">
+      <a href="https://bestdigitalmarketer.com/">Home</a>
+      <span>›</span>
+      <a href="https://bestdigitalmarketer.com/#services">Services</a>
+      <span>›</span>
+      <span>Search Engine Optimization</span>
+    </div>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="seo-hero">
+  <div class="hero-glow"></div>
+  <div class="hero-glow-2"></div>
+  <div class="container">
+    <div class="seo-hero-inner">
+      <div>
+        <div class="hero-badge">🔍 #1 Ranked SEO Agency</div>
+        <h1>Dominate <span>Google Rankings</span> & Drive Organic Revenue</h1>
+        <p class="hero-desc">We build high-performance SEO strategies that rank your brand at the top of search engines, attract high-intent buyers, and deliver sustainable organic growth — across 175+ countries.</p>
+        <div class="hero-btns">
+          <a href="#contact" class="btn-primary">Get Free SEO Audit &#8594;</a>
+          <a href="#packages" class="btn-secondary">View Packages</a>
+        </div>
+        <div class="hero-pills">
+          <span class="hero-pill">✓ On-Page SEO</span>
+          <span class="hero-pill">✓ Technical SEO</span>
+          <span class="hero-pill">✓ Link Building</span>
+          <span class="hero-pill">✓ Local SEO</span>
+          <span class="hero-pill">✓ E-Commerce SEO</span>
+          <span class="hero-pill">✓ International SEO</span>
+        </div>
+      </div>
+      <div class="seo-visual">
+        <div class="seo-rank-card">
+          <div class="rank-header">
+            <span class="rank-title">Live Keyword Rankings</span>
+            <span class="rank-live">Live</span>
+          </div>
+          <div class="rank-list">
+            <div class="rank-item">
+              <div class="rank-num top">🥇</div>
+              <span class="rank-kw">best digital marketer</span>
+              <span class="rank-pos">#1</span>
+              <span class="rank-change">↑ 47</span>
+            </div>
+            <div class="rank-item">
+              <div class="rank-num">2</div>
+              <span class="rank-kw">seo services india</span>
+              <span class="rank-pos">#2</span>
+              <span class="rank-change">↑ 23</span>
+            </div>
+            <div class="rank-item">
+              <div class="rank-num">3</div>
+              <span class="rank-kw">google ads management agency</span>
+              <span class="rank-pos">#3</span>
+              <span class="rank-change">↑ 15</span>
+            </div>
+            <div class="rank-item">
+              <div class="rank-num">4</div>
+              <span class="rank-kw">technical seo audit service</span>
+              <span class="rank-pos">#4</span>
+              <span class="rank-change">↑ 31</span>
+            </div>
+            <div class="rank-item">
+              <div class="rank-num">5</div>
+              <span class="rank-kw">ecommerce seo experts</span>
+              <span class="rank-pos">#5</span>
+              <span class="rank-change">↑ 19</span>
+            </div>
+          </div>
+        </div>
+        <div class="floating-seo floating-seo-1">
+          <div class="float-icon">📈</div>
+          <div class="float-txt">
+            <strong>35K+ Keywords</strong>
+            <span>Ranked on SERP</span>
+          </div>
+        </div>
+        <div class="floating-seo floating-seo-2">
+          <div class="float-icon org">🌍</div>
+          <div class="float-txt">
+            <strong>175+ Countries</strong>
+            <span>Global SEO Reach</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS STRIP -->
+<div class="stats-strip">
+  <div class="container">
+    <div class="stats-inner">
+      <div class="stat-box">
+        <div class="stat-num">35K+</div>
+        <div class="stat-lbl">Keywords Ranked on SERP</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-num">8+</div>
+        <div class="stat-lbl">Years of SEO Experience</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-num">95%</div>
+        <div class="stat-lbl">Client Retention Rate</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-num">25+</div>
+        <div class="stat-lbl">Industries Served</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SEO PILLARS -->
+<section class="pillars" id="services">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">SEO Services</span>
+      <h2 class="section-title">Complete <span>SEO Solutions</span> Under One Roof</h2>
+      <p class="section-desc">From technical foundations to authority-building link strategies — we cover every aspect of SEO to make your brand the top choice on Google.</p>
+    </div>
+    <div class="pillars-grid">
+      <div class="pillar-card">
+        <div class="pillar-icon">🔧</div>
+        <h3>Technical SEO</h3>
+        <p>Fix the foundation of your website — speed, crawlability, indexation, and Core Web Vitals — so search engines can find and rank your pages efficiently.</p>
+        <div class="pillar-features">
+          <div class="pf-item">Site Speed & Core Web Vitals Optimization</div>
+          <div class="pf-item">XML Sitemap & Robots.txt Setup</div>
+          <div class="pf-item">Canonical Tags & Redirect Fixes</div>
+          <div class="pf-item">Mobile-First Indexing Audit</div>
+          <div class="pf-item">Structured Data / Schema Markup</div>
+          <div class="pf-item">Crawl Error & 404 Resolution</div>
+        </div>
+      </div>
+      <div class="pillar-card">
+        <div class="pillar-icon">📝</div>
+        <h3>On-Page SEO</h3>
+        <p>Optimize every element on your pages to communicate relevance, intent and value to search engines — driving higher rankings and better click-through rates.</p>
+        <div class="pillar-features">
+          <div class="pf-item">Keyword Research & Mapping</div>
+          <div class="pf-item">Meta Titles & Description Optimization</div>
+          <div class="pf-item">Header Tags (H1–H6) Structuring</div>
+          <div class="pf-item">Content Gap Analysis & Rewriting</div>
+          <div class="pf-item">Internal Linking Strategy</div>
+          <div class="pf-item">Image Alt Text & SEO Optimization</div>
+        </div>
+      </div>
+      <div class="pillar-card">
+        <div class="pillar-icon">🔗</div>
+        <h3>Off-Page SEO & Link Building</h3>
+        <p>Build domain authority and trust through strategic, high-quality backlink acquisition from relevant, authoritative websites across the web.</p>
+        <div class="pillar-features">
+          <div class="pf-item">High DA Backlink Outreach</div>
+          <div class="pf-item">Guest Posting on Niche Sites</div>
+          <div class="pf-item">Digital PR & Media Coverage</div>
+          <div class="pf-item">Broken Link Building</div>
+          <div class="pf-item">Brand Mentions & Citations</div>
+          <div class="pf-item">Toxic Link Disavow Audit</div>
+        </div>
+      </div>
+      <div class="pillar-card">
+        <div class="pillar-icon">🏪</div>
+        <h3>Local SEO</h3>
+        <p>Dominate local search results and Google Maps to capture nearby customers searching for your products or services in real time.</p>
+        <div class="pillar-features">
+          <div class="pf-item">Google Business Profile Optimization</div>
+          <div class="pf-item">Local Citation Building & Cleanup</div>
+          <div class="pf-item">Location-Specific Landing Pages</div>
+          <div class="pf-item">Review Management Strategy</div>
+          <div class="pf-item">NAP Consistency Audit</div>
+          <div class="pf-item">Local Keyword Targeting</div>
+        </div>
+      </div>
+      <div class="pillar-card">
+        <div class="pillar-icon">🛒</div>
+        <h3>E-Commerce SEO</h3>
+        <p>Drive qualified organic buyers to your online store with category, product, and collection-level SEO built for conversion and revenue.</p>
+        <div class="pillar-features">
+          <div class="pf-item">Product & Category Page Optimization</div>
+          <div class="pf-item">Shopify / WooCommerce SEO Audit</div>
+          <div class="pf-item">Product Schema & Rich Snippets</div>
+          <div class="pf-item">Duplicate Content Resolution</div>
+          <div class="pf-item">Amazon & Marketplace SEO</div>
+          <div class="pf-item">Conversion-Focused Content Strategy</div>
+        </div>
+      </div>
+      <div class="pillar-card">
+        <div class="pillar-icon">🌐</div>
+        <h3>International SEO</h3>
+        <p>Expand your brand's reach globally with multilingual and multi-regional SEO strategies that rank you in the right country, for the right audience.</p>
+        <div class="pillar-features">
+          <div class="pf-item">Hreflang Tag Implementation</div>
+          <div class="pf-item">Country-Specific Keyword Research</div>
+          <div class="pf-item">International Link Building</div>
+          <div class="pf-item">Geo-Targeted Content Strategy</div>
+          <div class="pf-item">ccTLD & Subdomain SEO Strategy</div>
+          <div class="pf-item">Multilingual Content Optimization</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="process">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Our Process</span>
+      <h2 class="section-title">How We <span>Rank You #1</span></h2>
+      <p class="section-desc">A proven 5-step SEO framework designed to deliver consistent, long-lasting rankings and organic revenue growth.</p>
+    </div>
+    <div class="process-steps">
+      <div class="step">
+        <div class="step-num">01</div>
+        <h4>Deep Audit</h4>
+        <p>Full technical, on-page & competitor SEO audit to find gaps and opportunities.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">02</div>
+        <h4>Strategy Build</h4>
+        <p>Custom SEO roadmap with keyword targeting, content strategy & link plan.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">03</div>
+        <h4>Implementation</h4>
+        <p>Technical fixes, on-page optimization & quality content creation executed.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">04</div>
+        <h4>Authority Building</h4>
+        <p>Strategic backlink campaigns to build domain authority and trust signals.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">05</div>
+        <h4>Track & Scale</h4>
+        <p>Monthly reports, live dashboards, and continuous optimization to scale results.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY SEO -->
+<section class="why-seo">
+  <div class="container">
+    <div class="why-grid">
+      <div class="why-left">
+        <h2>Why SEO is the <span>Best Long-Term Investment</span> for Your Business</h2>
+        <p>Unlike paid ads that stop the moment you pause spending, SEO builds a compounding asset. Every keyword you rank for, every backlink earned, and every optimized page is a permanent growth lever that delivers traffic 24/7 — for free.</p>
+        <div class="why-checks">
+          <div class="why-check">
+            <div class="check-icon">🎯</div>
+            <div class="check-text">
+              <strong>High-Intent Traffic</strong>
+              <span>SEO brings people already searching for your solution — they convert 8x better than social traffic.</span>
+            </div>
+          </div>
+          <div class="why-check">
+            <div class="check-icon">💰</div>
+            <div class="check-text">
+              <strong>Lowest Cost Per Acquisition</strong>
+              <span>Over time, organic search has the lowest CAC of any digital channel — and it compounds.</span>
+            </div>
+          </div>
+          <div class="why-check">
+            <div class="check-icon">🏆</div>
+            <div class="check-text">
+              <strong>Builds Brand Authority</strong>
+              <span>Ranking #1 on Google builds massive trust and credibility — more than any ad can buy.</span>
+            </div>
+          </div>
+          <div class="why-check">
+            <div class="check-icon">📊</div>
+            <div class="check-text">
+              <strong>Fully Measurable ROI</strong>
+              <span>Track every keyword, every click, every conversion — full transparency with real-time dashboards.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="why-right">
+        <div class="seo-donut">
+          <div class="donut-title">Traffic Source Breakdown (Post-SEO)</div>
+          <div class="donut-wrap">
+            <svg class="donut-svg" viewBox="0 0 160 160">
+              <circle cx="80" cy="80" r="60" fill="none" stroke="#1a1a25" stroke-width="28"/>
+              <circle cx="80" cy="80" r="60" fill="none" stroke="#00d4aa" stroke-width="28" stroke-dasharray="226 150" stroke-dashoffset="0" transform="rotate(-90 80 80)"/>
+              <circle cx="80" cy="80" r="60" fill="none" stroke="#ff6b35" stroke-width="28" stroke-dasharray="75 301" stroke-dashoffset="-226" transform="rotate(-90 80 80)"/>
+              <circle cx="80" cy="80" r="60" fill="none" stroke="#6366f1" stroke-width="28" stroke-dasharray="38 338" stroke-dashoffset="-301" transform="rotate(-90 80 80)"/>
+              <circle cx="80" cy="80" r="60" fill="none" stroke="#f59e0b" stroke-width="28" stroke-dasharray="37 339" stroke-dashoffset="-339" transform="rotate(-90 80 80)"/>
+              <text x="80" y="76" text-anchor="middle" fill="#fff" font-size="18" font-family="Space Grotesk" font-weight="700">60%</text>
+              <text x="80" y="94" text-anchor="middle" fill="#9ca3af" font-size="10" font-family="Inter">Organic</text>
+            </svg>
+            <div class="donut-legend">
+              <div class="legend-item"><span class="legend-dot" style="background:#00d4aa"></span>Organic SEO<span class="legend-pct">60%</span></div>
+              <div class="legend-item"><span class="legend-dot" style="background:#ff6b35"></span>Paid Ads<span class="legend-pct">20%</span></div>
+              <div class="legend-item"><span class="legend-dot" style="background:#6366f1"></span>Social Media<span class="legend-pct">10%</span></div>
+              <div class="legend-item"><span class="legend-dot" style="background:#f59e0b"></span>Direct/Other<span class="legend-pct">10%</span></div>
+            </div>
+          </div>
+          <div class="seo-score">
+            <div class="score-label">Average Domain Authority Growth</div>
+            <div class="score-bar"><div class="score-fill" style="width:78%"></div></div>
+            <div class="score-num">DA 78/100 — achieved in 12 months</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TOOLS -->
+<section class="seo-tools">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Tech Stack</span>
+      <h2 class="section-title">SEO Tools We <span>Master</span></h2>
+      <p class="section-desc">We use the industry's most powerful SEO tools to research, audit, track, and scale your rankings with precision.</p>
+    </div>
+    <div class="tools-grid">
+      <div class="tool-item"><div class="tool-icon">📊</div><span>Google Analytics 4</span></div>
+      <div class="tool-item"><div class="tool-icon">🔍</div><span>Search Console</span></div>
+      <div class="tool-item"><div class="tool-icon">💪</div><span>Ahrefs</span></div>
+      <div class="tool-item"><div class="tool-icon">⚡</div><span>SEMrush</span></div>
+      <div class="tool-item"><div class="tool-icon">🏆</div><span>Moz Pro</span></div>
+      <div class="tool-item"><div class="tool-icon">🐸</div><span>Screaming Frog</span></div>
+      <div class="tool-item"><div class="tool-icon">💡</div><span>MS Clarity</span></div>
+      <div class="tool-item"><div class="tool-icon">📈</div><span>Power BI</span></div>
+      <div class="tool-item"><div class="tool-icon">🗺️</div><span>Sitebulb</span></div>
+      <div class="tool-item"><div class="tool-icon">🔧</div><span>GTmetrix</span></div>
+      <div class="tool-item"><div class="tool-icon">📝</div><span>SurferSEO</span></div>
+      <div class="tool-item"><div class="tool-icon">🎯</div><span>Majestic SEO</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- CASE STUDIES -->
+<section class="case-studies">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Case Studies</span>
+      <h2 class="section-title">Real Results. <span>Real Brands.</span></h2>
+      <p class="section-desc">Here's what happens when proven SEO strategy meets execution excellence.</p>
+    </div>
+    <div class="cs-grid">
+      <div class="cs-card">
+        <div class="cs-industry">🎓 Higher Education</div>
+        <h4>UC Berkeley Haas School of Business</h4>
+        <p class="cs-challenge">Needed visibility for executive programs across competitive global keywords.</p>
+        <div class="cs-metrics">
+          <div class="cs-metric"><strong>312%</strong><span>Organic Traffic</span></div>
+          <div class="cs-metric"><strong>#1</strong><span>Target Keywords</span></div>
+          <div class="cs-metric"><strong>8K+</strong><span>New Keywords</span></div>
+        </div>
+      </div>
+      <div class="cs-card">
+        <div class="cs-industry">📡 Telecom & eSIM</div>
+        <h4>Airalo eSIM — Global Market Expansion</h4>
+        <p class="cs-challenge">Scale organic reach across 50+ countries for travel eSIM product queries.</p>
+        <div class="cs-metrics">
+          <div class="cs-metric"><strong>5.2x</strong><span>Organic Growth</span></div>
+          <div class="cs-metric"><strong>175+</strong><span>Countries Ranked</span></div>
+          <div class="cs-metric"><strong>12K+</strong><span>Keywords Ranked</span></div>
+        </div>
+      </div>
+      <div class="cs-card">
+        <div class="cs-industry">🏛️ Government / Public Sector</div>
+        <h4>GAIL India & Delhi Police</h4>
+        <p class="cs-challenge">Improve public information accessibility and SERP visibility for government services.</p>
+        <div class="cs-metrics">
+          <div class="cs-metric"><strong>450%</strong><span>Impressions Up</span></div>
+          <div class="cs-metric"><strong>Top 3</strong><span>Branded Queries</span></div>
+          <div class="cs-metric"><strong>62%</strong><span>CTR Improved</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PACKAGES -->
+<section class="packages" id="packages">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Pricing Plans</span>
+      <h2 class="section-title">SEO Packages for <span>Every Business</span></h2>
+      <p class="section-desc">Transparent, flexible SEO plans for startups, growing brands, and enterprises. No hidden fees. Cancel anytime.</p>
+    </div>
+    <div class="pkg-grid">
+      <div class="pkg-card">
+        <div class="pkg-icon">🌱</div>
+        <div class="pkg-name">Starter SEO</div>
+        <div class="pkg-tagline">Perfect for new websites & local businesses</div>
+        <div class="pkg-price">Custom <span>/ mo</span></div>
+        <div class="pkg-billing">Starting price — tailored to your goals</div>
+        <ul class="pkg-features">
+          <li>Full Technical SEO Audit</li>
+          <li>10 Target Keywords</li>
+          <li>On-Page Optimization (up to 10 pages)</li>
+          <li>Google Search Console Setup</li>
+          <li>Google Business Profile Optimization</li>
+          <li>5 High-Quality Backlinks/mo</li>
+          <li>Monthly Performance Report</li>
+          <li class="no">Content Creation</li>
+          <li class="no">International SEO</li>
+        </ul>
+        <a href="#contact" class="pkg-btn outline">Get Started</a>
+      </div>
+      <div class="pkg-card featured">
+        <div class="pkg-popular">Most Popular</div>
+        <div class="pkg-icon">🚀</div>
+        <div class="pkg-name">Growth SEO</div>
+        <div class="pkg-tagline">Ideal for growing businesses & e-commerce</div>
+        <div class="pkg-price">Custom <span>/ mo</span></div>
+        <div class="pkg-billing">Best value — includes content & link building</div>
+        <ul class="pkg-features">
+          <li>Everything in Starter</li>
+          <li>30 Target Keywords</li>
+          <li>On-Page Optimization (up to 30 pages)</li>
+          <li>4 SEO-Optimized Blog Articles/mo</li>
+          <li>20 High-Quality Backlinks/mo</li>
+          <li>Competitor Gap Analysis</li>
+          <li>E-Commerce SEO (if applicable)</li>
+          <li>Real-Time Ranking Dashboard</li>
+          <li>Bi-Weekly Strategy Calls</li>
+        </ul>
+        <a href="#contact" class="pkg-btn fill">Get Started</a>
+      </div>
+      <div class="pkg-card">
+        <div class="pkg-icon">🏆</div>
+        <div class="pkg-name">Enterprise SEO</div>
+        <div class="pkg-tagline">For large brands, agencies & global markets</div>
+        <div class="pkg-price">Custom <span>/ mo</span></div>
+        <div class="pkg-billing">Fully custom — built for scale & authority</div>
+        <ul class="pkg-features">
+          <li>Everything in Growth</li>
+          <li>Unlimited Keywords</li>
+          <li>International / Multilingual SEO</li>
+          <li>8+ SEO Articles & Content/mo</li>
+          <li>50+ Premium Backlinks/mo</li>
+          <li>Digital PR & Brand Mentions</li>
+          <li>White-Label SEO Available</li>
+          <li>Dedicated Account Manager</li>
+          <li>Weekly Reports & Calls</li>
+        </ul>
+        <a href="#contact" class="pkg-btn outline">Contact Us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="seo-faq" id="faq">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">FAQ</span>
+      <h2 class="section-title">Frequently Asked <span>SEO Questions</span></h2>
+      <p class="section-desc">Everything you need to know about our SEO services before getting started.</p>
+    </div>
+    <div class="faq-grid">
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          <h3>How long does SEO take to show results?</h3>
+          <div class="faq-icon">+</div>
+        </div>
+        <div class="faq-answer">
+          <p>SEO is a long-term investment. You'll typically start seeing movement in rankings within 3–6 months, with meaningful traffic and revenue impact appearing at 6–12 months. Highly competitive niches may take longer. We maintain full transparency throughout and share progress reports every month.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          <h3>Do you guarantee #1 rankings on Google?</h3>
+          <div class="faq-icon">+</div>
+        </div>
+        <div class="faq-answer">
+          <p>No ethical SEO agency can guarantee a specific rank — Google's algorithm is dynamic and ever-changing. What we do guarantee is a data-driven strategy, transparent execution, and measurable improvement in rankings, traffic, and conversions. Our track record of 35K+ ranked keywords speaks for itself.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          <h3>What is the difference between On-Page and Off-Page SEO?</h3>
+          <div class="faq-icon">+</div>
+        </div>
+        <div class="faq-answer">
+          <p>On-Page SEO refers to everything you optimize within your website — content, meta tags, headings, internal links, and site structure. Off-Page SEO involves activities outside your site, primarily building high-quality backlinks and digital PR to improve your domain's authority and trustworthiness in Google's eyes.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          <h3>Do you offer white-label SEO services for agencies?</h3>
+          <div class="faq-icon">+</div>
+        </div>
+        <div class="faq-answer">
+          <p>Yes! We offer fully white-labeled SEO services for digital marketing agencies and resellers. You maintain the client relationship while we handle all SEO deliverables under your brand. We provide unbranded reports, dedicated account management, and seamless collaboration at scale.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          <h3>Will my rankings drop if I stop SEO?</h3>
+          <div class="faq-icon">+</div>
+        </div>
+        <div class="faq-answer">
+          <p>Unlike paid ads that stop immediately when you pause, SEO results are more durable. However, competitors continue to optimize, so without ongoing effort, rankings can gradually decline. Consistent SEO work compounds over time — making it the single highest-ROI digital channel long-term.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          <h3>Do you work with businesses outside India?</h3>
+          <div class="faq-icon">+</div>
+        </div>
+        <div class="faq-answer">
+          <p>Absolutely. We provide SEO services across 175+ countries including the USA, UK, UAE, Singapore, Australia, and more. Our international SEO expertise covers multilingual websites, hreflang implementation, country-specific keyword strategies, and building authority in global markets.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          <h3>How do you measure SEO success?</h3>
+          <div class="faq-icon">+</div>
+        </div>
+        <div class="faq-answer">
+          <p>We track keyword rankings, organic traffic growth, click-through rates, conversion rates, domain authority, backlink profile, and revenue attributed to organic search. You'll get a real-time live dashboard plus a detailed monthly report with clear insights and recommendations.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          <h3>Can SEO work alongside Google Ads / PPC?</h3>
+          <div class="faq-icon">+</div>
+        </div>
+        <div class="faq-answer">
+          <p>Yes — and they work best together. Google Ads gives you instant visibility while SEO builds long-term organic assets. Data from PPC campaigns (winning keywords, ad copy that converts) can directly inform your SEO strategy, and vice versa. We offer both services and can manage them in sync for maximum ROI.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BANNER -->
+<section class="cta-banner" id="contact">
+  <div class="container">
+    <div class="cta-inner">
+      <h2>Ready to <span>Rank #1</span> on Google?</h2>
+      <p>Get a free, no-obligation SEO audit worth ₹15,000 — and discover exactly what's holding your website back from dominating search results.</p>
+      <div class="cta-btns">
+        <a href="https://bestdigitalmarketer.com/#contact" class="btn-primary">🚀 Get Free SEO Audit</a>
+        <a href="https://wa.me/918750711007" target="_blank" class="btn-secondary">💬 WhatsApp Us</a>
+      </div>
+      <div class="cta-phone">
+        <span>📧 Email us at</span>
+        <a href="mailto:hello.bestdigitalmarketer@gmail.com">Hello.BestDigitalMarketer@gmail.com</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-left">
+        <a href="https://bestdigitalmarketer.com/" class="logo">
+          <div class="logo-icon">BDM</div>
+          Best Digital Marketer
+        </a>
+        <p class="footer-description">We're a full-service digital marketing agency dedicated to helping businesses grow their online presence and achieve measurable results.</p>
+        <div class="footer-links">
+          <div class="footer-links-column">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="https://bestdigitalmarketer.com/#services">Services</a></li>
+              <li><a href="https://bestdigitalmarketer.com/#about">About Us</a></li>
+              <li><a href="https://bestdigitalmarketer.com/#industries">Industries</a></li>
+              <li><a href="https://bestdigitalmarketer.com/#blog">Blog</a></li>
+            </ul>
+          </div>
+          <div class="footer-links-column">
+            <h4>SEO Services</h4>
+            <ul>
+              <li><a href="#">Technical SEO</a></li>
+              <li><a href="#">On-Page SEO</a></li>
+              <li><a href="#">Link Building</a></li>
+              <li><a href="#">Local SEO</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/company/destdigitalmarketer/" class="social-link" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
+          </a>
+          <a href="https://wa.me/918750711007" class="social-link" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+          </a>
+        </div>
+      </div>
+      <div class="footer-right">
+        <div class="footer-form">
+          <h3>Get Free SEO Audit</h3>
+          <p>Tell us about your website and we'll analyze it for free!</p>
+          <form id="contactForm">
+            <div class="form-row">
+              <div class="form-group"><input type="text" name="name" placeholder="Your Name *" required></div>
+              <div class="form-group"><input type="email" name="email" placeholder="Email Address *" required></div>
+            </div>
+            <div class="form-row">
+              <div class="form-group"><input type="tel" name="mobile" placeholder="Mobile with Country Code *" required></div>
+              <div class="form-group"><input type="url" name="website" placeholder="Your Website URL *"></div>
+            </div>
+            <div class="form-group">
+              <textarea name="message" placeholder="Tell us about your SEO goals & challenges *" required></textarea>
+            </div>
+            <button type="submit" class="form-submit">🚀 Request Free SEO Audit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copyright">© 2026 Best Digital Marketer. All rights reserved.</p>
+      <p><a href="mailto:hello.bestdigitalmarketer@gmail.com" style="color:var(--text-gray)">Hello.BestDigitalMarketer@gmail.com</a></p>
+      <div class="footer-legal">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Cookie Policy</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+function toggleMobileMenu(){document.getElementById('mobileMenu').classList.toggle('active')}
+function closeMobileMenu(){document.getElementById('mobileMenu').classList.remove('active')}
+function toggleFaq(el){
+  const item=el.parentElement;
+  item.classList.toggle('active');
+}
+window.addEventListener('scroll',function(){
+  const nb=document.querySelector('.navbar');
+  nb.style.background=window.scrollY>50?'rgba(10,10,15,0.98)':'rgba(10,10,15,0.95)';
+});
+// Animate on scroll
+const obs=new IntersectionObserver(entries=>{
+  entries.forEach(e=>{if(e.isIntersecting){e.target.style.opacity='1';e.target.style.transform='translateY(0)'}});
+},{threshold:0.1,rootMargin:'0px 0px -50px 0px'});
+document.querySelectorAll('.pillar-card,.step,.cs-card,.pkg-card,.why-check,.tool-item,.faq-item').forEach(el=>{
+  el.style.opacity='0';
+  el.style.transform='translateY(30px)';
+  el.style.transition='opacity 0.6s ease,transform 0.6s ease';
+  obs.observe(el);
+});
+// Form
+document.getElementById('contactForm').addEventListener('submit',async(e)=>{
+  e.preventDefault();
+  const f=e.target;
+  try{
+    alert('Thank you! Your free SEO audit request has been received. We\'ll get back to you within 24 hours.');
+    f.reset();
+  }catch(err){alert('Something went wrong. Please email us directly.')}
+});
+</script>
+</body>
+</html>
