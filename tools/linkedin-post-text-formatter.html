@@ -20,6 +20,10 @@
     <!-- End Google Tag Manager -->
 
 <style>
+textarea::selection {
+  background: rgba(0, 212, 170, 0.25);
+  color: var(--text-white);
+}
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 /* ── BDM Theme Variables ── */
@@ -572,6 +576,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <svg width="13" height="13" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6.5"/><path d="M5.5 9.5c.5.8 1.4 1.3 2.5 1.3s2-.5 2.5-1.3"/><circle cx="5.8" cy="6.5" r="0.8" fill="currentColor" stroke="none"/><circle cx="10.2" cy="6.5" r="0.8" fill="currentColor" stroke="none"/></svg>
           <span class="lbl">Emoji</span>
         </button>
+<button class="tb-btn" onclick="undoLast()" id="undoBtn" title="Undo last format">
+  <svg width="13" height="13" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 6h7a4 4 0 010 8H5"/><polyline points="2,3 2,6 5,6"/></svg>
+  <span class="lbl">Undo</span>
+</button>
         <button class="tb-btn" onclick="clearAll()">
           <svg width="13" height="13" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="2,4 3.3,4 14,4"/><path d="M12.5 4l-.8 9.2a1 1 0 01-1 .8H5.3a1 1 0 01-1-.8L3.5 4"/><path d="M6 4V2.7a.7.7 0 01.7-.7h2.6a.7.7 0 01.7.7V4"/></svg>
           <span class="lbl">Clear</span>
@@ -709,6 +717,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div class="toast" id="toast">✓ Copied!</div>
 
 <script>
+function undoLast(){
+  const el=ta();
+  if(undoStack.length===0){ showToast('Nothing to undo'); return; }
+  el.value=undoStack.pop();
+  onInput();
+  showToast('Undo done ✓');
+}
+
 // ── Unicode maps ──────────────────────────────────
 const MAPS = {
   bold:{'a':'𝗮','b':'𝗯','c':'𝗰','d':'𝗱','e':'𝗲','f':'𝗳','g':'𝗴','h':'𝗵','i':'𝗶','j':'𝗷','k':'𝗸','l':'𝗹','m':'𝗺','n':'𝗻','o':'𝗼','p':'𝗽','q':'𝗾','r':'𝗿','s':'𝘀','t':'𝘁','u':'𝘂','v':'𝘃','w':'𝘄','x':'𝘅','y':'𝘆','z':'𝘇','A':'𝗔','B':'𝗕','C':'𝗖','D':'𝗗','E':'𝗘','F':'𝗙','G':'𝗚','H':'𝗛','I':'𝗜','J':'𝗝','K':'𝗞','L':'𝗟','M':'𝗠','N':'𝗡','O':'𝗢','P':'𝗣','Q':'𝗤','R':'𝗥','S':'𝗦','T':'𝗧','U':'𝗨','V':'𝗩','W':'𝗪','X':'𝗫','Y':'𝗬','Z':'𝗭','0':'𝟬','1':'𝟭','2':'𝟮','3':'𝟯','4':'𝟰','5':'𝟱','6':'𝟲','7':'𝟳','8':'𝟴','9':'𝟵'},
@@ -721,6 +737,7 @@ function convertText(str,type){ const m=MAPS[type]; return [...str].map(c=>m[c]|
 
 // ── State ──────────────────────────────────────────
 let bulletMode=false, numberedMode=false, nextNum=1;
+let undoStack = [];
 let savedStart=0, savedEnd=0;
 const ta=()=>document.getElementById('input');
 
@@ -816,11 +833,13 @@ function applyFmt(type){
   el.setSelectionRange(savedStart,savedEnd);
   const s=el.selectionStart,e=el.selectionEnd;
   if(s===e){ showToast('Select some text first'); return; }
+undoStack.push(el.value);
   const conv=convertText(el.value.slice(s,e),type);
   el.value=el.value.slice(0,s)+conv+el.value.slice(e);
   el.selectionStart=s; el.selectionEnd=s+conv.length;
-  savedStart=s; savedEnd=s+conv.length;
-  onInput();
+savedStart=s; savedEnd=s+conv.length;
+el.selectionStart=el.selectionEnd=s+conv.length;
+onInput();
 }
 
 function addSpacer(){ const el=ta(); el.focus(); el.setSelectionRange(savedStart,savedEnd); insertRaw('\n\n'); onInput(); }
