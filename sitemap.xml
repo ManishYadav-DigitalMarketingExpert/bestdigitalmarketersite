@@ -94,7 +94,7 @@
   </url>
 
       <url>
-   <loc>https://bestdigitalmarketer.com/services/seo</loc>
+   <loc>https://bestdigitalmarketer.com/services/seo/</loc>
     <lastmod>2026-05-08</lastmod>
     <priority>0.80</priority>
   </url>
@@ -107,15 +107,21 @@
   </url>
 
   <url>
-   <loc>https://bestdigitalmarketer.com/services/google-ads</loc>
+   <loc>https://bestdigitalmarketer.com/services/google-ads/</loc>
     <lastmod>2026-05-09</lastmod>
     <priority>0.80</priority>
   </url>
 
   
       <url>
-   <loc>https://bestdigitalmarketer.com/tools/linkedin-post-text-formatter</loc>
+   <loc>https://bestdigitalmarketer.com/tools/linkedin-post-text-formatter/</loc>
     <lastmod>2026-05-09</lastmod>
+    <priority>0.80</priority>
+  </url>
+
+    <url>
+   <loc>https://bestdigitalmarketer.com/services/social-media-marketing/</loc>
+    <lastmod>2026-05-10</lastmod>
     <priority>0.80</priority>
   </url>
 </urlset>
