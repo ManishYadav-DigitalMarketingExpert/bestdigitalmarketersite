@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,7 +17,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-       <meta name="yandex-verification" content="8afbecf1e3ee6ca4" />
+             <meta name="yandex-verification" content="8afbecf1e3ee6ca4" />
 
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -106,48 +105,129 @@ img{max-width:100%;height:auto}
 .hm-num{font-family:'Space Grotesk',sans-serif;font-size:38px;font-weight:700;line-height:1;color:var(--primary)}
 .hm-lbl{font-size:13px;color:var(--text-gray);margin-top:4px}
 
-/* ── BROWSER MOCKUP ── */
-.browser-wrap{position:relative}
-.browser{background:var(--bg-card);border:1px solid var(--border-color);border-radius:16px;overflow:hidden;box-shadow:0 30px 80px rgba(0,0,0,.6)}
-.browser-bar{background:#0d0d16;border-bottom:1px solid var(--border-color);padding:12px 16px;display:flex;align-items:center;gap:12px}
-.b-dots{display:flex;gap:6px}
-.bd{width:12px;height:12px;border-radius:50%}
-.bd.r{background:#ea4335}.bd.y{background:#fbbc04}.bd.g{background:#34a853}
-.b-url{flex:1;background:rgba(255,255,255,.06);border-radius:6px;padding:6px 12px;font-size:12px;color:var(--text-gray);display:flex;align-items:center;gap:6px}
-.b-url::before{content:'🔒';font-size:10px}
-.browser-screen{padding:0}
-/* fake website inside */
-.fake-site{background:#f8fafc}
-.fs-nav{background:#fff;padding:10px 16px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #e2e8f0}
-.fs-logo{font-size:14px;font-weight:800;color:#1a1a2e}
-.fs-links{display:flex;gap:12px}
-.fs-link{font-size:9px;color:#64748b;font-weight:500}
-.fs-btn{background:linear-gradient(135deg,#6366f1,#4285f4);color:#fff;padding:4px 10px;border-radius:20px;font-size:9px;font-weight:700}
-.fs-hero{background:linear-gradient(135deg,#1a1a2e,#16213e,#0f3460);padding:20px 16px;text-align:center}
-.fs-h1{font-family:'Space Grotesk',sans-serif;font-size:16px;font-weight:800;color:#fff;margin-bottom:6px}
-.fs-h1 span{background:linear-gradient(135deg,#6366f1,#00d4aa);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-.fs-sub{font-size:9px;color:#94a3b8;margin-bottom:12px}
-.fs-cta{display:inline-block;background:linear-gradient(135deg,#00d4aa,#00b894);color:#0a0a0f;padding:6px 16px;border-radius:20px;font-size:10px;font-weight:700}
-.fs-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;padding:10px 16px;background:#f8fafc}
-.fs-card{background:#fff;border-radius:8px;padding:10px;border:1px solid #e2e8f0}
-.fs-card-icon{font-size:18px;margin-bottom:4px}
-.fs-card-title{font-size:9px;font-weight:700;color:#1a1a2e;margin-bottom:2px}
-.fs-card-txt{font-size:8px;color:#64748b;line-height:1.4}
-.fs-footer{background:#1a1a2e;padding:10px 16px;display:flex;justify-content:space-between;align-items:center}
-.fs-footer-txt{font-size:8px;color:#64748b}
-.fs-footer-links{display:flex;gap:8px}
-.fs-footer-link{font-size:8px;color:#94a3b8}
+/* ── HERO VISUAL — CREATIVE MULTI-DEVICE ── */
+.hero-visual-stack{position:relative;display:flex;justify-content:center;align-items:center;min-height:480px}
+/* desktop frame */
+.desk-frame{background:#0d0d18;border:2px solid #2a2a3a;border-radius:14px;width:100%;max-width:420px;box-shadow:0 30px 80px rgba(0,0,0,.7);position:relative}
+.desk-bar{background:#161622;border-bottom:1px solid #2a2a3a;padding:10px 14px;display:flex;align-items:center;gap:10px;border-radius:14px 14px 0 0}
+.d-dots{display:flex;gap:5px}
+.dd{width:10px;height:10px;border-radius:50%}
+.dd.r{background:#ea4335}.dd.y{background:#fbbc04}.dd.g{background:#34a853}
+.d-url{flex:1;background:rgba(255,255,255,.05);border-radius:5px;padding:5px 10px;font-size:11px;color:var(--text-gray);display:flex;align-items:center;gap:5px}
+.d-url::before{content:'🔒';font-size:9px}
+.desk-screen{border-radius:0 0 12px 12px;overflow:hidden}
+/* animated tabs inside browser */
+.site-tabs{display:flex;background:#1a1a28;border-bottom:1px solid #2a2a3a;padding:0 12px}
+.site-tab{padding:8px 14px;font-size:10px;font-weight:600;color:var(--text-gray);border-bottom:2px solid transparent;cursor:pointer;transition:all .2s}
+.site-tab.act{color:#6366f1;border-color:#6366f1}
+/* site pages — animated cycling */
+.site-page{display:none;animation:pageFade .4s ease}
+.site-page.show{display:block}
+@keyframes pageFade{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:translateY(0)}}
+/* CORPORATE PAGE */
+.corp-nav{background:#fff;padding:8px 14px;display:flex;align-items:center;justify-content:space-between}
+.cn-logo{font-size:12px;font-weight:800;color:#1a1a2e;font-family:'Space Grotesk',sans-serif}
+.cn-links{display:flex;gap:10px}
+.cn-link{font-size:8px;color:#64748b;font-weight:500}
+.cn-btn{background:#6366f1;color:#fff;padding:3px 8px;border-radius:12px;font-size:8px;font-weight:700}
+.corp-hero-sec{background:linear-gradient(135deg,#1a1a2e 0%,#0f0f1e 100%);padding:16px 14px;text-align:center;position:relative;overflow:hidden}
+.corp-hero-sec::before{content:'';position:absolute;width:150px;height:150px;background:radial-gradient(circle,rgba(99,102,241,.3),transparent);top:-40px;right:-20px}
+.ch-eyebrow{font-size:8px;color:#a5b4fc;font-weight:600;letter-spacing:1px;margin-bottom:6px;text-transform:uppercase}
+.ch-title{font-family:'Space Grotesk',sans-serif;font-size:14px;font-weight:800;color:#fff;line-height:1.2;margin-bottom:6px}
+.ch-title em{background:linear-gradient(135deg,#6366f1,#00d4aa);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;font-style:normal}
+.ch-sub{font-size:8px;color:#94a3b8;margin-bottom:10px;line-height:1.5}
+.ch-btns{display:flex;gap:6px;justify-content:center}
+.ch-btn-p{background:linear-gradient(135deg,#6366f1,#4285f4);color:#fff;padding:5px 12px;border-radius:12px;font-size:8px;font-weight:700}
+.ch-btn-s{border:1px solid rgba(255,255,255,.2);color:#fff;padding:5px 12px;border-radius:12px;font-size:8px;font-weight:600}
+.corp-stats-row{display:grid;grid-template-columns:repeat(3,1fr);background:#12121f;border-bottom:1px solid #1e1e30}
+.csr{padding:8px;text-align:center;border-right:1px solid #1e1e30}
+.csr:last-child{border-right:none}
+.csr-num{font-family:'Space Grotesk',sans-serif;font-size:13px;font-weight:800;color:#6366f1}
+.csr-lbl{font-size:7px;color:#64748b;margin-top:1px}
+.corp-cards-row{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;padding:8px;background:#0d0d18}
+.ccr{background:#12121f;border:1px solid #1e1e30;border-radius:8px;padding:8px;transition:all .2s}
+.ccr:hover{border-color:#6366f1;transform:translateY(-2px)}
+.ccr-ic{font-size:16px;margin-bottom:4px}
+.ccr-title{font-size:8px;font-weight:700;color:#e2e8f0;margin-bottom:2px}
+.ccr-txt{font-size:7px;color:#64748b;line-height:1.4}
+/* ECOMMERCE PAGE */
+.ec-nav{background:#fff;padding:6px 12px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #e2e8f0}
+.ec-logo{font-size:12px;font-weight:800;color:#96bf48;font-family:'Space Grotesk',sans-serif}
+.ec-icons{display:flex;gap:8px;font-size:13px}
+.ec-banner{background:linear-gradient(135deg,#0f0f0f,#1a1a1a);padding:10px 12px;text-align:center}
+.ec-banner-badge{background:#96bf48;color:#0f0f0f;font-size:7px;font-weight:800;padding:2px 8px;border-radius:10px;display:inline-block;margin-bottom:4px}
+.ec-banner-title{font-family:'Space Grotesk',sans-serif;font-size:13px;font-weight:800;color:#fff;margin-bottom:4px}
+.ec-banner-cta{background:#96bf48;color:#0f0f0f;padding:4px 12px;border-radius:10px;font-size:8px;font-weight:800;display:inline-block}
+.ec-products{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;padding:8px;background:#f8f9fa}
+.ec-prod{background:#fff;border-radius:8px;overflow:hidden;border:1px solid #e2e8f0}
+.ec-prod-img{height:40px;display:flex;align-items:center;justify-content:center;font-size:20px}
+.ec-p1-bg{background:linear-gradient(135deg,#ffecd2,#fcb69f)}
+.ec-p2-bg{background:linear-gradient(135deg,#a1c4fd,#c2e9fb)}
+.ec-p3-bg{background:linear-gradient(135deg,#d4fc79,#96e6a1)}
+.ec-prod-info{padding:5px 6px}
+.ec-prod-name{font-size:8px;font-weight:700;color:#1a1a2e;margin-bottom:2px}
+.ec-prod-price{font-size:8px;color:#96bf48;font-weight:800}
+.ec-prod-btn{width:100%;background:#96bf48;color:#0f0f0f;border:none;padding:3px;font-size:7px;font-weight:700;cursor:pointer}
+/* LANDING PAGE */
+.lp-hero{background:linear-gradient(135deg,#0f0a1e,#1a0a2e);padding:18px 14px;text-align:center;position:relative;overflow:hidden}
+.lp-hero::before,.lp-hero::after{content:'';position:absolute;border-radius:50%}
+.lp-hero::before{width:120px;height:120px;background:rgba(99,102,241,.15);top:-30px;left:-20px}
+.lp-hero::after{width:80px;height:80px;background:rgba(0,212,170,.12);bottom:-20px;right:-10px}
+.lp-badge-pill{background:rgba(99,102,241,.2);border:1px solid rgba(99,102,241,.4);color:#a5b4fc;font-size:7px;font-weight:700;padding:3px 10px;border-radius:12px;display:inline-block;margin-bottom:8px}
+.lp-h{font-family:'Space Grotesk',sans-serif;font-size:15px;font-weight:800;color:#fff;line-height:1.2;margin-bottom:4px}
+.lp-h span{color:#00d4aa}
+.lp-sub{font-size:8px;color:#94a3b8;margin-bottom:10px;line-height:1.5}
+.lp-form{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:10px;padding:8px}
+.lp-form-title{font-size:9px;font-weight:700;color:#fff;margin-bottom:6px;text-align:center}
+.lp-inp{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);border-radius:6px;padding:5px 8px;font-size:8px;color:#fff;width:100%;margin-bottom:5px}
+.lp-sub-btn{width:100%;background:linear-gradient(135deg,#00d4aa,#00b894);color:#0a0a0f;border:none;padding:6px;border-radius:8px;font-size:9px;font-weight:800;cursor:pointer}
+.lp-trust{display:flex;justify-content:center;gap:8px;margin-top:6px}
+.lp-trust-item{font-size:7px;color:#64748b}
+/* mobile frame — floats over desk */
+.mob-frame{position:absolute;width:90px;background:#0d0d18;border:2px solid #2a2a3a;border-radius:16px;box-shadow:0 20px 50px rgba(0,0,0,.8);bottom:-10px;right:-20px;animation:fl 4s ease-in-out infinite .5s}
+.mob-notch{width:28px;height:8px;background:#0d0d18;border-radius:0 0 8px 8px;margin:0 auto;border-top:2px solid #161622}
+.mob-screen{padding:6px}
+.mob-nav-bar{display:flex;align-items:center;justify-content:space-between;margin-bottom:6px}
+.mob-logo{font-size:8px;font-weight:800;color:#6366f1;font-family:'Space Grotesk',sans-serif}
+.mob-menu{font-size:14px}
+.mob-hero{background:linear-gradient(135deg,#12121f,#1a1a2e);border-radius:8px;padding:8px;text-align:center;margin-bottom:5px}
+.mob-hero-title{font-size:8px;font-weight:800;color:#fff;line-height:1.2;margin-bottom:4px}
+.mob-hero-cta{background:#6366f1;color:#fff;font-size:7px;font-weight:700;padding:3px 8px;border-radius:8px;display:inline-block}
+.mob-cards{display:grid;grid-template-columns:1fr 1fr;gap:4px}
+.mob-card{background:#12121f;border:1px solid #1e1e30;border-radius:6px;padding:5px;text-align:center}
+.mob-card-ic{font-size:12px;margin-bottom:2px}
+.mob-card-txt{font-size:6px;color:#64748b;font-weight:600}
+/* tablet frame */
+.tab-frame{position:absolute;width:130px;background:#0d0d18;border:2px solid #2a2a3a;border-radius:12px;box-shadow:0 20px 50px rgba(0,0,0,.7);top:-15px;left:-25px;animation:fl 4s ease-in-out infinite 1s}
+.tab-cam{width:6px;height:6px;background:#1a1a28;border-radius:50%;margin:6px auto}
+.tab-screen{padding:5px}
+.tab-site-nav{display:flex;justify-content:space-between;align-items:center;padding:4px 6px;background:#12121f;border-radius:6px;margin-bottom:4px}
+.tsn-logo{font-size:8px;font-weight:800;color:#fff;font-family:'Space Grotesk',sans-serif}
+.tsn-links{display:flex;gap:5px}
+.tsn-link{font-size:6px;color:#64748b}
+.tab-hero{background:linear-gradient(135deg,#0f3460,#16213e);border-radius:6px;padding:8px;margin-bottom:4px}
+.th-title{font-size:8px;font-weight:800;color:#fff;margin-bottom:3px;line-height:1.3}
+.th-title span{color:#00d4aa}
+.th-sub{font-size:6px;color:#94a3b8;margin-bottom:5px}
+.th-btn{background:#00d4aa;color:#0a0a0f;font-size:6px;font-weight:800;padding:3px 7px;border-radius:6px;display:inline-block}
+.tab-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:3px}
+.tg-item{background:#12121f;border-radius:5px;padding:4px;text-align:center}
+.tg-ic{font-size:10px;margin-bottom:2px}
+.tg-txt{font-size:6px;color:#64748b}
+/* floating metric chips on hero */
+.hero-chip{position:absolute;background:var(--bg-card);border:1px solid var(--border-color);border-radius:10px;padding:8px 12px;display:flex;align-items:center;gap:8px;box-shadow:0 8px 24px rgba(0,0,0,.5);z-index:10}
+.hc-1{top:10px;right:-10px;animation:fl 3s ease-in-out infinite .2s}
+.hc-2{bottom:50px;left:-10px;animation:fl 3s ease-in-out infinite .9s}
+.hci{width:30px;height:30px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:14px;flex-shrink:0}
+.hci-p{background:rgba(99,102,241,.2)}.hci-g{background:rgba(0,212,170,.2)}
+.hct strong{display:block;font-size:12px;font-weight:700}
+.hct span{font-size:10px;color:var(--text-gray)}
+/* page switcher dots */
+.page-dots{display:flex;justify-content:center;gap:6px;padding:6px;background:#0d0d18}
+.pd{width:6px;height:6px;border-radius:50%;background:#2a2a3a;cursor:pointer;transition:all .3s}
+.pd.act{background:#6366f1;width:18px;border-radius:3px}
 
-/* floating hero cards */
-.flt{position:absolute;background:var(--bg-card);border:1px solid var(--border-color);border-radius:14px;padding:12px 16px;display:flex;align-items:center;gap:10px;box-shadow:0 12px 30px rgba(0,0,0,.5)}
-.flt-1{top:-20px;right:-30px;animation:fl 3s ease-in-out infinite}
-.flt-2{bottom:30px;left:-40px;animation:fl 3s ease-in-out infinite .7s}
-.flt-3{bottom:-18px;right:30px;animation:fl 3s ease-in-out infinite 1.4s}
 @keyframes fl{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
-.fi{width:36px;height:36px;border-radius:9px;display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0}
-.fi-p{background:rgba(99,102,241,.2)}.fi-g{background:rgba(0,212,170,.2)}.fi-o{background:rgba(255,107,53,.2)}
-.ft strong{display:block;font-size:13px;font-weight:700}
-.ft span{font-size:11px;color:var(--text-gray)}
 
 /* ── STATS STRIP ── */
 .stats-strip{padding:48px 0;background:var(--bg-card);border-top:1px solid var(--border-color);border-bottom:1px solid var(--border-color)}
@@ -476,7 +556,7 @@ section{padding:100px 0}
 </style>
 </head>
 <body>
-    <!-- Google Tag Manager (noscript) -->
+           <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W33WK3QH"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
@@ -549,51 +629,164 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
       </div>
 
-      <!-- BROWSER MOCKUP -->
-      <div class="browser-wrap">
-        <div class="browser">
-          <div class="browser-bar">
-            <div class="b-dots"><div class="bd r"></div><div class="bd y"></div><div class="bd g"></div></div>
-            <div class="b-url">bestdigitalmarketer.com — Crafted by BDM</div>
-          </div>
-          <div class="browser-screen">
-            <div class="fake-site">
-              <div class="fs-nav">
-                <div class="fs-logo">YourBrand<span style="color:#6366f1">.</span></div>
-                <div class="fs-links">
-                  <span class="fs-link">Home</span><span class="fs-link">Services</span>
-                  <span class="fs-link">About</span><span class="fs-link">Contact</span>
-                </div>
-                <div class="fs-btn">Get Started</div>
-              </div>
-              <div class="fs-hero">
-                <div class="fs-h1">Grow Your Business <span>Online</span></div>
-                <div class="fs-sub">High-converting websites built for results — not just looks</div>
-                <div class="fs-cta">Start Your Project →</div>
-              </div>
-              <div class="fs-cards">
-                <div class="fs-card"><div class="fs-card-icon">🚀</div><div class="fs-card-title">Fast & SEO Ready</div><div class="fs-card-txt">Page speed 98/100. Built to rank.</div></div>
-                <div class="fs-card"><div class="fs-card-icon">📱</div><div class="fs-card-title">Mobile First</div><div class="fs-card-txt">Pixel-perfect on all devices.</div></div>
-                <div class="fs-card"><div class="fs-card-icon">🔒</div><div class="fs-card-title">SSL Secured</div><div class="fs-card-txt">Free SSL + daily backups.</div></div>
-              </div>
-              <div class="fs-footer">
-                <div class="fs-footer-txt">© 2026 YourBrand. All rights reserved.</div>
-                <div class="fs-footer-links"><span class="fs-footer-link">Privacy</span><span class="fs-footer-link">Terms</span></div>
-              </div>
+      <!-- CREATIVE MULTI-DEVICE HERO VISUAL -->
+      <div class="hero-visual-stack">
+        <!-- TABLET -->
+        <div class="tab-frame">
+          <div class="tab-cam"></div>
+          <div class="tab-screen">
+            <div class="tab-site-nav">
+              <div class="tsn-logo">YourBrand.</div>
+              <div class="tsn-links"><span class="tsn-link">Home</span><span class="tsn-link">Services</span><span class="tsn-link">Contact</span></div>
+            </div>
+            <div class="tab-hero">
+              <div class="th-title">Scale Your Business <span>Globally</span></div>
+              <div class="th-sub">Websites built for speed, SEO & conversions</div>
+              <div class="th-btn">Start Project →</div>
+            </div>
+            <div class="tab-grid">
+              <div class="tg-item"><div class="tg-ic">⚡</div><div class="tg-txt">Fast Load</div></div>
+              <div class="tg-item"><div class="tg-ic">🔍</div><div class="tg-txt">SEO Ready</div></div>
+              <div class="tg-item"><div class="tg-ic">🔒</div><div class="tg-txt">SSL Secure</div></div>
             </div>
           </div>
         </div>
-        <div class="flt flt-1">
-          <div class="fi fi-p">⚡</div>
-          <div class="ft"><strong>PageSpeed 98/100</strong><span>Core Web Vitals Passed</span></div>
+
+        <!-- DESKTOP BROWSER -->
+        <div class="desk-frame">
+          <div class="desk-bar">
+            <div class="d-dots"><div class="dd r"></div><div class="dd y"></div><div class="dd g"></div></div>
+            <div class="d-url">yourwebsite.com — Built by BDM</div>
+          </div>
+          <div class="desk-screen">
+            <div class="site-tabs">
+              <div class="site-tab act" onclick="switchTab(0)">🏢 Corporate</div>
+              <div class="site-tab" onclick="switchTab(1)">🛒 eCommerce</div>
+              <div class="site-tab" onclick="switchTab(2)">🎯 Landing Page</div>
+            </div>
+
+            <!-- CORPORATE PAGE -->
+            <div class="site-page show" id="sp0">
+              <div class="corp-nav">
+                <div class="cn-logo">AcorpGlobal.</div>
+                <div class="cn-links"><span class="cn-link">About</span><span class="cn-link">Services</span><span class="cn-link">Clients</span><span class="cn-link">Blog</span></div>
+                <div class="cn-btn">Get Quote</div>
+              </div>
+              <div class="corp-hero-sec">
+                <div class="ch-eyebrow">Trusted by 500+ Companies</div>
+                <div class="ch-title">Enterprise Solutions <em>That Drive Results</em></div>
+                <div class="ch-sub">Innovative strategies. Measurable impact. Global reach.</div>
+                <div class="ch-btns"><div class="ch-btn-p">Start Today →</div><div class="ch-btn-s">View Work</div></div>
+              </div>
+              <div class="corp-stats-row">
+                <div class="csr"><div class="csr-num">175+</div><div class="csr-lbl">Countries</div></div>
+                <div class="csr"><div class="csr-num">$2B+</div><div class="csr-lbl">Revenue Generated</div></div>
+                <div class="csr"><div class="csr-num">98%</div><div class="csr-lbl">Client Retention</div></div>
+              </div>
+              <div class="corp-cards-row">
+                <div class="ccr"><div class="ccr-ic">📊</div><div class="ccr-title">Analytics</div><div class="ccr-txt">Real-time data dashboards</div></div>
+                <div class="ccr"><div class="ccr-ic">🌍</div><div class="ccr-title">Global Reach</div><div class="ccr-txt">175+ countries served</div></div>
+                <div class="ccr"><div class="ccr-ic">🔒</div><div class="ccr-title">Enterprise Security</div><div class="ccr-txt">ISO certified systems</div></div>
+              </div>
+            </div>
+
+            <!-- ECOMMERCE PAGE -->
+            <div class="site-page" id="sp1">
+              <div class="ec-nav">
+                <div class="ec-logo">ShopMax.</div>
+                <div class="ec-icons"><span>🔍</span><span>❤️</span><span>🛒</span></div>
+              </div>
+              <div class="ec-banner">
+                <div class="ec-banner-badge">🔥 SALE — UP TO 70% OFF</div>
+                <div class="ec-banner-title">Summer Collection 2026</div>
+                <div class="ec-banner-cta">Shop Now →</div>
+              </div>
+              <div class="ec-products">
+                <div class="ec-prod">
+                  <div class="ec-prod-img ec-p1-bg">👟</div>
+                  <div class="ec-prod-info">
+                    <div class="ec-prod-name">Premium Sneaker</div>
+                    <div class="ec-prod-price">₹2,499</div>
+                  </div>
+                  <div class="ec-prod-btn">Add to Cart</div>
+                </div>
+                <div class="ec-prod">
+                  <div class="ec-prod-img ec-p2-bg">👜</div>
+                  <div class="ec-prod-info">
+                    <div class="ec-prod-name">Leather Bag</div>
+                    <div class="ec-prod-price">₹4,999</div>
+                  </div>
+                  <div class="ec-prod-btn">Add to Cart</div>
+                </div>
+                <div class="ec-prod">
+                  <div class="ec-prod-img ec-p3-bg">⌚</div>
+                  <div class="ec-prod-info">
+                    <div class="ec-prod-name">Smart Watch</div>
+                    <div class="ec-prod-price">₹8,999</div>
+                  </div>
+                  <div class="ec-prod-btn">Add to Cart</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- LANDING PAGE -->
+            <div class="site-page" id="sp2">
+              <div class="lp-hero">
+                <div class="lp-badge-pill">⚡ Limited Offer — Ends Sunday</div>
+                <div class="lp-h">Get <span>10x More Leads</span><br>In 30 Days or Free</div>
+                <div class="lp-sub">Join 2,400+ businesses already growing with our proven system. No contracts. Cancel anytime.</div>
+                <div class="lp-form">
+                  <div class="lp-form-title">🚀 Claim Your Free Strategy Session</div>
+                  <input class="lp-inp" placeholder="Your Name" readonly>
+                  <input class="lp-inp" placeholder="Email Address" readonly>
+                  <input class="lp-inp" placeholder="Phone Number" readonly>
+                  <div class="lp-sub-btn">Get Instant Access →</div>
+                  <div class="lp-trust">
+                    <div class="lp-trust-item">🔒 100% Secure</div>
+                    <div class="lp-trust-item">⭐ 4.9/5 Rating</div>
+                    <div class="lp-trust-item">✅ No Spam</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="page-dots">
+              <div class="pd act" onclick="switchTab(0)"></div>
+              <div class="pd" onclick="switchTab(1)"></div>
+              <div class="pd" onclick="switchTab(2)"></div>
+            </div>
+          </div>
         </div>
-        <div class="flt flt-2">
-          <div class="fi fi-g">📱</div>
-          <div class="ft"><strong>100% Responsive</strong><span>All Devices & Screens</span></div>
+
+        <!-- MOBILE -->
+        <div class="mob-frame">
+          <div class="mob-notch"></div>
+          <div class="mob-screen">
+            <div class="mob-nav-bar">
+              <div class="mob-logo">YB.</div>
+              <div class="mob-menu">☰</div>
+            </div>
+            <div class="mob-hero">
+              <div class="mob-hero-title">Grow Your<br>Business Online</div>
+              <div class="mob-hero-cta">Get Started →</div>
+            </div>
+            <div class="mob-cards">
+              <div class="mob-card"><div class="mob-card-ic">⚡</div><div class="mob-card-txt">Fast</div></div>
+              <div class="mob-card"><div class="mob-card-ic">🔍</div><div class="mob-card-txt">SEO</div></div>
+              <div class="mob-card"><div class="mob-card-ic">📱</div><div class="mob-card-txt">Mobile</div></div>
+              <div class="mob-card"><div class="mob-card-ic">🔒</div><div class="mob-card-txt">Secure</div></div>
+            </div>
+          </div>
         </div>
-        <div class="flt flt-3">
-          <div class="fi fi-o">🛒</div>
-          <div class="ft"><strong>eCommerce Ready</strong><span>Shopify & WooCommerce</span></div>
+
+        <!-- FLOATING CHIPS -->
+        <div class="hero-chip hc-1">
+          <div class="hci hci-p">⚡</div>
+          <div class="hct"><strong>PageSpeed 98/100</strong><span>Core Web Vitals ✓</span></div>
+        </div>
+        <div class="hero-chip hc-2">
+          <div class="hci hci-g">📱</div>
+          <div class="hct"><strong>100% Responsive</strong><span>All Devices & Screens</span></div>
         </div>
       </div>
     </div>
@@ -845,10 +1038,41 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <div class="tld-item"><span class="tld-ext">+ More</span><div class="tld-use">200+ TLDs Available</div></div>
         </div>
 
-        <div class="domain-search">
-          <input type="text" class="ds-input" placeholder="Search your domain name... e.g. yourbrand">
-          <button class="ds-btn" onclick="handleDomainSearch()">Check →</button>
-        </div>
+/* ── DOMAIN CHECKER — INLINE ── */
+.dc-search{display:flex;gap:0;margin-bottom:6px}
+.dc-input{flex:1;background:rgba(255,255,255,.05);border:1px solid var(--border-color);border-right:none;border-radius:12px 0 0 12px;padding:13px 16px;font-size:14px;color:#fff;font-family:'Inter',sans-serif;transition:border-color .3s}
+.dc-input:focus{outline:none;border-color:#6366f1}
+.dc-input::placeholder{color:var(--text-gray)}
+.dc-ext-select{background:rgba(255,255,255,.07);border:1px solid var(--border-color);border-left:none;border-right:none;padding:13px 8px;font-size:13px;color:#a5b4fc;font-family:'Inter',sans-serif;cursor:pointer;font-weight:700;min-width:80px}
+.dc-ext-select:focus{outline:none}
+.dc-ext-select option{background:#12121a;color:#fff}
+.dc-btn{background:linear-gradient(135deg,#6366f1,#4285f4);color:#fff;border:none;padding:13px 18px;border-radius:0 12px 12px 0;font-size:14px;font-weight:700;cursor:pointer;font-family:'Inter',sans-serif;transition:all .3s;white-space:nowrap}
+.dc-btn:hover{box-shadow:0 6px 20px rgba(99,102,241,.4)}
+.dc-btn:disabled{opacity:.5;cursor:not-allowed}
+.dc-hint{font-size:11px;color:var(--text-gray);margin-bottom:14px;display:flex;align-items:center;gap:4px}
+.dc-err{background:rgba(251,188,4,.08);border:1px solid rgba(251,188,4,.25);border-radius:10px;padding:10px 14px;font-size:12px;color:#fbbf24;display:none;margin-bottom:10px}
+.dc-err.show{display:block}
+.dc-loading{font-size:13px;color:var(--text-gray);padding:10px 0;display:none;text-align:center}
+.dc-loading.show{display:block}
+.dc-results{display:none;flex-direction:column;gap:8px}
+.dc-results.show{display:flex}
+.dc-result-item{display:flex;align-items:center;justify-content:space-between;padding:11px 14px;border-radius:10px;border:1px solid;transition:all .3s;gap:8px}
+.dc-result-item.available{background:rgba(0,212,170,.06);border-color:rgba(0,212,170,.3)}
+.dc-result-item.taken{background:rgba(234,67,53,.04);border-color:rgba(234,67,53,.2)}
+.dc-result-item.checking{background:rgba(99,102,241,.04);border-color:rgba(99,102,241,.2);animation:pulse 1.5s infinite}
+.dc-res-left{display:flex;align-items:center;gap:10px;min-width:0}
+.dc-domain-name{font-family:'Space Grotesk',sans-serif;font-size:14px;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.dc-badge{padding:3px 10px;border-radius:20px;font-size:11px;font-weight:700;white-space:nowrap;flex-shrink:0}
+.badge-avail{background:rgba(0,212,170,.15);color:var(--primary)}
+.badge-taken{background:rgba(234,67,53,.12);color:#f87171}
+.badge-checking{background:rgba(99,102,241,.12);color:#a5b4fc}
+.dc-cta-btn{background:var(--gradient-1);color:var(--bg-dark);padding:6px 14px;border-radius:16px;font-size:12px;font-weight:700;border:none;cursor:pointer;transition:all .3s;font-family:'Inter',sans-serif;white-space:nowrap;flex-shrink:0}
+.dc-cta-btn:hover{transform:translateY(-1px);box-shadow:0 4px 14px rgba(0,212,170,.4)}
+.dc-taken-txt{font-size:12px;color:var(--text-gray);white-space:nowrap;flex-shrink:0}
+.dc-bulk-row{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px;padding-top:14px;border-top:1px solid var(--border-color)}
+.dc-bulk-label{font-size:11px;color:var(--text-gray);width:100%;margin-bottom:2px}
+.dc-bulk-ext{background:rgba(99,102,241,.08);border:1px solid rgba(99,102,241,.2);color:#a5b4fc;padding:4px 10px;border-radius:16px;font-size:11px;font-weight:600;cursor:pointer;transition:all .3s;font-family:'Inter',sans-serif}
+.dc-bulk-ext:hover{background:rgba(99,102,241,.18);transform:translateY(-1px)}
       </div>
 
       <!-- HOSTING CARD -->
@@ -1411,11 +1635,151 @@ document.getElementById('footerForm').addEventListener('submit', async e => {
 function toggleMenu(){document.getElementById('mobileMenu').classList.toggle('active')}
 function closeMenu(){document.getElementById('mobileMenu').classList.remove('active')}
 function toggleFaq(el){el.parentElement.classList.toggle('active')}
-function handleDomainSearch(){
-  const v=document.querySelector('.ds-input').value.trim();
-  if(v) alert('Great choice! Contact us to check availability for "'+v+'" and all its extensions (.com, .ai, .tech, .co.uk, .in and more).\n\nWhatsApp: +91 8750 711 007\nEmail: Hello.BestDigitalMarketer@gmail.com');
-  else alert('Please enter a domain name to check.');
+
+/* ── TAB SWITCHER ── */
+let tabTimer;
+function switchTab(n){
+  clearTimeout(tabTimer);
+  document.querySelectorAll('.site-page').forEach((p,i)=>{p.classList.toggle('show',i===n)});
+  document.querySelectorAll('.site-tab').forEach((t,i)=>{t.classList.toggle('act',i===n)});
+  document.querySelectorAll('.pd').forEach((d,i)=>{d.classList.toggle('act',i===n)});
+  tabTimer=setTimeout(()=>switchTab((n+1)%3),4000);
 }
+tabTimer=setTimeout(()=>switchTab(1),4000);
+
+/* ── DOMAIN CHECKER (real DNS via doh.li / Cloudflare DoH) ── */
+const ALL_TLDS=['.com','.net','.org','.io','.co','.ai','.tech','.store','.in','.co.uk'];
+
+function sanitize(s){return s.toLowerCase().replace(/[^a-z0-9\-\.]/g,'').replace(/^[\.\-]+|[\.\-]+$/g,'').replace(/\.+/g,'.').split('.')[0]}
+
+async function isDomainAvailable(domain){
+  /* Use Cloudflare DNS-over-HTTPS (free, no key needed) */
+  const url=`https://cloudflare-dns.com/dns-query?name=${encodeURIComponent(domain)}&type=A`;
+  try{
+    const r=await fetch(url,{headers:{'Accept':'application/dns-json'},signal:AbortSignal.timeout(6000)});
+    if(!r.ok)throw new Error('network');
+    const data=await r.json();
+    /* Status 0 = NOERROR (domain resolves = taken or parked), Status 3 = NXDOMAIN (domain does NOT exist = likely available) */
+    /* Also check SOA record to be more thorough */
+    if(data.Status===3)return 'available';
+    if(data.Status===0)return 'taken';
+    return 'unknown';
+  }catch(e){
+    /* fallback: try AAAA */
+    try{
+      const r2=await fetch(`https://cloudflare-dns.com/dns-query?name=${encodeURIComponent(domain)}&type=SOA`,{headers:{'Accept':'application/dns-json'},signal:AbortSignal.timeout(5000)});
+      const d2=await r2.json();
+      return d2.Status===3?'available':'taken';
+    }catch{return 'unknown';}
+  }
+}
+
+async function checkDomain(){
+  const raw=document.getElementById('dcInput').value.trim();
+  const ext=document.getElementById('dcExt').value;
+  if(!raw){shakeInput();return;}
+  const name=sanitize(raw);
+  if(!name||name.length<2){showErr('Please enter a valid domain name (at least 2 characters).');return;}
+  if(name.length>63){showErr('Domain name is too long (max 63 characters).');return;}
+
+  hideErr();
+  const btn=document.getElementById('dcBtn');
+  btn.disabled=true; btn.textContent='⏳ Checking...';
+  document.getElementById('dcLoading').classList.add('show');
+  document.getElementById('dcResults').classList.remove('show');
+  document.getElementById('dcResults').innerHTML='';
+  document.getElementById('dcBulkRow').style.display='none';
+
+  const primaryDomain=name+ext;
+
+  /* Build list: primary first, then a few popular extras */
+  const extras=ALL_TLDS.filter(t=>t!==ext).slice(0,5);
+  const toCheck=[ext,...extras];
+
+  const resultsDiv=document.getElementById('dcResults');
+  resultsDiv.classList.add('show');
+
+  /* Create placeholder rows immediately */
+  const rows={};
+  toCheck.forEach(tld=>{
+    const dom=name+tld;
+    const div=document.createElement('div');
+    div.className='dc-result-item checking';
+    div.id='row-'+tld.replace(/\./g,'_');
+    div.innerHTML=`<div class="dc-res-left"><div class="dc-domain-name">${dom}</div><span class="dc-badge badge-checking">Checking...</span></div><div style="font-size:12px;color:var(--text-gray)">⏳</div>`;
+    resultsDiv.appendChild(div);
+    rows[tld]=div;
+  });
+
+  document.getElementById('dcLoading').classList.remove('show');
+
+  /* Check all in parallel */
+  const checks=toCheck.map(async tld=>{
+    const dom=name+tld;
+    const status=await isDomainAvailable(dom);
+    const row=rows[tld];
+    if(!row)return;
+    if(status==='available'){
+      row.className='dc-result-item available';
+      row.innerHTML=`<div class="dc-res-left"><div class="dc-domain-name" style="color:#00d4aa">${dom}</div><span class="dc-badge badge-avail">✓ Available</span></div><button class="dc-cta-btn" onclick="contactForDomain('${dom}')">Register Now →</button>`;
+    } else if(status==='taken'){
+      row.className='dc-result-item taken';
+      row.innerHTML=`<div class="dc-res-left"><div class="dc-domain-name" style="color:#f87171;text-decoration:line-through">${dom}</div><span class="dc-badge badge-taken">✗ Taken</span></div><span class="dc-taken-txt">Try another →</span>`;
+    } else {
+      row.className='dc-result-item';
+      row.style.background='rgba(255,255,255,.02)';
+      row.style.borderColor='var(--border-color)';
+      row.innerHTML=`<div class="dc-res-left"><div class="dc-domain-name">${dom}</div><span class="dc-badge" style="background:rgba(255,107,53,.12);color:#fb923c">⚠ Retry</span></div><button style="background:transparent;border:1px solid var(--border-color);color:var(--text-gray);padding:6px 14px;border-radius:16px;font-size:12px;cursor:pointer;font-family:inherit" onclick="retrySingle('${name}','${tld}')">Retry</button>`;
+    }
+  });
+
+  await Promise.all(checks);
+
+  btn.disabled=false; btn.innerHTML='🔍 Check';
+
+  /* Show bulk alt TLD row */
+  buildBulkRow(name,ext);
+}
+
+function buildBulkRow(name,usedExt){
+  const row=document.getElementById('dcBulkRow');
+  row.style.display='flex';
+  row.innerHTML='<span class="dc-bulk-label">💡 Also check these extensions:</span>';
+  ALL_TLDS.filter(t=>t!==usedExt).forEach(tld=>{
+    const b=document.createElement('button');
+    b.className='dc-bulk-ext';
+    b.textContent=name+tld;
+    b.onclick=()=>{document.getElementById('dcInput').value=name;document.getElementById('dcExt').value=tld;checkDomain();};
+    row.appendChild(b);
+  });
+}
+
+async function retrySingle(name,tld){
+  const dom=name+tld;
+  const rowId='row-'+tld.replace(/\./g,'_');
+  const row=document.getElementById(rowId);
+  if(!row)return;
+  row.className='dc-result-item checking';
+  row.innerHTML=`<div class="dc-res-left"><div class="dc-domain-name">${dom}</div><span class="dc-badge badge-checking">Retrying...</span></div><div>⏳</div>`;
+  const status=await isDomainAvailable(dom);
+  if(status==='available'){
+    row.className='dc-result-item available';
+    row.innerHTML=`<div class="dc-res-left"><div class="dc-domain-name" style="color:#00d4aa">${dom}</div><span class="dc-badge badge-avail">✓ Available</span></div><button class="dc-cta-btn" onclick="contactForDomain('${dom}')">Register Now →</button>`;
+  } else if(status==='taken'){
+    row.className='dc-result-item taken';
+    row.innerHTML=`<div class="dc-res-left"><div class="dc-domain-name" style="color:#f87171;text-decoration:line-through">${dom}</div><span class="dc-badge badge-taken">✗ Taken</span></div><span class="dc-taken-link">Try another</span>`;
+  }
+}
+
+function contactForDomain(domain){
+  const msg=`Hi! I'd like to register the domain "${domain}". Please help me with the registration and hosting.`;
+  window.open(`https://wa.me/918750711007?text=${encodeURIComponent(msg)}`,'_blank');
+}
+
+function showErr(msg){const e=document.getElementById('dcErr');e.textContent=msg;e.classList.add('show')}
+function hideErr(){document.getElementById('dcErr').classList.remove('show')}
+function shakeInput(){const i=document.getElementById('dcInput');i.style.borderColor='#ea4335';i.focus();setTimeout(()=>i.style.borderColor='',1200)}
+
 window.addEventListener('scroll',()=>{
   document.getElementById('navbar').style.background=window.scrollY>50?'rgba(10,10,15,0.98)':'rgba(10,10,15,0.95)';
 });
@@ -1423,8 +1787,6 @@ const obs=new IntersectionObserver(entries=>{
   entries.forEach((e,i)=>{if(e.isIntersecting){setTimeout(()=>e.target.classList.add('visible'),(i%4)*80);obs.unobserve(e.target);}});
 },{threshold:0.08,rootMargin:'0px 0px -40px 0px'});
 document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
-
-// Animate perf bars on scroll
 const perfObs=new IntersectionObserver(entries=>{
   entries.forEach(e=>{if(e.isIntersecting){
     e.target.querySelectorAll('.si-fill').forEach(b=>{const w=b.style.width;b.style.width='0';setTimeout(()=>b.style.width=w,200);});
