@@ -1,0 +1,1558 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="robots" content="noindex, nofollow"/>
+<title>Google Ads Strategy | Best Digital Marketer × MojoeSIM</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+   <meta name="yandex-verification" content="8afbecf1e3ee6ca4" />
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W33WK3QH');</script>
+<!-- End Google Tag Manager -->
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --bg-dark: #0a0a0f;
+  --bg-card: #12121a;
+  --bg-card-hover: #1a1a25;
+  --text-white: #ffffff;
+  --text-gray: #9ca3af;
+  --text-light-gray: #d1d5db;
+  --primary: #00d4aa;
+  --primary-dark: #00b894;
+  --accent: #ff6b35;
+  --accent2: #7c3aed;
+  --border-color: #2a2a3a;
+  --gradient-1: linear-gradient(135deg, #00d4aa 0%, #00b894 100%);
+  --gradient-2: linear-gradient(135deg, #ff6b35 0%, #ff8555 100%);
+  --gradient-3: linear-gradient(135deg, #7c3aed 0%, #a855f7 100%);
+  --gradient-hero: linear-gradient(135deg, rgba(0,212,170,0.08) 0%, rgba(124,58,237,0.05) 50%, rgba(255,107,53,0.04) 100%);
+  --shadow: 0 4px 24px rgba(0,0,0,0.4), 0 1px 4px rgba(0,0,0,0.3);
+}
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--bg-dark);
+  color: var(--text-white);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+h1, h2, h3, h4 { font-family: 'Space Grotesk', sans-serif; font-weight: 700; line-height: 1.2; }
+a { text-decoration: none; color: inherit; transition: all 0.3s ease; }
+
+/* ── NAVBAR ── */
+.navbar {
+  position: sticky; top: 0; left: 0; right: 0; z-index: 1000;
+  background: rgba(10,10,15,0.97);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--border-color);
+  padding: 16px 0;
+}
+.nav-container {
+  max-width: 1280px; margin: 0 auto; padding: 0 24px;
+  display: flex; justify-content: space-between; align-items: center;
+}
+.logo {
+  display: flex; align-items: center; gap: 12px;
+  font-family: 'Space Grotesk', sans-serif; font-size: 22px; font-weight: 700;
+}
+.logo-icon {
+  width: 40px; height: 40px; background: var(--gradient-1);
+  border-radius: 10px; display: flex; align-items: center; justify-content: center;
+  font-weight: 800; font-size: 15px; color: var(--bg-dark);
+}
+.nav-right { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+.nav-badge {
+  background: rgba(0,212,170,0.1); border: 1px solid rgba(0,212,170,0.3);
+  color: var(--primary); padding: 6px 14px; border-radius: 50px;
+  font-size: 12px; font-weight: 600;
+}
+.nav-conf {
+  background: rgba(255,107,53,0.1); border: 1px solid rgba(255,107,53,0.3);
+  color: var(--accent); padding: 5px 12px; border-radius: 50px;
+  font-size: 11px; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase;
+}
+
+/* ── HERO ── */
+.tool-hero {
+  position: relative; overflow: hidden;
+  padding: 80px 24px 64px; text-align: center;
+}
+.tool-hero::before {
+  content: ''; position: absolute; inset: 0;
+  background: var(--gradient-hero); pointer-events: none;
+}
+.hero-grid {
+  position: absolute; inset: 0;
+  background-image: linear-gradient(rgba(0,212,170,0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,212,170,0.035) 1px, transparent 1px);
+  background-size: 56px 56px;
+  mask-image: radial-gradient(ellipse 80% 70% at 50% 0%, black 0%, transparent 100%);
+}
+.hero-glow {
+  position: absolute; width: 700px; height: 700px;
+  background: radial-gradient(circle, rgba(0,212,170,0.09) 0%, transparent 70%);
+  top: -250px; right: -200px; pointer-events: none;
+}
+.hero-glow-2 {
+  position: absolute; width: 500px; height: 500px;
+  background: radial-gradient(circle, rgba(124,58,237,0.07) 0%, transparent 70%);
+  bottom: -150px; left: -150px; pointer-events: none;
+}
+.hero-glow-3 {
+  position: absolute; width: 400px; height: 400px;
+  background: radial-gradient(circle, rgba(255,107,53,0.06) 0%, transparent 70%);
+  top: 50%; left: 50%; transform: translate(-50%, -50%); pointer-events: none;
+}
+.hero-inner { position: relative; z-index: 1; max-width: 860px; margin: 0 auto; }
+.hero-badge {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: rgba(0,212,170,0.1); border: 1px solid rgba(0,212,170,0.3);
+  padding: 8px 20px; border-radius: 50px; font-size: 13px;
+  color: var(--primary); margin-bottom: 24px; font-weight: 600;
+}
+.hero-badge::before {
+  content: ''; width: 8px; height: 8px; background: var(--primary);
+  border-radius: 50%; animation: pulse 2s infinite;
+}
+@keyframes pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:0.5;transform:scale(0.85)} }
+
+.client-pill {
+  display: inline-flex; align-items: center; gap: 10px;
+  background: rgba(124,58,237,0.1); border: 1px solid rgba(124,58,237,0.25);
+  padding: 6px 16px; border-radius: 50px; margin-bottom: 20px;
+  font-size: 12px; color: #a78bfa; font-weight: 600;
+}
+.client-dot { width: 24px; height: 24px; border-radius: 6px; background: var(--gradient-3); display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:800;color:white; }
+
+.tool-hero h1 {
+  font-size: clamp(2.2rem, 5vw, 3.6rem);
+  margin-bottom: 20px;
+  background: linear-gradient(135deg, #fff 0%, #d1d5db 100%);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+  letter-spacing: -0.02em;
+}
+.tool-hero h1 .g1 {
+  background: var(--gradient-1);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+}
+.tool-hero h1 .g3 {
+  background: var(--gradient-3);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+}
+.tool-hero p { font-size: 15px; color: var(--text-gray); line-height: 1.8; max-width: 640px; margin: 0 auto 44px; }
+
+/* ── HERO STATS ── */
+.hero-stats {
+  display: flex; justify-content: center; gap: 0;
+  background: var(--bg-card); border: 1px solid var(--border-color);
+  border-radius: 20px; overflow: hidden; max-width: 760px; margin: 0 auto;
+}
+.hero-stat {
+  flex: 1; padding: 22px 16px; text-align: center;
+  border-right: 1px solid var(--border-color);
+  position: relative; overflow: hidden;
+}
+.hero-stat::before {
+  content: ''; position:absolute;top:0;left:0;right:0;height:2px;
+}
+.hero-stat:nth-child(1)::before { background:var(--gradient-1); }
+.hero-stat:nth-child(2)::before { background:var(--gradient-3); }
+.hero-stat:nth-child(3)::before { background:var(--gradient-2); }
+.hero-stat:nth-child(4)::before { background:linear-gradient(135deg,#06b6d4,#0891b2); }
+.hero-stat:nth-child(5)::before { background:linear-gradient(135deg,#f59e0b,#d97706); }
+.hero-stat:last-child { border-right: none; }
+.hero-stat .num {
+  font-family: 'Space Grotesk', sans-serif; font-size: 1.7rem; font-weight: 800;
+  background: var(--gradient-1); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+  line-height: 1;
+}
+.hero-stat:nth-child(2) .num { background:var(--gradient-3);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text; }
+.hero-stat:nth-child(3) .num { background:var(--gradient-2);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text; }
+.hero-stat .lbl { font-size: 10px; color: var(--text-gray); text-transform: uppercase; letter-spacing: 0.07em; margin-top: 5px; }
+
+/* ── WRAPPER ── */
+.wrapper { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+section { padding: 64px 0; }
+section + section { padding-top: 0; }
+
+/* ── SECTION HEADER ── */
+.sec-tag {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: rgba(0,212,170,0.08); border: 1px solid rgba(0,212,170,0.2);
+  color: var(--primary); padding: 5px 14px; border-radius: 50px;
+  font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;
+  margin-bottom: 14px;
+}
+.sec-tag.red { background: rgba(255,107,53,0.08); border-color: rgba(255,107,53,0.25); color: var(--accent); }
+.sec-tag.purple { background: rgba(124,58,237,0.08); border-color: rgba(124,58,237,0.25); color: #a78bfa; }
+.sec-title { font-size: clamp(1.6rem, 3vw, 2.3rem); margin-bottom: 12px; }
+.sec-sub { font-size: 15px; color: var(--text-gray); line-height: 1.75; max-width: 600px; }
+
+/* ── CARD ── */
+.card {
+  background: var(--bg-card); border: 1px solid var(--border-color);
+  border-radius: 20px; box-shadow: var(--shadow); overflow: hidden;
+  position: relative; transition: all 0.3s;
+}
+.card::before {
+  content: ''; position: absolute; top: 0; left: 0; right: 0;
+  height: 3px; background: var(--gradient-1);
+}
+.card.red::before { background: var(--gradient-2); }
+.card.purple::before { background: var(--gradient-3); }
+.card:hover { border-color: rgba(0,212,170,0.3); transform: translateY(-3px); box-shadow: 0 12px 40px rgba(0,0,0,0.5); }
+.card-body { padding: 28px; }
+
+/* ── STRATEGY OVERVIEW GRID ── */
+.strat-overview { display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;margin-top:28px; }
+.strat-box {
+  background:var(--bg-card);border:1px solid var(--border-color);
+  border-radius:18px;padding:24px;position:relative;overflow:hidden;transition:all 0.3s;
+}
+.strat-box::before { content:'';position:absolute;top:0;left:0;right:0;height:3px; }
+.strat-box.s1::before { background:var(--gradient-1); }
+.strat-box.s2::before { background:var(--gradient-3); }
+.strat-box.s3::before { background:var(--gradient-2); }
+.strat-box:hover { transform:translateY(-3px);box-shadow:0 12px 36px rgba(0,0,0,0.5); }
+.sb-icon { font-size:32px;margin-bottom:12px; }
+.sb-title { font-family:'Space Grotesk',sans-serif;font-size:15px;font-weight:700;margin-bottom:8px; }
+.sb-desc { font-size:12px;color:var(--text-gray);line-height:1.7; }
+.sb-val { font-family:'Space Grotesk',sans-serif;font-size:1.6rem;font-weight:800;margin-top:12px; }
+.sv-g1 { background:var(--gradient-1);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text; }
+.sv-g3 { background:var(--gradient-3);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text; }
+.sv-g2 { background:var(--gradient-2);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text; }
+
+/* ── BUDGET BREAKDOWN ── */
+.budget-wrap { display:grid;grid-template-columns:1fr 1.6fr;gap:24px;margin-top:28px;align-items:start; }
+.budget-total {
+  background:var(--bg-card);border:1px solid var(--border-color);
+  border-radius:20px;padding:28px;text-align:center;position:relative;overflow:hidden;
+}
+.budget-total::before { content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--gradient-1); }
+.bt-label { font-size:11px;color:var(--text-gray);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:8px; }
+.bt-amount { font-family:'Space Grotesk',sans-serif;font-size:2.8rem;font-weight:800;background:var(--gradient-1);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;line-height:1; }
+.bt-sub { font-size:12px;color:var(--text-gray);margin-top:6px; }
+.bt-divider { border:none;border-top:1px solid var(--border-color);margin:20px 0; }
+.bt-row { display:flex;justify-content:space-between;align-items:center;font-size:13px;margin-bottom:10px; }
+.bt-row:last-child { margin-bottom:0; }
+.bt-row .lk { color:var(--text-gray); }
+.bt-row .vk { color:var(--text-white);font-weight:600; }
+.country-alloc { display:flex;flex-direction:column;gap:10px; }
+.ca-item {
+  background:var(--bg-card);border:1px solid var(--border-color);
+  border-radius:14px;padding:16px 20px;transition:all 0.3s;
+}
+.ca-item:hover { border-color:rgba(0,212,170,0.3);background:var(--bg-card-hover); }
+.ca-top { display:flex;justify-content:space-between;align-items:center;margin-bottom:10px; }
+.ca-flag { font-size:20px; }
+.ca-name { font-family:'Space Grotesk',sans-serif;font-size:14px;font-weight:700; }
+.ca-budget { font-family:'Space Grotesk',sans-serif;font-size:15px;font-weight:700;color:var(--primary); }
+.ca-meta { display:flex;gap:12px;flex-wrap:wrap;margin-bottom:10px; }
+.cm-pill {
+  font-size:10px;font-weight:600;padding:3px 10px;border-radius:50px;
+  background:rgba(0,212,170,0.07);border:1px solid rgba(0,212,170,0.15);color:var(--primary);
+}
+.cm-pill.orange { background:rgba(255,107,53,0.07);border-color:rgba(255,107,53,0.2);color:var(--accent); }
+.cm-pill.purple { background:rgba(124,58,237,0.07);border-color:rgba(124,58,237,0.2);color:#a78bfa; }
+.ca-bar-track { height:5px;background:rgba(255,255,255,0.06);border-radius:3px;overflow:hidden; }
+.ca-bar-fill { height:100%;border-radius:3px;background:var(--gradient-1);transition:width 1.4s cubic-bezier(0.25,1,0.5,1); }
+
+/* ── KEYWORD TABLE ── */
+.kw-wrap { border-radius:20px;border:1px solid var(--border-color);overflow:hidden;margin-top:28px; }
+.kw-header {
+  display:flex;align-items:center;justify-content:space-between;
+  background:var(--bg-card-hover);padding:16px 20px;border-bottom:1px solid var(--border-color);
+}
+.kw-header h3 { font-family:'Space Grotesk',sans-serif;font-size:15px;font-weight:700; }
+.kw-note { font-size:11px;color:var(--text-gray); }
+table { width:100%;border-collapse:collapse; }
+thead { background:var(--bg-card-hover); }
+th {
+  padding:11px 14px;text-align:left;font-size:10px;font-weight:700;
+  letter-spacing:0.07em;text-transform:uppercase;color:var(--text-gray);
+  border-bottom:1px solid var(--border-color);
+}
+td {
+  padding:12px 14px;font-size:13px;color:var(--text-light-gray);
+  border-bottom:1px solid rgba(42,42,58,0.5);vertical-align:middle;
+}
+tr:last-child td { border-bottom:none; }
+tr:hover td { background:rgba(0,212,170,0.02); }
+.flag-cell { display:flex;align-items:center;gap:10px; }
+.fc-flag { font-size:18px; }
+.fc-text strong { display:block;color:var(--text-white);font-weight:600;font-size:13px; }
+.fc-text span { font-size:11px;color:var(--text-gray); }
+.vol-chip {
+  display:inline-block;padding:3px 10px;border-radius:50px;font-size:10px;font-weight:700;
+  background:rgba(0,212,170,0.1);border:1px solid rgba(0,212,170,0.2);color:var(--primary);
+}
+.comp-badge { display:inline-block;padding:2px 9px;border-radius:50px;font-size:10px;font-weight:700; }
+.comp-high { background:rgba(248,113,113,0.15);color:#f87171; }
+.cpc-range { font-family:'Space Grotesk',sans-serif;font-size:13px;font-weight:600; }
+.cpc-opt { font-family:'Space Grotesk',sans-serif;font-size:12px;font-weight:700;color:var(--primary); }
+.kw-type { display:inline-block;padding:2px 8px;border-radius:50px;font-size:10px;font-weight:600; }
+.kwt-phrase { background:rgba(124,58,237,0.12);border:1px solid rgba(124,58,237,0.2);color:#a78bfa; }
+.kwt-exact { background:rgba(0,212,170,0.1);border:1px solid rgba(0,212,170,0.2);color:var(--primary); }
+.kwt-broad { background:rgba(255,107,53,0.1);border:1px solid rgba(255,107,53,0.2);color:var(--accent); }
+
+/* ── CAMPAIGN STRUCTURE ── */
+.camp-grid { display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:28px; }
+.camp-card {
+  background:var(--bg-card);border:1px solid var(--border-color);
+  border-radius:18px;padding:22px;transition:all 0.3s;position:relative;overflow:hidden;
+}
+.camp-card::before { content:'';position:absolute;top:0;left:0;right:0;height:3px; }
+.cc1::before { background:linear-gradient(90deg,#00d4aa,#0891b2); }
+.cc2::before { background:linear-gradient(90deg,#7c3aed,#a855f7); }
+.cc3::before { background:linear-gradient(90deg,#f59e0b,#d97706); }
+.cc4::before { background:linear-gradient(90deg,#ec4899,#f43f5e); }
+.cc5::before { background:var(--gradient-2); }
+.cc6::before { background:var(--gradient-1); }
+.camp-card:hover { border-color:rgba(0,212,170,0.3);transform:translateY(-2px); }
+.cc-flag { font-size:28px;margin-bottom:10px; }
+.cc-title { font-family:'Space Grotesk',sans-serif;font-size:15px;font-weight:700;margin-bottom:6px; }
+.cc-sub { font-size:12px;color:var(--text-gray);margin-bottom:14px;line-height:1.6; }
+.cc-tags { display:flex;flex-wrap:wrap;gap:6px;margin-bottom:14px; }
+.ctag {
+  font-size:10px;font-weight:600;padding:3px 9px;border-radius:50px;
+  background:rgba(0,212,170,0.07);border:1px solid rgba(0,212,170,0.15);color:var(--primary);
+}
+.cc-adgroups { border-top:1px solid var(--border-color);padding-top:12px; }
+.cc-ag-label { font-size:10px;color:var(--text-gray);text-transform:uppercase;letter-spacing:0.06em;margin-bottom:8px; }
+.ag-row { font-size:12px;color:var(--text-light-gray);display:flex;gap:6px;align-items:flex-start;margin-bottom:5px;line-height:1.5; }
+.ag-row::before { content:'↳';color:var(--primary);flex-shrink:0;margin-top:0px; }
+
+/* ── METRICS TABLE ── */
+.metrics-grid { display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:28px; }
+.metric-card {
+  background:var(--bg-card);border:1px solid var(--border-color);
+  border-radius:16px;padding:22px;text-align:center;transition:all 0.3s;position:relative;overflow:hidden;
+}
+.metric-card::after {
+  content:'';position:absolute;bottom:0;left:0;right:0;height:40px;
+  background:radial-gradient(ellipse at 50% 100%,rgba(0,212,170,0.06) 0%,transparent 70%);
+}
+.metric-card:hover { border-color:rgba(0,212,170,0.3);transform:translateY(-3px); }
+.metric-icon { font-size:28px;margin-bottom:10px; }
+.metric-val {
+  font-family:'Space Grotesk',sans-serif;font-size:1.8rem;font-weight:800;
+  background:var(--gradient-1);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+  line-height:1;margin-bottom:4px;
+}
+.metric-val.v2 { background:var(--gradient-3);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text; }
+.metric-val.v3 { background:var(--gradient-2);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text; }
+.metric-lbl { font-size:11px;color:var(--text-gray);margin-bottom:6px;line-height:1.4; }
+.metric-note { font-size:10px;background:rgba(0,212,170,0.07);border:1px solid rgba(0,212,170,0.15);color:var(--primary);padding:3px 8px;border-radius:6px;display:inline-block; }
+
+/* ── PHASE PLAN ── */
+.phase-wrap { display:flex;flex-direction:column;gap:0;margin-top:28px;position:relative; }
+.phase-wrap::before {
+  content:'';position:absolute;left:21px;top:0;bottom:0;width:2px;
+  background:linear-gradient(to bottom,var(--primary),rgba(0,212,170,0.05));
+}
+.phase { display:grid;grid-template-columns:44px 1fr;gap:20px;padding-bottom:32px;align-items:start; }
+.phase:last-child { padding-bottom:0; }
+.phase-dot {
+  width:44px;height:44px;border-radius:50%;
+  background:var(--bg-card);border:2px solid var(--primary);
+  display:flex;align-items:center;justify-content:center;
+  font-family:'Space Grotesk',sans-serif;font-size:13px;font-weight:700;
+  color:var(--primary);flex-shrink:0;position:relative;z-index:1;
+}
+.phase-dot.pd2 { border-color:#a78bfa;color:#a78bfa; }
+.phase-dot.pd3 { border-color:var(--accent);color:var(--accent); }
+.phase-dot.pd4 { border-color:#f59e0b;color:#f59e0b; }
+.phase-box {
+  background:var(--bg-card);border:1px solid var(--border-color);
+  border-radius:16px;padding:22px;transition:all 0.3s;
+}
+.phase-box:hover { border-color:rgba(0,212,170,0.3);background:var(--bg-card-hover); }
+.phase-timeline { font-size:10px;font-weight:700;color:var(--primary);letter-spacing:0.08em;text-transform:uppercase;margin-bottom:5px; }
+.phase-title { font-family:'Space Grotesk',sans-serif;font-size:16px;font-weight:700;margin-bottom:8px; }
+.phase-desc { font-size:13px;color:var(--text-gray);line-height:1.7; }
+.phase-tags { display:flex;flex-wrap:wrap;gap:6px;margin-top:12px; }
+.ptag {
+  background:rgba(0,212,170,0.08);border:1px solid rgba(0,212,170,0.18);
+  color:var(--primary);font-size:10px;font-weight:600;
+  padding:3px 10px;border-radius:50px;letter-spacing:0.04em;
+}
+.ptag.p2 { background:rgba(124,58,237,0.08);border-color:rgba(124,58,237,0.2);color:#a78bfa; }
+.ptag.p3 { background:rgba(255,107,53,0.08);border-color:rgba(255,107,53,0.2);color:var(--accent); }
+.ptag.p4 { background:rgba(245,158,11,0.08);border-color:rgba(245,158,11,0.2);color:#f59e0b; }
+
+/* ── FUNNEL ── */
+.funnel-outer { display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:28px;align-items:start; }
+.funnel { display:flex;flex-direction:column;gap:8px; }
+.fs {
+  border-radius:12px;padding:15px 20px;
+  display:flex;align-items:center;justify-content:space-between;
+  transition:filter 0.2s;cursor:default;
+}
+.fs:hover { filter:brightness(1.1); }
+.fs1 { background:linear-gradient(135deg,rgba(0,212,170,0.22),rgba(0,212,170,0.07));border:1px solid rgba(0,212,170,0.3); }
+.fs2 { background:linear-gradient(135deg,rgba(0,212,170,0.16),rgba(0,212,170,0.05));border:1px solid rgba(0,212,170,0.2);margin:0 2%; }
+.fs3 { background:linear-gradient(135deg,rgba(0,212,170,0.1),rgba(0,212,170,0.03));border:1px solid rgba(0,212,170,0.15);margin:0 4%; }
+.fs4 { background:linear-gradient(135deg,rgba(124,58,237,0.15),rgba(124,58,237,0.05));border:1px solid rgba(124,58,237,0.25);margin:0 6%; }
+.fs5 { background:linear-gradient(135deg,rgba(255,107,53,0.2),rgba(255,107,53,0.07));border:1px solid rgba(255,107,53,0.35);margin:0 8%; }
+.fs6 { background:linear-gradient(135deg,rgba(255,107,53,0.3),rgba(255,107,53,0.12));border:1px solid rgba(255,107,53,0.45);margin:0 10%; }
+.fs-lbl { font-family:'Space Grotesk',sans-serif;font-size:13px;font-weight:600; }
+.fs-r { text-align:right; }
+.fs-num { font-size:15px;font-weight:800;color:var(--primary);font-family:'Space Grotesk',sans-serif; }
+.fs4 .fs-num { color:#a78bfa; }
+.fs5 .fs-num,.fs6 .fs-num { color:var(--accent); }
+.fs-sub { font-size:10px;color:var(--text-gray); }
+
+/* ── USA SPECIAL BLOCK ── */
+.usa-block {
+  margin-top:28px;border-radius:20px;overflow:hidden;
+  border:1px solid rgba(255,107,53,0.3);position:relative;
+}
+.usa-header {
+  background:linear-gradient(135deg,rgba(255,107,53,0.15),rgba(255,107,53,0.06));
+  padding:20px 24px;display:flex;align-items:center;gap:16px;
+  border-bottom:1px solid rgba(255,107,53,0.2);
+}
+.usa-flag { font-size:32px; }
+.usa-head-text h3 { font-family:'Space Grotesk',sans-serif;font-size:18px;font-weight:700;margin-bottom:4px; }
+.usa-head-text p { font-size:12px;color:var(--text-gray); }
+.usa-badge { margin-left:auto;background:rgba(255,107,53,0.15);border:1px solid rgba(255,107,53,0.3);color:var(--accent);padding:6px 14px;border-radius:50px;font-size:11px;font-weight:700;white-space:nowrap; }
+.usa-body { padding:24px; }
+.usa-grid { display:grid;grid-template-columns:1fr 1fr;gap:16px; }
+.usa-reason {
+  background:var(--bg-card-hover);border:1px solid rgba(255,107,53,0.15);
+  border-radius:14px;padding:16px;
+}
+.ur-num { font-family:'Space Grotesk',sans-serif;font-size:2rem;font-weight:800;color:rgba(255,107,53,0.15);line-height:1;margin-bottom:6px; }
+.ur-title { font-size:13px;font-weight:700;color:var(--text-white);margin-bottom:6px;font-family:'Space Grotesk',sans-serif; }
+.ur-desc { font-size:12px;color:var(--text-gray);line-height:1.65; }
+.usa-plan {
+  margin-top:16px;background:rgba(0,212,170,0.04);border:1px solid rgba(0,212,170,0.15);
+  border-radius:14px;padding:18px 20px;display:flex;gap:14px;align-items:flex-start;
+}
+.up-icon { font-size:24px;flex-shrink:0;margin-top:2px; }
+.up-text h4 { font-family:'Space Grotesk',sans-serif;font-size:14px;font-weight:700;color:var(--primary);margin-bottom:6px; }
+.up-text p { font-size:13px;color:var(--text-gray);line-height:1.7; }
+
+/* ── LANDING PAGE ── */
+.lp-grid { display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:28px; }
+.lp-item {
+  background:var(--bg-card);border:1px solid var(--border-color);
+  border-radius:16px;padding:20px;transition:all 0.3s;
+}
+.lp-item:hover { border-color:rgba(0,212,170,0.3);transform:translateY(-2px); }
+.li-icon { font-size:22px;margin-bottom:10px; }
+.li-status { display:inline-block;font-size:10px;font-weight:700;padding:2px 9px;border-radius:50px;margin-bottom:8px; }
+.st-must { background:rgba(248,113,113,0.15);color:#f87171; }
+.st-imp { background:rgba(255,107,53,0.15);color:var(--accent); }
+.st-rec { background:rgba(0,212,170,0.12);color:var(--primary); }
+.li-title { font-family:'Space Grotesk',sans-serif;font-size:14px;font-weight:700;margin-bottom:6px; }
+.li-desc { font-size:12px;color:var(--text-gray);line-height:1.65; }
+.li-fix { margin-top:10px;padding:9px 12px;background:rgba(0,212,170,0.05);border:1px solid rgba(0,212,170,0.12);border-radius:8px;font-size:11px;color:var(--primary);line-height:1.6; }
+.li-fix strong { font-weight:700;display:block;margin-bottom:2px; }
+
+/* ── MATCH TYPE ── */
+.match-grid { display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:28px; }
+.match-card {
+  background:var(--bg-card);border:1px solid var(--border-color);
+  border-radius:16px;padding:22px;position:relative;overflow:hidden;transition:all 0.3s;
+}
+.match-card::before { content:'';position:absolute;top:0;left:0;right:0;height:3px; }
+.mc-broad::before { background:var(--gradient-2); }
+.mc-phrase::before { background:var(--gradient-3); }
+.mc-exact::before { background:var(--gradient-1); }
+.match-card:hover { transform:translateY(-2px); }
+.mc-badge { display:inline-block;font-size:11px;font-weight:700;padding:4px 12px;border-radius:50px;margin-bottom:12px; }
+.mc-broad .mc-badge { background:rgba(255,107,53,0.12);color:var(--accent); }
+.mc-phrase .mc-badge { background:rgba(124,58,237,0.12);color:#a78bfa; }
+.mc-exact .mc-badge { background:rgba(0,212,170,0.12);color:var(--primary); }
+.mc-title { font-family:'Space Grotesk',sans-serif;font-size:15px;font-weight:700;margin-bottom:8px; }
+.mc-purpose { font-size:12px;font-weight:600;color:var(--text-gray);margin-bottom:10px; }
+.mc-list { list-style:none;display:flex;flex-direction:column;gap:6px; }
+.mc-list li { font-size:12px;color:var(--text-light-gray);line-height:1.5;display:flex;gap:7px;align-items:flex-start; }
+.mc-broad .mc-list li::before { content:'→';color:var(--accent);flex-shrink:0; }
+.mc-phrase .mc-list li::before { content:'→';color:#a78bfa;flex-shrink:0; }
+.mc-exact .mc-list li::before { content:'→';color:var(--primary);flex-shrink:0; }
+
+/* ── ABOUT ── */
+.about-box {
+  display:grid;grid-template-columns:auto 1fr;gap:36px;align-items:center;
+  background:var(--bg-card);border:1px solid var(--border-color);
+  border-radius:24px;padding:40px;position:relative;overflow:hidden;margin-top:32px;
+}
+.about-box::before { content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--gradient-1); }
+.av { width:110px;height:110px;border-radius:50%;border:3px solid var(--primary);overflow:hidden;flex-shrink:0; }
+.av img { width:100%;height:100%;object-fit:cover; }
+.ab-name { font-family:'Space Grotesk',sans-serif;font-size:1.4rem;font-weight:700;margin-bottom:4px; }
+.ab-role { color:var(--primary);font-size:13px;font-weight:600;margin-bottom:10px; }
+.ab-desc { font-size:13px;color:var(--text-gray);line-height:1.7;max-width:540px; }
+.ab-badges { display:flex;flex-wrap:wrap;gap:8px;margin-top:14px; }
+.ab-badge { background:rgba(0,212,170,0.07);border:1px solid rgba(0,212,170,0.2);color:var(--text-light-gray);font-size:11px;padding:4px 12px;border-radius:50px; }
+
+/* ── CTA ── */
+.cta-box {
+  background:linear-gradient(135deg,rgba(0,212,170,0.08),rgba(124,58,237,0.05),rgba(255,107,53,0.04));
+  border:1px solid rgba(0,212,170,0.2);border-radius:24px;
+  padding:60px 40px;text-align:center;margin-top:60px;position:relative;overflow:hidden;
+}
+.cta-box::before {
+  content:'';position:absolute;inset:0;
+  background:radial-gradient(ellipse 60% 60% at 25% 50%,rgba(0,212,170,0.06) 0%,transparent 70%),
+              radial-gradient(ellipse 50% 50% at 75% 50%,rgba(124,58,237,0.05) 0%,transparent 70%);
+}
+.cta-box > * { position:relative;z-index:1; }
+.cta-btns { display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:28px; }
+.btn-primary {
+  display:inline-flex;align-items:center;gap:9px;
+  background:var(--gradient-1);color:var(--bg-dark);
+  padding:15px 32px;border-radius:50px;font-size:15px;font-weight:700;
+  font-family:'Space Grotesk',sans-serif;transition:all 0.3s;border:none;cursor:pointer;
+}
+.btn-primary:hover { transform:translateY(-3px);box-shadow:0 12px 36px rgba(0,212,170,0.4); }
+.btn-outline {
+  display:inline-flex;align-items:center;gap:9px;
+  background:transparent;color:var(--primary);
+  border:2px solid rgba(0,212,170,0.4);padding:13px 28px;border-radius:50px;
+  font-size:15px;font-weight:600;font-family:'Space Grotesk',sans-serif;transition:all 0.3s;
+}
+.btn-outline:hover { background:rgba(0,212,170,0.08);box-shadow:0 8px 24px rgba(0,212,170,0.2); }
+
+/* ── DISCLAIMER / INFO BOX ── */
+.info-box {
+  background:rgba(0,212,170,0.04);border:1px solid rgba(0,212,170,0.15);
+  border-radius:14px;padding:16px 20px;margin-top:20px;
+  font-size:12px;color:var(--text-gray);line-height:1.7;
+}
+.info-box strong { color:var(--primary); }
+
+/* ── FOOTER ── */
+.footer {
+  background:var(--bg-card);border-top:1px solid var(--border-color);
+  padding:36px 24px;text-align:center;margin-top:80px;
+}
+.footer p { font-size:13px;color:var(--text-gray);line-height:1.8; }
+.footer a { color:var(--primary); }
+
+/* ── FADE IN ── */
+.fi { opacity:0;transform:translateY(22px);transition:opacity 0.55s ease,transform 0.55s ease; }
+.fi.on { opacity:1;transform:translateY(0); }
+
+/* ── DIVIDER ── */
+.section-divider {
+  height:1px;background:linear-gradient(to right,transparent,var(--border-color),transparent);
+  margin:0;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width:900px) {
+  .strat-overview { grid-template-columns:1fr; }
+  .budget-wrap { grid-template-columns:1fr; }
+  .camp-grid { grid-template-columns:1fr; }
+  .metrics-grid { grid-template-columns:1fr 1fr; }
+  .funnel-outer { grid-template-columns:1fr; }
+  .lp-grid { grid-template-columns:1fr; }
+  .match-grid { grid-template-columns:1fr; }
+  .about-box { grid-template-columns:1fr;text-align:center; }
+  .ab-badges { justify-content:center; }
+  .usa-grid { grid-template-columns:1fr; }
+}
+@media (max-width:600px) {
+  .metrics-grid { grid-template-columns:1fr 1fr; }
+  .hero-stats { flex-direction:column; }
+  .hero-stat { border-right:none;border-bottom:1px solid var(--border-color); }
+  .hero-stat:last-child { border-bottom:none; }
+  section { padding:44px 0; }
+  .cta-box { padding:36px 20px; }
+  th,td { padding:10px 10px;font-size:12px; }
+}
+</style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W33WK3QH"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="nav-container">
+    <a href="https://bestdigitalmarketer.com/" class="logo">
+      <div class="logo-icon">BDM</div>
+      Best Digital Marketer
+    </a>
+    <div class="nav-right">
+      <span class="nav-conf">Confidential Proposal</span>
+      <a href="https://bestdigitalmarketer.com/contact/" class="nav-badge">Book Strategy Call →</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="tool-hero">
+  <div class="hero-grid"></div>
+  <div class="hero-glow"></div>
+  <div class="hero-glow-2"></div>
+  <div class="hero-glow-3"></div>
+  <div class="hero-inner">
+    <div class="client-pill">
+      <div class="client-dot">M</div>
+      Prepared Exclusively for MojoeSIM
+    </div>
+    <div class="hero-badge">Google Ads Growth Strategy — 6 Countries</div>
+    <h1>Turn Global eSIM Searches<br>into <span class="g1">Paying Customers</span> with<br><span class="g3">Precision Google Ads</span></h1>
+    <p>A full-funnel Google Ads strategy across UK, Germany, France, Netherlands, Italy and a phased USA approach — built on real keyword data, tight budget allocation, and a roadmap from first click to repeat purchase.</p>
+    <div class="hero-stats fi">
+      <div class="hero-stat"><div class="num">6</div><div class="lbl">Target Countries</div></div>
+      <div class="hero-stat"><div class="num">₹47–57K</div><div class="lbl">Monthly Budget</div></div>
+      <div class="hero-stat"><div class="num">3–5%</div><div class="lbl">Target Conv. Rate</div></div>
+      <div class="hero-stat"><div class="num">180+</div><div class="lbl">Est. Monthly Sales</div></div>
+      <div class="hero-stat"><div class="num">90-Day</div><div class="lbl">P-Max Roadmap</div></div>
+    </div>
+  </div>
+</section>
+
+<div class="wrapper">
+
+<!-- ══ STRATEGY OVERVIEW ══ -->
+<section class="fi">
+  <div class="sec-tag">🧭 Strategic Overview</div>
+  <h2 class="sec-title">The 3-Pillar Google Ads Approach<br>for MojoeSIM</h2>
+  <p class="sec-sub">Every rupee of your budget is mapped to a specific country, keyword theme, and funnel stage. No wastage, no guesswork — just structured growth across Europe and beyond.</p>
+  <div class="strat-overview">
+    <div class="strat-box s1">
+      <div class="sb-icon">🎯</div>
+      <div class="sb-title">Precision Search Campaigns</div>
+      <div class="sb-desc">Phrase + Exact Match keywords targeting high-intent travellers actively searching for eSIM plans for each destination country. Tight negative keyword lists block irrelevant traffic from day one.</div>
+      <div class="sb-val sv-g1">5 Countries</div>
+    </div>
+    <div class="strat-box s2">
+      <div class="sb-icon">🔬</div>
+      <div class="sb-title">Broad Match Data Mining</div>
+      <div class="sb-desc">A controlled Broad Match layer runs parallel to discover new high-intent keyword variations you'd never find in Keyword Planner. All broad match campaigns are on tight budgets with aggressive negative keyword management to prevent waste.</div>
+      <div class="sb-val sv-g3">Discovery Layer</div>
+    </div>
+    <div class="strat-box s3">
+      <div class="sb-icon">🤖</div>
+      <div class="sb-title">P-Max Phase (Month 3+)</div>
+      <div class="sb-desc">Once the account has 60–90 days of clean conversion data, Google's Performance Max AI activates — using your real buyer profiles to find new customers across Search, Shopping, YouTube, Display, and Gmail. USA strategy begins here when CPC economics improve.</div>
+      <div class="sb-val sv-g2">Month 3+</div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- ══ BUDGET BREAKDOWN ══ -->
+<section class="fi">
+  <div class="sec-tag">💰 Budget Allocation</div>
+  <h2 class="sec-title">Monthly Budget Plan<br>by Country</h2>
+  <p class="sec-sub">Budget is distributed based on keyword competition, average CPC, market size, and projected conversion opportunity. All figures are in INR at current exchange rates (approx ₹84/USD).</p>
+
+  <div class="budget-wrap">
+    <div>
+      <div class="budget-total">
+        <div class="bt-label">Total Monthly Budget</div>
+        <div class="bt-amount">₹47,000–57,000</div>
+        <div class="bt-sub">Recommended range for meaningful data volume</div>
+        <hr class="bt-divider"/>
+        <div class="bt-row"><span class="lk">Daily Budget (avg)</span><span class="vk">₹1,550–1,900/day</span></div>
+        <div class="bt-row"><span class="lk">Primary Match Types</span><span class="vk">Phrase + Exact (70%) + Broad (30%)</span></div>
+        <div class="bt-row"><span class="lk">Languages</span><span class="vk">English + Local (FR/DE/IT/NL)</span></div>
+        <div class="bt-row"><span class="lk">Ad Schedule</span><span class="vk">All hours, optimise by peak days</span></div>
+        <div class="bt-row"><span class="lk">Bidding Strategy</span><span class="vk">Maximize Conversions → Target CPA</span></div>
+        <div class="bt-row"><span class="lk">USA Budget Month 1–3</span><span class="vk">₹0 (P-Max activated at Month 3)</span></div>
+      </div>
+    </div>
+
+    <div class="country-alloc">
+      <div class="ca-item">
+        <div class="ca-top">
+          <div style="display:flex;align-items:center;gap:10px">
+            <span class="ca-flag">🇬🇧</span>
+            <div>
+              <div class="ca-name">United Kingdom</div>
+              <div style="font-size:11px;color:var(--text-gray)">Highest volume + strong buying intent</div>
+            </div>
+          </div>
+          <div class="ca-budget">₹16,000–18,000</div>
+        </div>
+        <div class="ca-meta">
+          <span class="cm-pill">CPC: $2.09–6.59</span>
+          <span class="cm-pill orange">High Competition</span>
+          <span class="cm-pill purple">Est. 55–85 sales/mo</span>
+        </div>
+        <div class="ca-bar-track"><div class="ca-bar-fill" style="width:31%"></div></div>
+      </div>
+
+      <div class="ca-item">
+        <div class="ca-top">
+          <div style="display:flex;align-items:center;gap:10px">
+            <span class="ca-flag">🇩🇪</span>
+            <div>
+              <div class="ca-name">Germany</div>
+              <div style="font-size:11px;color:var(--text-gray)">High CPC market — quality over volume</div>
+            </div>
+          </div>
+          <div class="ca-budget">₹12,000–14,000</div>
+        </div>
+        <div class="ca-meta">
+          <span class="cm-pill">CPC: $4.37–10.51</span>
+          <span class="cm-pill orange">High Competition</span>
+          <span class="cm-pill purple">Est. 25–40 sales/mo</span>
+        </div>
+        <div class="ca-bar-track"><div class="ca-bar-fill" style="width:24%"></div></div>
+      </div>
+
+      <div class="ca-item">
+        <div class="ca-top">
+          <div style="display:flex;align-items:center;gap:10px">
+            <span class="ca-flag">🇫🇷</span>
+            <div>
+              <div class="ca-name">France</div>
+              <div style="font-size:11px;color:var(--text-gray)">Cost-efficient with strong travel culture</div>
+            </div>
+          </div>
+          <div class="ca-budget">₹8,000–10,000</div>
+        </div>
+        <div class="ca-meta">
+          <span class="cm-pill">CPC: $2.61–6.59</span>
+          <span class="cm-pill orange">High Competition</span>
+          <span class="cm-pill purple">Est. 30–50 sales/mo</span>
+        </div>
+        <div class="ca-bar-track"><div class="ca-bar-fill" style="width:17%"></div></div>
+      </div>
+
+      <div class="ca-item">
+        <div class="ca-top">
+          <div style="display:flex;align-items:center;gap:10px">
+            <span class="ca-flag">🇳🇱</span>
+            <div>
+              <div class="ca-name">Netherlands</div>
+              <div style="font-size:11px;color:var(--text-gray)">Highest CPC — tightly capped budget</div>
+            </div>
+          </div>
+          <div class="ca-budget">₹7,000–8,000</div>
+        </div>
+        <div class="ca-meta">
+          <span class="cm-pill">CPC: $3.93–12.09</span>
+          <span class="cm-pill orange">High Competition</span>
+          <span class="cm-pill purple">Est. 15–25 sales/mo</span>
+        </div>
+        <div class="ca-bar-track"><div class="ca-bar-fill" style="width:14%"></div></div>
+      </div>
+
+      <div class="ca-item">
+        <div class="ca-top">
+          <div style="display:flex;align-items:center;gap:10px">
+            <span class="ca-flag">🇮🇹</span>
+            <div>
+              <div class="ca-name">Italy</div>
+              <div style="font-size:11px;color:var(--text-gray)">Growing travel market, moderate CPC</div>
+            </div>
+          </div>
+          <div class="ca-budget">₹4,000–7,000</div>
+        </div>
+        <div class="ca-meta">
+          <span class="cm-pill">CPC: $2.45–7.13</span>
+          <span class="cm-pill orange">High Competition</span>
+          <span class="cm-pill purple">Est. 20–35 sales/mo</span>
+        </div>
+        <div class="ca-bar-track"><div class="ca-bar-fill" style="width:10%"></div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="info-box">
+    <strong>Note on CPC Data:</strong> The keyword data above (UK eSIM, Germany eSIM, France eSIM, etc.) is sourced from the same-origin location targeting — meaning the search data is from users in each respective country searching for that country's eSIM. As the account matures and conversion data accumulates, we will also run cross-country ads — e.g., targeting Indian travellers heading to Europe, UK-based travellers needing Italy eSIM, etc. This will be introduced in Month 2–3 based on data signals.
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- ══ KEYWORD TABLE ══ -->
+<section class="fi">
+  <div class="sec-tag purple">🔑 Keyword Intelligence</div>
+  <h2 class="sec-title">Core Keywords, CPC & Optimised<br>Bid Strategy per Country</h2>
+  <p class="sec-sub">These are the primary anchor keywords from Google Keyword Planner. Each campaign will expand with long-tail variations, city-level keywords, and device-type modifiers post-launch.</p>
+
+  <div class="kw-wrap">
+    <div class="kw-header">
+      <h3>Primary Keywords — Same-Origin Data (Source Country = Target Country)</h3>
+      <span class="kw-note">Optimised CPC = bid target after Quality Score improvement (Month 1–2)</span>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>Country & Keyword</th>
+          <th>Monthly Searches</th>
+          <th>Competition</th>
+          <th>Top of Page Bid Range</th>
+          <th>Optimised CPC Target</th>
+          <th>Match Strategy</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <div class="flag-cell">
+              <span class="fc-flag">🇬🇧</span>
+              <div class="fc-text"><strong>uk esim</strong><span>Primary — highest volume</span></div>
+            </div>
+          </td>
+          <td><span class="vol-chip">10K – 100K</span></td>
+          <td><span class="comp-badge comp-high">High</span></td>
+          <td><span class="cpc-range">$2.09 – $6.59</span></td>
+          <td><span class="cpc-opt">$2.50 – $3.50</span></td>
+          <td>
+            <span class="kw-type kwt-phrase">Phrase</span>
+            <span class="kw-type kwt-exact">Exact</span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="flag-cell">
+              <span class="fc-flag">🇬🇧</span>
+              <div class="fc-text"><strong>uk data esim</strong><span>Secondary — high intent</span></div>
+            </div>
+          </td>
+          <td><span class="vol-chip">100 – 1K</span></td>
+          <td><span class="comp-badge comp-high">High</span></td>
+          <td><span class="cpc-range">$2.77 – $8.18</span></td>
+          <td><span class="cpc-opt">$3.00 – $4.50</span></td>
+          <td>
+            <span class="kw-type kwt-phrase">Phrase</span>
+            <span class="kw-type kwt-exact">Exact</span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="flag-cell">
+              <span class="fc-flag">🇩🇪</span>
+              <div class="fc-text"><strong>esim germany</strong><span>Germany anchor keyword</span></div>
+            </div>
+          </td>
+          <td><span class="vol-chip">1K – 10K</span></td>
+          <td><span class="comp-badge comp-high">High</span></td>
+          <td><span class="cpc-range">$4.37 – $10.51</span></td>
+          <td><span class="cpc-opt">$4.80 – $6.00</span></td>
+          <td>
+            <span class="kw-type kwt-phrase">Phrase</span>
+            <span class="kw-type kwt-exact">Exact</span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="flag-cell">
+              <span class="fc-flag">🇫🇷</span>
+              <div class="fc-text"><strong>esim france</strong><span>France anchor keyword</span></div>
+            </div>
+          </td>
+          <td><span class="vol-chip">1K – 10K</span></td>
+          <td><span class="comp-badge comp-high">High</span></td>
+          <td><span class="cpc-range">$2.61 – $6.59</span></td>
+          <td><span class="cpc-opt">$2.80 – $3.80</span></td>
+          <td>
+            <span class="kw-type kwt-phrase">Phrase</span>
+            <span class="kw-type kwt-exact">Exact</span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="flag-cell">
+              <span class="fc-flag">🇳🇱</span>
+              <div class="fc-text"><strong>esim netherlands</strong><span>Netherlands anchor</span></div>
+            </div>
+          </td>
+          <td><span class="vol-chip">1K – 10K</span></td>
+          <td><span class="comp-badge comp-high">High</span></td>
+          <td><span class="cpc-range">$3.93 – $12.09</span></td>
+          <td><span class="cpc-opt">$4.20 – $5.50</span></td>
+          <td>
+            <span class="kw-type kwt-phrase">Phrase</span>
+            <span class="kw-type kwt-exact">Exact</span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="flag-cell">
+              <span class="fc-flag">🇮🇹</span>
+              <div class="fc-text"><strong>esim italy</strong><span>Italy anchor keyword</span></div>
+            </div>
+          </td>
+          <td><span class="vol-chip">1K – 10K</span></td>
+          <td><span class="comp-badge comp-high">High</span></td>
+          <td><span class="cpc-range">$2.45 – $7.13</span></td>
+          <td><span class="cpc-opt">$2.60 – $3.60</span></td>
+          <td>
+            <span class="kw-type kwt-phrase">Phrase</span>
+            <span class="kw-type kwt-exact">Exact</span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="info-box" style="margin-top:16px">
+    <strong>Optimised CPC Strategy:</strong> The "Optimised CPC Target" column represents our narrow bid targets after landing page improvements, Quality Score gains, and 30–45 days of conversion data. Google rewards relevant ads and good landing pages with lower CPCs — we expect a 25–40% reduction from raw top-of-page bids within the first 4–6 weeks for well-structured campaigns.
+  </div>
+
+  <!-- Long tail section -->
+  <div style="margin-top:24px">
+    <div class="sec-tag" style="margin-bottom:14px">📋 Long-Tail & City-Level Keywords (Layer 2)</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px">
+      <div style="background:var(--bg-card);border:1px solid var(--border-color);border-radius:14px;padding:16px">
+        <div style="font-family:'Space Grotesk',sans-serif;font-size:13px;font-weight:700;color:var(--primary);margin-bottom:10px">🇬🇧 UK — Layer 2 Keywords</div>
+        <div style="font-size:12px;color:var(--text-gray);line-height:1.9">
+          best esim for uk travel<br>
+          uk travel esim card<br>
+          esim for uk unlimited data<br>
+          cheap esim uk<br>
+          esim uk tourist<br>
+          prepaid esim united kingdom<br>
+          mojo esim uk<br>
+          london esim data plan
+        </div>
+      </div>
+      <div style="background:var(--bg-card);border:1px solid var(--border-color);border-radius:14px;padding:16px">
+        <div style="font-family:'Space Grotesk',sans-serif;font-size:13px;font-weight:700;color:#a78bfa;margin-bottom:10px">🇩🇪🇫🇷 DE + FR Layer 2</div>
+        <div style="font-size:12px;color:var(--text-gray);line-height:1.9">
+          esim for germany travel<br>
+          germany tourist esim<br>
+          paris esim data card<br>
+          esim france holiday<br>
+          best data plan france travel<br>
+          prepaid esim germany<br>
+          berlin esim unlimited<br>
+          france esim tourist
+        </div>
+      </div>
+      <div style="background:var(--bg-card);border:1px solid var(--border-color);border-radius:14px;padding:16px">
+        <div style="font-family:'Space Grotesk',sans-serif;font-size:13px;font-weight:700;color:var(--accent);margin-bottom:10px">🇳🇱🇮🇹 NL + IT Layer 2</div>
+        <div style="font-size:12px;color:var(--text-gray);line-height:1.9">
+          esim netherlands tourist<br>
+          amsterdam esim data<br>
+          best esim for italy<br>
+          rome travel esim<br>
+          italy tourist esim card<br>
+          netherlands data plan esim<br>
+          esim italy unlimited<br>
+          milan esim plan
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- ══ PROJECTED METRICS ══ -->
+<section class="fi">
+  <div class="sec-tag">📊 Projected Performance</div>
+  <h2 class="sec-title">Expected Monthly Performance<br>Across All 5 Active Countries</h2>
+  <p class="sec-sub">Conservative projections based on eSIM/travel tech industry benchmarks after proper campaign structuring and conversion tracking. Numbers improve significantly from Month 2 onwards as Google's algorithm learns.</p>
+
+  <div class="metrics-grid">
+    <div class="metric-card">
+      <div class="metric-icon">👁</div>
+      <div class="metric-val">80K–150K</div>
+      <div class="metric-lbl">Monthly Ad Impressions (all countries)</div>
+      <div class="metric-note">Targeted audience only</div>
+    </div>
+    <div class="metric-card">
+      <div class="metric-icon">🖱</div>
+      <div class="metric-val v2">2,000–4,500</div>
+      <div class="metric-lbl">Monthly Website Clicks</div>
+      <div class="metric-note">CTR target: 2.5–4%</div>
+    </div>
+    <div class="metric-card">
+      <div class="metric-icon">🛒</div>
+      <div class="metric-val">150–220</div>
+      <div class="metric-lbl">Estimated eSIM Sales/Month</div>
+      <div class="metric-note">3–5% conv. rate</div>
+    </div>
+    <div class="metric-card">
+      <div class="metric-icon">💸</div>
+      <div class="metric-val v3">₹215–380</div>
+      <div class="metric-lbl">Estimated Cost Per Sale</div>
+      <div class="metric-note">Optimised by Month 2</div>
+    </div>
+  </div>
+
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px">
+    <div class="card" style="margin-top:0">
+      <div class="card-body">
+        <h3 style="font-family:'Space Grotesk',sans-serif;font-size:15px;margin-bottom:16px;color:var(--primary)">CTR Benchmarks by Country (Target)</h3>
+        <div style="display:flex;flex-direction:column;gap:10px">
+          <div style="display:flex;justify-content:space-between;align-items:center;font-size:13px">
+            <span style="color:var(--text-gray)">🇬🇧 UK</span>
+            <span style="font-weight:700;color:var(--text-white)">3.5–5.5% (brand awareness helps)</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;align-items:center;font-size:13px">
+            <span style="color:var(--text-gray)">🇩🇪 Germany</span>
+            <span style="font-weight:700;color:var(--text-white)">2.5–4% (localised copy key)</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;align-items:center;font-size:13px">
+            <span style="color:var(--text-gray)">🇫🇷 France</span>
+            <span style="font-weight:700;color:var(--text-white)">2.8–4.5% (French ad copy boosts)</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;align-items:center;font-size:13px">
+            <span style="color:var(--text-gray)">🇳🇱 Netherlands</span>
+            <span style="font-weight:700;color:var(--text-white)">2–3.5% (high English proficiency)</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;align-items:center;font-size:13px">
+            <span style="color:var(--text-gray)">🇮🇹 Italy</span>
+            <span style="font-weight:700;color:var(--text-white)">2–3.5% (Italian ad copy helps)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card" style="margin-top:0">
+      <div class="card-body">
+        <h3 style="font-family:'Space Grotesk',sans-serif;font-size:15px;margin-bottom:16px;color:var(--primary)">Conversion Rate Expectations</h3>
+        <div style="display:flex;flex-direction:column;gap:10px">
+          <div style="background:var(--bg-card-hover);border:1px solid var(--border-color);border-radius:10px;padding:12px">
+            <div style="font-size:12px;font-weight:700;color:var(--text-white);margin-bottom:4px">Month 1 — Learning Phase</div>
+            <div style="font-size:12px;color:var(--text-gray)">1.5–2.5% conv. rate. Google algorithm still learning. Manual CPC or Max Clicks bidding.</div>
+          </div>
+          <div style="background:var(--bg-card-hover);border:1px solid var(--border-color);border-radius:10px;padding:12px">
+            <div style="font-size:12px;font-weight:700;color:var(--primary);margin-bottom:4px">Month 2 — Optimised Phase</div>
+            <div style="font-size:12px;color:var(--text-gray)">3–4% conv. rate. Switch to Maximize Conversions. Negative keyword list matured. Landing page A/B results in.</div>
+          </div>
+          <div style="background:rgba(0,212,170,0.04);border:1px solid rgba(0,212,170,0.18);border-radius:10px;padding:12px">
+            <div style="font-size:12px;font-weight:700;color:var(--primary);margin-bottom:4px">Month 3+ — Scale Phase</div>
+            <div style="font-size:12px;color:var(--text-gray)">4–6% conv. rate possible. Target CPA bidding active. P-Max campaigns launching. Budget scaling on winners.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Conversion Funnel -->
+  <div style="margin-top:36px">
+    <h3 style="font-family:'Space Grotesk',sans-serif;font-size:18px;margin-bottom:8px">Full Funnel — Monthly Projection (5 Countries Combined)</h3>
+    <p style="font-size:13px;color:var(--text-gray);margin-bottom:0">From ad impression to completed eSIM purchase.</p>
+  </div>
+  <div class="funnel-outer">
+    <div class="funnel">
+      <div class="fs fs1">
+        <span class="fs-lbl">👁 Total Ad Impressions</span>
+        <div class="fs-r"><div class="fs-num">80K–150K</div><div class="fs-sub">/month (targeted B2C travellers)</div></div>
+      </div>
+      <div class="fs fs2">
+        <span class="fs-lbl">🖱 Clicks to Website</span>
+        <div class="fs-r"><div class="fs-num">2,000–4,500</div><div class="fs-sub">~2.5–4% blended CTR</div></div>
+      </div>
+      <div class="fs fs3">
+        <span class="fs-lbl">📄 Landing Page Views</span>
+        <div class="fs-r"><div class="fs-num">1,900–4,200</div><div class="fs-sub">~95% land on correct page</div></div>
+      </div>
+      <div class="fs fs4">
+        <span class="fs-lbl">🔍 Plan Selection / Cart</span>
+        <div class="fs-r"><div class="fs-num">500–900</div><div class="fs-sub">~25% browse plans deeper</div></div>
+      </div>
+      <div class="fs fs5">
+        <span class="fs-lbl">💳 Checkout Initiated</span>
+        <div class="fs-r"><div class="fs-num">250–450</div><div class="fs-sub">~50% proceed to checkout</div></div>
+      </div>
+      <div class="fs fs6">
+        <span class="fs-lbl">✅ Completed Purchases</span>
+        <div class="fs-r"><div class="fs-num">150–220</div><div class="fs-sub">3–5% overall conv. rate</div></div>
+      </div>
+    </div>
+    <div>
+      <div class="card" style="margin-top:0">
+        <div class="card-body">
+          <h3 style="font-family:'Space Grotesk',sans-serif;font-size:15px;margin-bottom:16px;color:var(--primary)">Per-Country Sales Forecast</h3>
+          <div style="display:flex;flex-direction:column;gap:10px;font-size:13px">
+            <div style="background:var(--bg-card-hover);border:1px solid var(--border-color);border-radius:10px;padding:12px 14px">
+              <div style="display:flex;justify-content:space-between;margin-bottom:4px">
+                <span style="font-weight:700">🇬🇧 United Kingdom</span>
+                <span style="color:var(--primary);font-weight:700">55–85 sales</span>
+              </div>
+              <div style="font-size:11px;color:var(--text-gray)">Budget: ₹16–18K · Est. CPS: ₹200–300 · CTR: 3.5–5.5%</div>
+            </div>
+            <div style="background:var(--bg-card-hover);border:1px solid var(--border-color);border-radius:10px;padding:12px 14px">
+              <div style="display:flex;justify-content:space-between;margin-bottom:4px">
+                <span style="font-weight:700">🇩🇪 Germany</span>
+                <span style="color:var(--primary);font-weight:700">25–40 sales</span>
+              </div>
+              <div style="font-size:11px;color:var(--text-gray)">Budget: ₹12–14K · Est. CPS: ₹350–500 · CTR: 2.5–4%</div>
+            </div>
+            <div style="background:var(--bg-card-hover);border:1px solid var(--border-color);border-radius:10px;padding:12px 14px">
+              <div style="display:flex;justify-content:space-between;margin-bottom:4px">
+                <span style="font-weight:700">🇫🇷 France</span>
+                <span style="color:var(--primary);font-weight:700">30–50 sales</span>
+              </div>
+              <div style="font-size:11px;color:var(--text-gray)">Budget: ₹8–10K · Est. CPS: ₹180–280 · CTR: 2.8–4.5%</div>
+            </div>
+            <div style="background:var(--bg-card-hover);border:1px solid var(--border-color);border-radius:10px;padding:12px 14px">
+              <div style="display:flex;justify-content:space-between;margin-bottom:4px">
+                <span style="font-weight:700">🇳🇱 Netherlands</span>
+                <span style="color:var(--primary);font-weight:700">15–25 sales</span>
+              </div>
+              <div style="font-size:11px;color:var(--text-gray)">Budget: ₹7–8K · Est. CPS: ₹320–480 · CTR: 2–3.5%</div>
+            </div>
+            <div style="background:var(--bg-card-hover);border:1px solid var(--border-color);border-radius:10px;padding:12px 14px">
+              <div style="display:flex;justify-content:space-between;margin-bottom:4px">
+                <span style="font-weight:700">🇮🇹 Italy</span>
+                <span style="color:var(--primary);font-weight:700">20–35 sales</span>
+              </div>
+              <div style="font-size:11px;color:var(--text-gray)">Budget: ₹4–7K · Est. CPS: ₹170–280 · CTR: 2–3.5%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- ══ USA STRATEGY ══ -->
+<section class="fi">
+  <div class="sec-tag red">🇺🇸 USA Strategy — Special Note</div>
+  <h2 class="sec-title">Why We're Not Running<br>Standard Google Ads in USA Yet</h2>
+  <p class="sec-sub">The USA is the world's largest eSIM market — but it requires a completely different approach. Here's the data-driven rationale.</p>
+
+  <div class="usa-block">
+    <div class="usa-header">
+      <div class="usa-flag">🇺🇸</div>
+      <div class="usa-head-text">
+        <h3>United States — Deferred to Month 3+ (P-Max Only)</h3>
+        <p>Economics do not support direct Search bidding with current account data and eSIM price points</p>
+      </div>
+      <div class="usa-badge">⏳ Month 3+</div>
+    </div>
+    <div class="usa-body">
+      <div class="usa-grid">
+        <div class="usa-reason">
+          <div class="ur-num">01</div>
+          <div class="ur-title">CPC vs Product Price Mismatch</div>
+          <div class="ur-desc">Top-of-page CPCs in the USA for eSIM keywords typically range from $8–$25+ per click. With eSIM plans often priced at $8–$25 for a data bundle, a single ad click could cost as much as — or more than — the product itself. The unit economics simply don't work for direct Search campaigns without a proven conversion rate above 15–20%, which takes months to achieve.</div>
+        </div>
+        <div class="usa-reason">
+          <div class="ur-num">02</div>
+          <div class="ur-title">No Account Conversion History</div>
+          <div class="ur-desc">Google's Smart Bidding (Target CPA, Max Conversions) requires a minimum of 30–50 conversions per month to learn effectively. Without this baseline, Google wastes budget on high-CPC clicks from users with no real intent. Running USA campaigns on a fresh account with no conversion data would result in CPAs of ₹3,000–8,000 per sale — unviable.</div>
+        </div>
+        <div class="usa-reason">
+          <div class="ur-num">03</div>
+          <div class="ur-title">Extremely High Competition</div>
+          <div class="ur-desc">The US eSIM space is dominated by well-funded players with enormous brand recognition. eSIM companies and major telcos have been running high-budget Google Ads in the US for years, pushing CPCs to levels that make entry without a proven ROAS model financially risky for a brand building its data profile.</div>
+        </div>
+        <div class="usa-reason">
+          <div class="ur-num">04</div>
+          <div class="ur-title">P-Max Changes the Math</div>
+          <div class="ur-desc">Performance Max campaigns use Google's AI to find buyers across every surface — including YouTube, Gmail, Discover, and Display — at a significantly lower CPL than Search alone. Once we have 60–90 days of clean conversion data from European campaigns, Google's AI will know exactly what a MojoeSIM buyer looks like and can find them in the USA at a fraction of the Search CPC. This is the right entry path for USA.</div>
+        </div>
+      </div>
+      <div class="usa-plan">
+        <div class="up-icon">🤖</div>
+        <div class="up-text">
+          <h4>USA Entry Plan — Month 3: Performance Max Campaign</h4>
+          <p>At Month 3, we launch a P-Max campaign for USA with asset groups built around your best-converting European creatives and buyer data. Google's AI will find US-based travellers who look like your European buyers — at a far better CPC than manual Search bidding. We start with a small test budget of ₹5,000–8,000/month, measure CPL vs. product price, and scale only when ROAS is proven positive. No budget wasted, no guesswork — just AI doing what it does best when given real data to work with.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- ══ CAMPAIGN STRUCTURE ══ -->
+<section class="fi">
+  <div class="sec-tag">🗂 Campaign Architecture</div>
+  <h2 class="sec-title">Full Campaign Structure —<br>What We're Building</h2>
+  <p class="sec-sub">Each country gets its own dedicated campaign with multiple ad groups, ad copy variants, and keyword themes. City-level targeting is activated for high-volume markets in Month 2.</p>
+
+  <div class="camp-grid">
+    <div class="camp-card cc1">
+      <div class="cc-flag">🇬🇧</div>
+      <div class="cc-title">Campaign 1 — UK Search (Primary)</div>
+      <div class="cc-sub">Highest volume country. Multiple ad groups by intent level and keyword theme. Both English copy and A/B test with informal tone variants.</div>
+      <div class="cc-tags">
+        <span class="ctag">Phrase Match</span>
+        <span class="ctag">Exact Match</span>
+        <span class="ctag">English</span>
+        <span class="ctag">All UK</span>
+      </div>
+      <div class="cc-adgroups">
+        <div class="cc-ag-label">Ad Groups</div>
+        <div class="ag-row">Generic eSIM UK (uk esim, esim for uk)</div>
+        <div class="ag-row">Data-focused (uk data esim, unlimited esim uk)</div>
+        <div class="ag-row">Tourist/Travel intent (travel esim uk, uk tourist esim)</div>
+        <div class="ag-row">City-level: London, Manchester, Edinburgh</div>
+        <div class="ag-row">Broad Match discovery group (controlled budget)</div>
+      </div>
+    </div>
+
+    <div class="camp-card cc2">
+      <div class="cc-flag">🇩🇪</div>
+      <div class="cc-title">Campaign 2 — Germany Search</div>
+      <div class="cc-sub">High CPC market — tight targeting, English + German ad copy. City-level in Munich, Berlin, Frankfurt for better relevance score and lower CPC.</div>
+      <div class="cc-tags">
+        <span class="ctag">Phrase Match</span>
+        <span class="ctag">Exact Match</span>
+        <span class="ctag">EN + DE Copy</span>
+      </div>
+      <div class="cc-adgroups">
+        <div class="cc-ag-label">Ad Groups</div>
+        <div class="ag-row">Anchor: esim germany, germany esim</div>
+        <div class="ag-row">Travel: esim for germany travel, tourist esim germany</div>
+        <div class="ag-row">City-level: Berlin eSIM, Munich eSIM, Frankfurt</div>
+        <div class="ag-row">German-language: eSIM Deutschland (test group)</div>
+      </div>
+    </div>
+
+    <div class="camp-card cc3">
+      <div class="cc-flag">🇫🇷</div>
+      <div class="cc-title">Campaign 3 — France Search</div>
+      <div class="cc-sub">French travellers respond well to local-language ads. Running English ads + French copy variants to compare CTR and conversion performance.</div>
+      <div class="cc-tags">
+        <span class="ctag">Phrase Match</span>
+        <span class="ctag">Exact Match</span>
+        <span class="ctag">EN + FR Copy</span>
+      </div>
+      <div class="cc-adgroups">
+        <div class="cc-ag-label">Ad Groups</div>
+        <div class="ag-row">Anchor: esim france, france esim plan</div>
+        <div class="ag-row">Travel: esim france voyage, esim for paris</div>
+        <div class="ag-row">French copy group: Carte eSIM France, eSIM data France</div>
+        <div class="ag-row">City-level: Paris eSIM, Lyon, Nice, Marseille</div>
+      </div>
+    </div>
+
+    <div class="camp-card cc4">
+      <div class="cc-flag">🇳🇱</div>
+      <div class="cc-title">Campaign 4 — Netherlands Search</div>
+      <div class="cc-sub">Netherlands has the highest CPC in the set — budget is deliberately capped. High English proficiency means English ads perform well. Dutch copy tested as a low-budget variant.</div>
+      <div class="cc-tags">
+        <span class="ctag">Exact Match Primary</span>
+        <span class="ctag">EN + NL Test</span>
+        <span class="ctag">Tight Budget</span>
+      </div>
+      <div class="cc-adgroups">
+        <div class="cc-ag-label">Ad Groups</div>
+        <div class="ag-row">Anchor: esim netherlands, netherlands esim</div>
+        <div class="ag-row">Travel: esim for netherlands trip, amsterdam esim</div>
+        <div class="ag-row">Dutch copy test: eSIM Nederland, prepaid eSIM NL</div>
+        <div class="ag-row">City: Amsterdam, Rotterdam, The Hague</div>
+      </div>
+    </div>
+
+    <div class="camp-card cc5">
+      <div class="cc-flag">🇮🇹</div>
+      <div class="cc-title">Campaign 5 — Italy Search</div>
+      <div class="cc-sub">Italy is a strong tourism destination — targeting inbound travellers via search. Both English and Italian copy to maximise reach across different intent types.</div>
+      <div class="cc-tags">
+        <span class="ctag">Phrase + Exact</span>
+        <span class="ctag">EN + IT Copy</span>
+        <span class="ctag">Tourist Focus</span>
+      </div>
+      <div class="cc-adgroups">
+        <div class="cc-ag-label">Ad Groups</div>
+        <div class="ag-row">Anchor: esim italy, italy esim plan</div>
+        <div class="ag-row">Travel: esim for italy travel, tourist esim italy</div>
+        <div class="ag-row">Italian copy: eSIM Italia, prepaid eSIM Roma</div>
+        <div class="ag-row">City: Rome, Milan, Florence, Venice, Naples</div>
+      </div>
+    </div>
+
+    <div class="camp-card cc6">
+      <div class="cc-flag">🔄</div>
+      <div class="cc-title">Campaign 6 — Remarketing (All Countries)</div>
+      <div class="cc-sub">Every visitor who lands on mojoesim.com but doesn't purchase gets re-targeted with tailored ads. Three audience segments, each with different creatives matching their stage in the funnel.</div>
+      <div class="cc-tags">
+        <span class="ctag">RLSA</span>
+        <span class="ctag">Display Remarketing</span>
+        <span class="ctag">All 5 Countries</span>
+      </div>
+      <div class="cc-adgroups">
+        <div class="cc-ag-label">Audience Segments</div>
+        <div class="ag-row">All site visitors (90 days) — awareness creative</div>
+        <div class="ag-row">Plan page viewers (30 days) — comparison creative</div>
+        <div class="ag-row">Checkout abandoners (7 days) — urgency/offer creative</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- ══ MATCH TYPE STRATEGY ══ -->
+<section class="fi">
+  <div class="sec-tag purple">🎯 Match Type Strategy</div>
+  <h2 class="sec-title">Broad + Phrase + Exact —<br>How Each Match Type Earns Its Place</h2>
+  <p class="sec-sub">All three match types run simultaneously but with very different roles, budgets, and purposes. This is not a set-it-and-forget-it setup — match types are reviewed weekly and adjusted based on search term reports.</p>
+
+  <div class="match-grid">
+    <div class="match-card mc-broad">
+      <span class="mc-badge">Broad Match</span>
+      <div class="mc-title">Data Discovery Layer</div>
+      <div class="mc-purpose">Purpose: Find keyword gold mines we haven't thought of</div>
+      <ul class="mc-list">
+        <li>Small budget (15–20% of total per campaign) with very aggressive negatives</li>
+        <li>Uncovers unexpected high-converting search terms from real users</li>
+        <li>Every winner from broad goes into Phrase or Exact immediately</li>
+        <li>Reviewed every 3–4 days — any irrelevant match gets a negative added</li>
+        <li>Budget capped per day to prevent runaway spend on irrelevant terms</li>
+      </ul>
+    </div>
+    <div class="match-card mc-phrase">
+      <span class="mc-badge">Phrase Match</span>
+      <div class="mc-title">Core Workhorse</div>
+      <div class="mc-purpose">Purpose: Capture intent variations of your key themes</div>
+      <ul class="mc-list">
+        <li>50–60% of each campaign's budget runs here</li>
+        <li>Catches all variations: "best esim for italy", "cheap italy esim", "italy travel esim"</li>
+        <li>Allows for creative flexibility in ad copy matching query intent</li>
+        <li>Weekly search term report review — winners go exact, losers get negatives</li>
+        <li>Builds conversion volume needed to enable Smart Bidding faster</li>
+      </ul>
+    </div>
+    <div class="match-card mc-exact">
+      <span class="mc-badge">Exact Match</span>
+      <div class="mc-title">Conversion Precision</div>
+      <div class="mc-purpose">Purpose: Lock in proven keywords at lower CPC</div>
+      <ul class="mc-list">
+        <li>20–30% of budget — extremely tight, only proven converters go here</li>
+        <li>Highest Quality Score = lowest CPC + top ad position</li>
+        <li>Ad copy written specifically for that one exact query</li>
+        <li>Enables Target CPA bidding per keyword as data accumulates</li>
+        <li>Grows over time as winning terms migrate from Phrase match</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- ══ 90-DAY PLAN ══ -->
+<section class="fi">
+  <div class="sec-tag">🗓 Execution Roadmap</div>
+  <h2 class="sec-title">90-Day Google Ads Launch Plan<br>for MojoeSIM</h2>
+  <p class="sec-sub">A structured rollout — from account setup to P-Max AI campaigns in 90 days. Every step builds on the last. Every decision is data-driven.</p>
+  <div class="phase-wrap">
+    <div class="phase">
+      <div class="phase-dot">01</div>
+      <div class="phase-box">
+        <div class="phase-timeline">Week 1 – 2 · Setup & Foundation</div>
+        <div class="phase-title">Account Setup, Tracking & Audience Build</div>
+        <div class="phase-desc">Google Ads account audit (if existing) or fresh setup. Google Tag Manager installation on mojoesim.com. Conversion tracking for: purchase completion, plan page views (micro), checkout initiation (micro), and any WhatsApp/email contact (if applicable). Google Ads Remarketing tag installed. Custom audiences built: all visitors, plan viewers, checkout abandoners. Google Search Console + Analytics 4 linked to Ads account for audience and landing page data.</div>
+        <div class="phase-tags">
+          <span class="ptag">GTM Setup</span>
+          <span class="ptag">Conversion Tracking</span>
+          <span class="ptag">Remarketing Tag</span>
+          <span class="ptag">Audience Build</span>
+          <span class="ptag">GA4 Link</span>
+        </div>
+      </div>
+    </div>
+    <div class="phase">
+      <div class="phase-dot pd2">02</div>
+      <div class="phase-box">
+        <div class="phase-timeline">Week 2 – 3 · Build & Launch</div>
+        <div class="phase-title">Campaign Build, Ad Copy & Landing Page Alignment</div>
+        <div class="phase-desc">Build all 5 country campaigns + remarketing campaign. Write 3–5 Responsive Search Ad (RSA) variants per ad group — testing different value propositions: price, instant activation, coverage, ease of use. Build initial negative keyword list (300–500 terms blocking informational, job seeker, competitor, and irrelevant queries). Set up all ad extensions: sitelinks, callouts, promotion (if any offer), image extensions. Brief landing page team on optimisations required (see Landing Page section). Launch on Maximize Clicks bidding to gather initial data.</div>
+        <div class="phase-tags">
+          <span class="ptag p2">5 Campaigns Live</span>
+          <span class="ptag p2">RSA Variants</span>
+          <span class="ptag p2">Negative KW List</span>
+          <span class="ptag p2">All Extensions</span>
+          <span class="ptag p2">Local Language Ads</span>
+        </div>
+      </div>
+    </div>
+    <div class="phase">
+      <div class="phase-dot pd3">03</div>
+      <div class="phase-box">
+        <div class="phase-timeline">Month 2 · Optimise & Narrow</div>
+        <div class="phase-title">Data Review, Negative Build, Bidding Shift & City Targeting</div>
+        <div class="phase-desc">Weekly search term reports — mine broad match for new keyword discoveries, add 50–100 negatives from junk queries. Switch best-performing campaigns from Maximize Clicks to Maximize Conversions. Launch city-level ad groups for UK (London, Manchester) and Germany (Berlin, Munich). Pause low-CTR ad variations, double spend on high-CTR variants. A/B test landing page headlines and CTA copy. First ad copy refresh based on month 1 CTR data. Launch remarketing campaigns as audience pools fill up (minimum 100 users required).</div>
+        <div class="phase-tags">
+          <span class="ptag p3">Negative Expansion</span>
+          <span class="ptag p3">Bidding Switch</span>
+          <span class="ptag p3">City Targeting</span>
+          <span class="ptag p3">Remarketing Live</span>
+          <span class="ptag p3">LP A/B Tests</span>
+        </div>
+      </div>
+    </div>
+    <div class="phase">
+      <div class="phase-dot pd4">04</div>
+      <div class="phase-box">
+        <div class="phase-timeline">Month 3 · Scale, P-Max & USA Entry</div>
+        <div class="phase-title">Performance Max Launch + USA Test + Budget Scaling</div>
+        <div class="phase-desc">With 60–90 days of clean conversion data, activate Performance Max campaigns. P-Max asset groups built around best-performing ad copy themes and product images. USA P-Max test campaign launched with ₹5,000–8,000 budget — Google AI uses European buyer data to find similar US travellers across YouTube, Gmail, Discovery, and Display. Increase budgets by 20–30% on countries showing positive ROAS. Switch top campaigns to Target CPA bidding. Monthly performance report: impressions, clicks, CTR, conversions, CPS, ROAS per country.</div>
+        <div class="phase-tags">
+          <span class="ptag p4">P-Max Live</span>
+          <span class="ptag p4">USA Test Launch</span>
+          <span class="ptag p4">Target CPA</span>
+          <span class="ptag p4">Budget Scale</span>
+          <span class="ptag p4">Monthly ROAS Report</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- ══ LANDING PAGE ══ -->
+<section class="fi">
+  <div class="sec-tag red">🖥 Landing Page Optimisation</div>
+  <h2 class="sec-title">What MojoeSIM's Landing Pages<br>Need to Convert Paid Traffic</h2>
+  <p class="sec-sub">Paid traffic is wasted if the landing page doesn't match the ad's promise and guide the visitor straight to purchase. These are the highest-impact improvements — most can be implemented quickly without a full redesign.</p>
+
+  <div class="lp-grid">
+    <div class="lp-item">
+      <div class="li-icon">🔗</div>
+      <span class="li-status st-must">MUST HAVE</span>
+      <div class="li-title">Dedicated Country Landing Pages</div>
+      <div class="li-desc">Every country campaign (UK, DE, FR, NL, IT) must link to a dedicated landing page — not the homepage. The page headline, subheading, and intro paragraph must match the ad's promise. "UK eSIM from $X — Instant Activation" in the ad = exact same message on the page.</div>
+      <div class="li-fix"><strong>Action:</strong> Create or configure: /esim-uk, /esim-germany, /esim-france, /esim-netherlands, /esim-italy. Each pulls the relevant plan cards. H1 matches ad keyword. This alone improves Quality Score by 2–4 points, dropping CPC by 25–40%.</div>
+    </div>
+    <div class="lp-item">
+      <div class="li-icon">⚡</div>
+      <span class="li-status st-must">MUST HAVE</span>
+      <div class="li-title">Page Load Speed Under 2.5s</div>
+      <div class="li-desc">Google's Quality Score directly penalises slow landing pages. A 1-second delay in load time reduces conversions by ~7%. Mobile travellers searching on-the-go abandon pages that don't load instantly. mojoesim.com should hit Core Web Vitals green on mobile.</div>
+      <div class="li-fix"><strong>Action:</strong> Compress all images to WebP format. Lazy-load non-critical assets. Enable browser caching. Consider a CDN (Cloudflare free tier). Test via PageSpeed Insights — target 80+ mobile score.</div>
+    </div>
+    <div class="lp-item">
+      <div class="li-icon">📱</div>
+      <span class="li-status st-must">MUST HAVE</span>
+      <div class="li-title">Mobile-First Purchase Flow</div>
+      <div class="li-desc">70–80% of paid eSIM traffic will come from mobile devices — people searching for data plans are often about to travel or are already at the airport. The entire purchase flow — plan selection, payment, eSIM delivery — must be frictionless on mobile.</div>
+      <div class="li-fix"><strong>Action:</strong> Test the full purchase flow on iPhone and Android monthly. Ensure Razorpay checkout renders correctly on mobile. CTA buttons must be above the fold and fingertip-sized (min 48px height). Eliminate any horizontal scrolling.</div>
+    </div>
+    <div class="lp-item">
+      <div class="li-icon">🏆</div>
+      <span class="li-status st-imp">IMPORTANT</span>
+      <div class="li-title">Trust Signals Above the Fold</div>
+      <div class="li-desc">First-time visitors from paid ads need trust cues within 3 seconds. "190+ countries", "Instant Activation", and "Secure Checkout" are already on the site — but they need to be more visible and prominent on landing pages for ad traffic who may not know the brand.</div>
+      <div class="li-fix"><strong>Action:</strong> Add a trust bar below the hero: ✓ 190+ Countries · ✓ Instant QR Activation · ✓ Secure Checkout · ✓ 24/7 Support. Add star rating / review count if available. Show a "How it works in 3 steps" section early on the page.</div>
+    </div>
+    <div class="lp-item">
+      <div class="li-icon">🔔</div>
+      <span class="li-status st-imp">IMPORTANT</span>
+      <div class="li-title">Urgency & Scarcity Cues</div>
+      <div class="li-desc">Travellers make impulse purchases. Adding gentle urgency elements — without fake countdowns — helps move browsers to buyers. "Activate before you land", "Used by 10,000+ travellers" type social proof + urgency combinations increase conversion rates measurably.</div>
+      <div class="li-fix"><strong>Action:</strong> Add "Activate in under 5 minutes" messaging near CTAs. Show number of plans sold for popular destinations. Use a sticky "Get Your UK eSIM Now →" floating CTA on scroll. These elements typically add 10–20% uplift to conversion rate.</div>
+    </div>
+    <div class="lp-item">
+      <div class="li-icon">🌐</div>
+      <span class="li-status st-rec">RECOMMENDED</span>
+      <div class="li-title">Localised Content for DE/FR/IT/NL</div>
+      <div class="li-desc">For German, French, Italian, and Dutch campaigns, landing page copy in the local language significantly improves Quality Score and conversion rate. Users in these markets, particularly Germany and France, respond much better to ads and pages in their native language.</div>
+      <div class="li-fix"><strong>Action:</strong> Start with the H1, hero subheading, and CTA button in local language. Run EN vs local-language landing page A/B test for 30 days. If local language converts better (very likely), invest in full page translation for DE and FR first.</div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- ══ ABOUT ══ -->
+<section class="fi">
+  <div class="about-box">
+    <div class="av">
+      <img src="https://media.licdn.com/dms/image/v2/D5603AQHmbz2e8fvliA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1668485568228?e=1779926400&v=beta&t=LG5v-FhzY0eoKvdg4Mv3w6T5l4DsbnQKE7OG0wUyOVU" alt="Manish Yadav" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 110 110%22><rect fill=%22%2312121a%22 width=%22110%22 height=%22110%22/><text x=%2255%22 y=%2270%22 text-anchor=%22middle%22 font-size=%2240%22 fill=%22%2300d4aa%22>MY</text></svg>'"/>
+    </div>
+    <div>
+      <div class="ab-name">Manish Yadav</div>
+      <div class="ab-role">360° Digital Marketing Expert & Consultant | Best Digital Marketer</div>
+      <div class="ab-desc">8+ years experience running Google Ads for B2C, B2B, SaaS, and e-commerce clients globally. ₹48Cr+ in business generated. I've personally reviewed MojoeSIM's website, mapped the keyword landscape, and built this strategy around your exact budget, target markets, and product economics. Every recommendation in this document is based on real data — not a generic template.</div>
+      <div class="ab-badges">
+        <span class="ab-badge">175+ Countries</span>
+        <span class="ab-badge">₹48Cr+ Revenue Generated</span>
+        <span class="ab-badge">Google Ads Specialist</span>
+        <span class="ab-badge">eCommerce Campaigns</span>
+        <span class="ab-badge">P-Max & Demand Gen</span>
+        <span class="ab-badge">8+ Years Experience</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CTA ══ -->
+<section class="fi">
+  <div class="cta-box">
+    <div class="sec-tag" style="margin:0 auto 18px;width:fit-content">🚀 Ready to Start?</div>
+    <h2 style="font-size:clamp(1.8rem,4vw,2.8rem);margin-bottom:14px">Let's Launch MojoeSIM's Google Ads<br>Across 5 Countries — This Month</h2>
+    <p style="font-size:15px;color:var(--text-gray);line-height:1.8;max-width:520px;margin:0 auto">Share Google Ads account access, confirm your monthly budget, and we'll have campaigns live within 7–10 business days. No long delays, no unnecessary complexity — just results.</p>
+    <div class="cta-btns">
+      <a href="https://wa.me/918750711007?text=Hi%20Manish!%20Reviewed%20the%20MojoeSIM%20Google%20Ads%20proposal.%20Let%27s%20get%20started." class="btn-primary" target="_blank">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.940 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.570-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        WhatsApp Manish Now
+      </a>
+      <a href="https://bestdigitalmarketer.com/contact/" class="btn-outline" target="_blank">Book a Strategy Call →</a>
+    </div>
+    <p style="font-size:12px;color:var(--text-gray);margin-top:22px">📞 +91 875 071 1007 &nbsp;·&nbsp; ✉️ manishyv0@gmail.com &nbsp;·&nbsp; 🌐 bestdigitalmarketer.com</p>
+  </div>
+</section>
+
+</div><!-- /wrapper -->
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div>
+    <p>© 2026 <a href="https://bestdigitalmarketer.com/">Best Digital Marketer</a> &nbsp;·&nbsp; Prepared exclusively for MojoeSIM &nbsp;·&nbsp; <strong style="color:var(--accent)">Confidential — Not for redistribution</strong></p>
+    <p style="margin-top:6px;font-size:11px;color:rgba(156,163,175,0.4)">This page is marked noindex, nofollow and is intended for private client presentation only. All projections are estimates based on industry benchmarks and may vary based on actual account performance, competition, and product pricing.</p>
+  </div>
+</footer>
+
+<script>
+// ── Intersection Observer fade-in ──
+const obs = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('on'); });
+}, { threshold: 0.08 });
+document.querySelectorAll('.fi').forEach(el => obs.observe(el));
+
+// ── Animate bar fills ──
+const barObs = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.querySelectorAll('.ca-bar-fill').forEach(b => {
+        const w = b.style.width; b.style.width = '0';
+        setTimeout(() => { b.style.width = w; }, 200);
+      });
+      barObs.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.2 });
+document.querySelectorAll('.country-alloc').forEach(el => barObs.observe(el));
+
+// ── Counter animation for hero stats ──
+function animateValue(el, start, end, duration, suffix) {
+  const range = end - start;
+  const startTime = performance.now();
+  function update(now) {
+    const elapsed = now - startTime;
+    const progress = Math.min(elapsed / duration, 1);
+    const eased = 1 - Math.pow(1 - progress, 3);
+    el.textContent = Math.floor(start + range * eased) + suffix;
+    if (progress < 1) requestAnimationFrame(update);
+  }
+  requestAnimationFrame(update);
+}
+
+const statsObs = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      statsObs.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.5 });
+document.querySelectorAll('.hero-stats').forEach(el => statsObs.observe(el));
+</script>
+</body>
+</html>
